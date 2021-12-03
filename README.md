@@ -31,65 +31,59 @@ Students and working professional neeeded to done in short time ,using this web 
 git clone  https://github.com/shivshankar9/Student-portal
 ```
 
-**3.** Navigate to the project directory :file_folder: .
-
-```
-cd Blood-Buddy
-```
-
-**4.** Add a remote upstream to the original repository.
+**3.** Add a remote upstream to the original repository.
 
 ```
 git remote add upstream https://github.com/shivshankar9/Student-portal
 ```
 
-**5.** Check the remotes for the repository.
+**4.** Check the remotes for the repository.
 
 ```
 git remote -v
 ```
 
-**6.** It is always advused to take a pull from the upstream repository to your master branch to keep it even with the main project(updated repository).
+**5.** It is always advused to take a pull from the upstream repository to your master branch to keep it even with the main project(updated repository).
 
 ```
 git pull upstream master(or main)
 ```
 
-**7.** Create a new branch.
+**6.** Create a new branch.
 
 ```
 git checkout -b <your_branch_name>
 ```
 
-**8.** Perform your desired changes to the code base.
+**7.** Perform your desired changes to the code base.
 
 <p align="center"><img width=35% src="https://media.giphy.com/media/oMHPlvpTvnXGPS7GhX/giphy.gif"></p>
 
-**9.** Track your changes:heavy_check_mark: .
+**8.** Track your changes:heavy_check_mark: .
 
 ```
 git add . 
 ```
 
-**10.** Commit your changes .
+**9.** Commit your changes .
 
 ```
 git commit -m "Message related to changes you made in the code"
 ```
 
-**11.** Push the committed changes in your feature branch to your remote repo.
+**10.** Push the committed changes in your feature branch to your remote repo.
 
 ```
 git push -u origin <your_branch_name>
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`. Please ensure that both the branches are even in order to avoid merge conficts
+**11.** To create a pull request, click on `compare and pull requests`. Please ensure that both the branches are even in order to avoid merge conficts
 
-**13.** Add a title and description to your PR explaining the features you added.
+**12.** Add a title and description to your PR explaining the features you added.
 
-**14.** Click on `Create Pull Request`.
+**13.** Click on `Create Pull Request`.
 
-**15.** Congrats !! You made your first PR 🥳.
+**14.** Congrats !! You made your first PR 🥳.
 
 <p align="center"><img width=35% src="https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif"></p>
 
