@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    background  : url(background.jpg);
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+    
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    top: 50%;
+    left: 50px;
+    right: 20px;
+    font-size: 100px;
+    font-weight: 600;
+    position: absolute;
+    
+}
+
+.topnav{
+    background-color:rgb(255, 196, 0);
+    overflow: hidden;
+}
+.topnav a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color:red ;
+    color: black;
+
+}
+.topnav a.active {
+    background-color: black;
+    color: white;
+  }
+  
