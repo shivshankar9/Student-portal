@@ -45,3 +45,36 @@ h1{
     color: white;
   }
   
+.footer{
+      padding: 40px 0;
+      background-color: black;
+  }
+  .footer .socials {
+      text-align: center;
+      padding: 25px;
+      color: white;
+
+  }
+  .footer.socials a{
+      font-size: 24px;
+      color: inherit;
+      border: 1px solid #ccc;
+      width: 40px;
+      height: 40 px;
+      line-height: 38px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      margin: 0 8px;
+      opacity: 0.75;
+  }
+  .footer.socials a:hover{
+      opacity: 0.9;
+  }
+  
+  .footer .copyright{
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+  }
