@@ -1,32 +1,33 @@
 *{
     margin: 0;
     padding: 0;
-
 }
+
 header{
-    background  : url(background.jpg);
-    height:100vh;
+    background: url(background.jpg);
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-attachment: initial;
-    
 }
+
 h1{
     text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
     top: 50%;
-    left: 50px;
+    left: 156px;
     right: 20px;
     font-size: 100px;
     font-weight: 600;
     position: absolute;
-    
+    color: white;
 }
 
 .topnav{
-    background-color:rgb(255, 196, 0);
+    background-color: rgb(255, 196, 0);
     overflow: hidden;
 }
+
 .topnav a{
     float: left;
     color: black;
@@ -35,13 +36,25 @@ h1{
     text-decoration: none;
     font-size: 17px;
 }
-.topnav a:hover{
-    background-color:red ;
-    color: black;
 
+.topnav a:hover{
+    background-color: red;
+    color: black;
 }
-.topnav a.active {
+
+.topnav a.active{
     background-color: black;
     color: white;
-  }
-  
+}
+
+.logo{
+    text-align: center;
+    top: 40%;
+    left: 60px;
+    position: absolute;
+}
+
+.image{
+    border-radius: 50%;
+    width: 11pc;
+}
