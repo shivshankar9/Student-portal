@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background  : url(background.jpg);
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+    transition: initial;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+
+nav{
+    position: absolute;
+    left: 70%;
+    top: 10px;
+}
+nav a{
+    font-size: 25px;
+    float: left;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    color: white;
+}
+nav a:hover{
+    color: yellow;
+}
+header h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    left: 50px;
+    right: 50px;
+    font-size: 130px;
+    font-weight: 600;
+    position: absolute;
+   color: whitesmoke;
+   margin: 100px;
+   position: absolute;
+}
+
+main h2{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    
+    padding: 50px;
+    margin: 50px;
+    background-color: whitesmoke;
+    
+    border: 100px;
+    top: 85vh;
+    position: relative;
+    
+    
+}
+ 
+main .row{
+    float: left;
+    background-color: rgb(2, 2, 37);
+    text-align: center;
+    padding: 10px 20px;
+    margin: 50px;
+    border-radius: 5px;
+    height: 20vh;
+    width: 70vh;
+   
+    top: 550px;
+    position: relative;
+    
+}
+main .row a{
+    color: whitesmoke;
+    text-align: center;
+   padding: 20px 30px;
+   font-size: 30px;
+   font-weight: 600;
+   top: 50vh;
+    
+}
+main .row a:hover{
+    color:yellow;
+}
