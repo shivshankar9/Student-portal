@@ -63,9 +63,11 @@ main h2{
 }
  
 main .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     background-color: rgb(2, 2, 37);
-    text-align: center;
     padding: 10px 20px;
     margin: 50px;
     border-radius: 5px;
@@ -87,4 +89,8 @@ main .row a{
 }
 main .row a:hover{
     color:yellow;
+}
+main button {
+    padding: 10px;
+    background-color: grey;
 }
