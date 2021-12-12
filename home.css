@@ -1,6 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+=======
+  box-sizing: border-box;
+>>>>>>> ManojM
 }
 
 body {
@@ -9,7 +13,12 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: initial;
+<<<<<<< HEAD
   /* transition: initial; */
+=======
+  transition: initial;
+  font-family: sans-serif;
+>>>>>>> ManojM
 }
 
 nav {
@@ -22,6 +31,7 @@ nav {
   background-color: #020225a9;
   color: aliceblue;
   z-index: 5;
+<<<<<<< HEAD
   padding: 3px;
 }
 #logo {
@@ -92,8 +102,26 @@ main h2 {
   margin: 50px auto;
   background-color: whitesmoke;
   text-align: center;
+=======
+  padding: 5px;
 }
+#logo {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.nav-links {
+  transition: all 1s ease-in-out;
+>>>>>>> ManojM
+}
+.nav-links ul {
+  display: flex;
+  font-size: 1.2rem;
+}
+.nav-links li {
+  list-style: none;
+  padding: 0.7rem 1rem;
 
+<<<<<<< HEAD
 main > .tools-items {
   display: flex;
   flex-wrap: wrap;
@@ -149,6 +177,96 @@ main button {
     font-size: 5rem;
     padding-left: 3rem;
   }
+=======
+  margin: 3px 5px;
+  font-weight: 600;
+  color: aliceblue;
+}
+.nav-links a {
+  text-decoration: none;
+}
+li .active {
+  color: yellow;
+}
+nav li:hover {
+  color: yellow;
+  background-color: #05055a54;
+}
+.toogle-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toogle-btn .bar {
+  height: 3px;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+/* end of nav */
+header {
+  /* width: 100%; */
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 650;
+  position: absolute;
+  top: 5rem;
+  color: whitesmoke;
+  margin-top: 150px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  padding: 50px;
+  margin: 50px;
+  background-color: whitesmoke;
+  border: 100px;
+  top: 85vh;
+  /* position: relative; */
+}
+
+main .row {
+  float: left;
+  background-color: rgb(2, 2, 37);
+  text-align: center;
+  padding: 10px 20px;
+  margin: 50px;
+  border-radius: 5px;
+  height: 20vh;
+  /* width: 70vh; */
+
+  top: 550px;
+  /* position: relative; */
+}
+main .row a {
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: 600;
+  top: 50vh;
+}
+main .row a:hover {
+  color: yellow;
+}
+@media screen and (max-width: 400px) {
+>>>>>>> ManojM
   .toogle-btn {
     display: flex;
   }
