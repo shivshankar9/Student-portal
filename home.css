@@ -52,7 +52,8 @@ main h2{
     color: black;
     
     padding: 50px;
-    margin: 50px;
+    width: 75vw;
+    margin:  50px auto;
     background-color: whitesmoke;
     
     border: 100px;
@@ -61,18 +62,25 @@ main h2{
     
     
 }
+
+main > .tools-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85vw;
+    margin:  50px auto;
+}
  
 main .row{
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
     background-color: rgb(2, 2, 37);
     padding: 10px 20px;
-    margin: 50px;
+    margin: 30px 0;
     border-radius: 5px;
-    height: 20vh;
-    width: 70vh;
+    height: 15vh;
+    width: 35vw;
    
     top: 550px;
     position: relative;
@@ -87,10 +95,22 @@ main .row a{
    top: 50vh;
     
 }
+
 main .row a:hover{
     color:yellow;
 }
+
 main button {
     padding: 10px;
+    text-align: left;
     background-color: grey;
+}
+
+@media only screen and (max-width: 960px) {
+    main h2 {
+        padding-right: 0;
+    }
+    main .row {
+        width: 100vw;
+    }
 }
