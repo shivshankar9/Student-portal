@@ -31,7 +31,7 @@ Students and working professional neeeded to done in short time ,using this web 
 **2.**  Clone your fork copy of the project which'll be visible in your account.
 
 ```
-git clone  https://github.com/shivshankar9/Student-portal
+git clone  https://github.com/<your username>/Student-portal
 ```
 
 **3.** Add a remote upstream to the original repository.
