@@ -1,118 +1,173 @@
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background  : url(background.jpg);
-    height: 700px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: initial;
-    transition: initial;
-    margin: 20px;
-    padding: 20px;
+body {
+  background: url(background.jpg);
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: initial;
+  /* transition: initial; */
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #020225a9;
+  color: aliceblue;
+  z-index: 5;
+  padding: 3px;
+}
+#logo {
+  font-size: 1.7rem;
+  margin: 0.5rem;
+}
+.nav-links {
+  transition: all 1s linear;
+}
+.nav-links ul {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.nav-links li {
+  list-style: none;
+  padding: 0.5rem 0.8rem;
 
+  margin: 2px 5px;
+}
+.nav-links a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: inherit;
+}
+li .active {
+  color: yellow;
+  background-color: #0d0d772f;
+}
+nav a:hover {
+  background-color: #0d0d772f;
+  color: yellow;
+}
+.toogle-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toogle-btn .bar {
+  height: 3px;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: white;
+}
+header {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 600;
+  color: whitesmoke;
+}
 
-nav{
-    position: absolute;
-    left: 70%;
-    top: 10px;
-}
-nav a{
-    font-size: 25px;
-    float: left;
-    text-decoration: none;
-    display: block;
-    padding: 10px 10px;
-    color: white;
-}
-nav a:hover{
-    color: yellow;
-}
-header h1{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    left: 50px;
-    right: 50px;
-    font-size: 130px;
-    font-weight: 600;
-    position: absolute;
-   color: whitesmoke;
-   margin: 100px;
-   position: absolute;
-}
-
-main h2{
-    font-size: 40px;
-    color: black;
-    
-    padding: 50px;
-    width: 75vw;
-    margin:  50px auto;
-    background-color: whitesmoke;
-    
-    border: 100px;
-    top: 85vh;
-    position: relative;
-    
-    
+main h2 {
+  font-size: 40px;
+  color: black;
+  padding: 50px;
+  width: 75vw;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  text-align: center;
 }
 
 main > .tools-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 85vw;
-    margin:  50px auto;
-}
- 
-main .row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(2, 2, 37);
-    padding: 10px 20px;
-    margin: 30px 0;
-    border-radius: 5px;
-    height: 15vh;
-    width: 35vw;
-   
-    top: 550px;
-    position: relative;
-    
-}
-main .row a{
-    color: whitesmoke;
-    text-align: center;
-   padding: 20px 30px;
-   font-size: 30px;
-   font-weight: 600;
-   top: 50vh;
-   transition: all 200ms ease-in-out;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85vw;
+  margin: 50px auto;
 }
 
-main .row a:hover{
-    color:yellow;
-    font-size: 35px;
+main .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 2, 37);
+  padding: 10px 20px;
+  margin: 30px 0;
+  border-radius: 5px;
+  height: 15vh;
+  width: 35vw;
+  /* top: 550px; */
+  /* position: relative; */
+}
+main .row a {
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: 600;
+  top: 50vh;
+  transition: all 200ms ease-in-out;
+}
+
+main .row a:hover {
+  color: yellow;
+  font-size: 35px;
 }
 
 main button {
-    padding: 10px;
-    text-align: left;
-    background-color: grey;
+  padding: 10px;
+  text-align: left;
+  background-color: grey;
 }
 
 @media only screen and (max-width: 960px) {
-    main h2 {
-        padding-right: 0;
-    }
-    main .row {
-        width: 100vw;
-    }
+  main h2 {
+    padding-right: 0;
+  }
+  main .row {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 5rem;
+    padding-left: 3rem;
+  }
+  .toogle-btn {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  nav li {
+    text-align: center;
+  }
+  nav .display {
+    display: flex;
+  }
 }
