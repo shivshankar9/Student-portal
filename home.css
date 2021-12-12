@@ -93,11 +93,13 @@ main .row a{
    font-size: 30px;
    font-weight: 600;
    top: 50vh;
+   transition: all 200ms ease-in-out;
     
 }
 
 main .row a:hover{
     color:yellow;
+    font-size: 35px;
 }
 
 main button {
