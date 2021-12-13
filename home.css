@@ -4,12 +4,15 @@
 }
 
 body {
-  background: url(background.jpg);
-  height: 700px;
+  background-color: #152a79;
+  /* background: url(background.jpg); */
+  /* background-color: #0d0d6a; */
+  min-height: 100vh;
   background-position: center;
   background-size: cover;
   background-attachment: initial;
   /* transition: initial; */
+  font-family: "Bakbak One";
 }
 
 nav {
@@ -25,7 +28,8 @@ nav {
   padding: 3px;
 }
 #logo {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
   margin: 0.5rem;
 }
 .nav-links {
@@ -72,26 +76,33 @@ nav a:hover {
   background-color: white;
 }
 header {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 header h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
   font-size: 6.5rem;
-  font-weight: 600;
-  color: whitesmoke;
+}
+
+main button {
+  border: none;
+}
+
+.main-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main h2 {
-  font-size: 40px;
-  color: black;
-  padding: 50px;
-  width: 75vw;
-  margin: 50px auto;
-  background-color: whitesmoke;
   text-align: center;
+  font-size: 4rem;
+  color: white;
+  padding: 2rem 7rem;
+  box-shadow: 0 4px 20px 0 #020225a9, 0 0 0 0 #020225a9;
 }
 
 main > .tools-items {
@@ -106,9 +117,9 @@ main .row {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(2, 2, 37);
+  box-shadow: 0 4px 8px 0 #020225a9, 0 6px 20px 0 #020225a9;
   padding: 10px 20px;
-  margin: 30px 0;
+  margin: 20px 0;
   border-radius: 5px;
   height: 15vh;
   width: 35vw;
@@ -116,9 +127,12 @@ main .row {
   /* position: relative; */
 }
 main .row a {
-  color: whitesmoke;
+  font-family: "Bakbak One";
+
+  text-decoration: none;
+  color: white;
   text-align: center;
-  padding: 20px 30px;
+  letter-spacing: 1px;
   font-size: 30px;
   font-weight: 600;
   top: 50vh;
@@ -126,28 +140,41 @@ main .row a {
 }
 
 main .row a:hover {
-  color: yellow;
-  font-size: 35px;
+  font-size: 40px;
+}
+
+.logo {
+  width: 15%;
 }
 
 main button {
   padding: 10px;
   text-align: left;
-  background-color: grey;
+  background-color: transparent;
+}
+
+.row:hover {
+  cursor: pointer;
+}
+
+.tools-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools-img {
+  width: 20%;
 }
 
 @media only screen and (max-width: 960px) {
-  main h2 {
-    padding-right: 0;
-  }
   main .row {
     width: 100vw;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 426px) {
   header h1 {
-    font-size: 5rem;
-    padding-left: 3rem;
+    font-size: 2rem;
   }
   .toogle-btn {
     display: flex;
@@ -169,5 +196,26 @@ main button {
   }
   nav .display {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1105px) {
+  .heading {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  main .row a {
+    font-size: 1.1rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
   }
 }
