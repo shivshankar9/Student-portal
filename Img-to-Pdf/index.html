@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image to pdf</title>
-    <link rel="stylesheet" href="../home.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="../home.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="logo">
-            <h1 id="logo">Student portal</h1>
-        </div>
-        <div class="toggle-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#news">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </div>
-
+      <div class="logo">
+        <img id="logo" src="../logo.png" alt="" />
+      </div>
+      <div class="toggle-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#news">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
     </nav>
     <main>
-        <div id="allForms">
-        </div>
-        <span><input type="file" style="display: none;" id="fileUpload"></span>
-        <div class="submission">
-            <button id="addMore">Add More</button>
-            <button id="uploadAll">Upload All</button>
-        </div>
+      <div id="allForms"></div>
+      <span><input type="file" style="display: none" id="fileUpload" /></span>
+      <div class="submission">
+        <button id="addMore">Add More</button>
+        <button id="uploadAll">Upload All</button>
+      </div>
     </main>
     <script src="./script.js"></script>
-</body>
-
+    <script src="../script.js"></script>
+  </body>
 </html>

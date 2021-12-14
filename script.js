@@ -3,4 +3,5 @@ const navLinks = document.getElementsByClassName("nav-links")[0];
 
 toggleBtn.addEventListener("click", () => {
   navLinks.classList.toggle("display");
+  toggleBtn.classList.toggle("btn-transform");
 });

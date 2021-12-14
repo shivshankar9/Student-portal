@@ -5,13 +5,10 @@
 
 body {
   background-color: #152a79;
-  /* background: url(background.jpg); */
-  /* background-color: #0d0d6a; */
   min-height: 100vh;
   background-position: center;
   background-size: cover;
   background-attachment: initial;
-  /* transition: initial; */
   font-family: "Bakbak One", sans-serif;
 }
 
@@ -28,12 +25,10 @@ nav {
   padding: 3px;
 }
 #logo {
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  margin: 0.5rem;
+  width: 5em;
 }
 .nav-links {
-  transition: all 1s linear;
+  transition: all 5s linear;
 }
 .nav-links ul {
   display: flex;
@@ -61,8 +56,8 @@ nav a:hover {
 }
 .toggle-btn {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 2rem;
+  right: 1.2rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -171,13 +166,16 @@ main button {
     width: 100vw;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 650px) {
   header h1 {
     font-size: 2rem;
-
   }
   .toggle-btn {
     display: flex;
+    transition: transform 300ms linear;
+  }
+  .btn-transform {
+    transform: rotate(90deg);
   }
   .nav-links {
     display: none;
