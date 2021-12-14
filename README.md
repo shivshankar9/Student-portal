@@ -1,5 +1,5 @@
 # Student-portal
-In this project, we try to include all those work that students and working professionals that is needed to be done in a short time, using this web application.  
+In this project, we try to include all types of work that students and working professionals need to do in a short time, using this web application.  
 
 ![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
 
