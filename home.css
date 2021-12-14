@@ -175,6 +175,7 @@ main button {
 @media screen and (max-width: 426px) {
   header h1 {
     font-size: 2rem;
+
   }
   .toogle-btn {
     display: flex;

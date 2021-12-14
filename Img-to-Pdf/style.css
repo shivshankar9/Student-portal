@@ -1,61 +1,61 @@
 /* ------------------------Global---------------------- */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 input {
-    height: 35px;
-    border: none;
-    margin: 4px;
-    border-radius: 2px;
+  height: 35px;
+  border: none;
+  margin: 4px;
+  border-radius: 2px;
 }
 
 button {
-    width: 48%;
-    height: 30px;
-    color: white;
-    border: none;
-    border-radius: 2px;
+  width: 48%;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 2px;
 }
 
 /* -----------x----------Global--------------x-------- */
 
 body {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    padding: 20px;
-    background-color: rgba(173,216,230,0.5);
+  padding: 20px;
+  background-color: rgba(173, 216, 230, 0.5);
 }
 
 main input[type="text"] {
-    width: 200px;
-    padding-left: 10px;
-    background-color: white;
+  width: 200px;
+  padding-left: 10px;
+  background-color: white;
 }
 
 main input[type="submit"] {
-    padding: 0 20px;
-    color: white;
-    background-color: purple;
+  padding: 0 20px;
+  color: white;
+  background-color: purple;
 }
 
 main .submission {
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
 }
 
 main .submission #addMore {
-    background-color: orange;
+  background-color: orange;
 }
 
 main .submission #uploadAll {
-    background-color: green;
+  background-color: green;
 }
