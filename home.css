@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-attachment: initial;
   /* transition: initial; */
-  font-family: "Bakbak One";
+  font-family: "Bakbak One", sans-serif;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav a:hover {
   background-color: #0d0d772f;
   color: yellow;
 }
-.toogle-btn {
+.toggle-btn {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
@@ -69,7 +69,7 @@ nav a:hover {
   width: 30px;
   height: 21px;
 }
-.toogle-btn .bar {
+.toggle-btn .bar {
   height: 3px;
   width: 100%;
   border-radius: 1rem;
@@ -127,8 +127,7 @@ main .row {
   /* position: relative; */
 }
 main .row a {
-  font-family: "Bakbak One";
-
+  font-family: "Bakbak One", sans-serif;
   text-decoration: none;
   color: white;
   text-align: center;
@@ -177,7 +176,7 @@ main button {
     font-size: 2rem;
 
   }
-  .toogle-btn {
+  .toggle-btn {
     display: flex;
   }
   .nav-links {

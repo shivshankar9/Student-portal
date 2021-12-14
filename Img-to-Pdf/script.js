@@ -1,18 +1,18 @@
 // All the html elements used
-var allFiles = {};
-var upload = document.getElementById("upload");
-var addMore = document.getElementById("addMore");
-var allForms = document.getElementById("allForms");
-var uploadAll = document.getElementById("uploadAll");
+const allFiles = {};
+const upload = document.getElementById("upload");
+const addMore = document.getElementById("addMore");
+const allForms = document.getElementById("allForms");
+const uploadAll = document.getElementById("uploadAll");
 
-// Descrription of all the functions
-var submissionFunction = (data) => {
+// Description of all the functions
+const submissionFunction = (data) => {
   // perform some action
 };
 
-var addMoreInputField = () => {
+const addMoreInputField = () => {
   // Create a form tag
-  var formTag = document.createElement("form");
+  const formTag = document.createElement("form");
 
   // Putting input tag inside for tag
   formTag.innerHTML =
@@ -34,6 +34,8 @@ const addFiles = (event) => {
 }
 
 // Executing functions
-addMoreInputField();
-addMore.addEventListener("click", addMoreInputField);
-uploadAll.addEventListener("click", submissionFunction);
+window.onload = () => {
+  addMoreInputField();
+  addMore.addEventListener("click", addMoreInputField);
+  uploadAll.addEventListener("click", submissionFunction);
+}
