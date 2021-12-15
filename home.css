@@ -166,12 +166,12 @@ main button {
   width: 20%;
 }
 
-button{
+.submit{
   border:none;
   outline: none;
   cursor: pointer;
 }
-section{
+#section_chatbot{
   max-width: 1000px;
   margin: auto;
   text-align: center;
@@ -206,7 +206,7 @@ border-radius:50px;
   right:115px;
   height: 550px;
   width: 400px;
-  background-color: white;
+  background-color: whitesmoke;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.8rem;
