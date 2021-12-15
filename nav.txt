@@ -9,10 +9,10 @@
     </div>
     <div class="nav-links">
     <ul>
-        <li><a class="active" href="/">Home</a></li>
-        <li><a href="/#news">Services</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/#about">About</a></li>
+        <li><a class="active" href="https://abaran803.github.io/Student-portal/">Home</a></li>
+        <li><a href="https://abaran803.github.io/Student-portal/#news">Services</a></li>
+        <li><a href="https://abaran803.github.io/Student-portal/contact.html">Contact</a></li>
+        <li><a href="https://abaran803.github.io/Student-portal/#about">About</a></li>
     </ul>
     </div>
 </nav>
