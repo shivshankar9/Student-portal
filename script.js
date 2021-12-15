@@ -1,4 +1,4 @@
-fetch("/nav.txt")
+fetch("nav.txt")
   .then((data) => data.text())
   .then((data) => {
     console.log(data);
