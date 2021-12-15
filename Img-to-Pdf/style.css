@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+
 input {
   height: 35px;
   border: none;
@@ -13,7 +14,7 @@ input {
 }
 
 button {
-  width: 48%;
+  width: 40%;
   height: 30px;
   color: white;
   border: none;
@@ -24,26 +25,34 @@ button {
 
 body {
   height: 80vh;
-  display: flex;
+  display: flexbox;
   justify-content: center;
   align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: initial;
+  /* transition: initial; */
+  font-family: "Bakbak One", sans-serif;
 }
 
 main {
-  padding: 20px;
+  padding: 100px;
   background-color: rgba(173, 216, 230, 0.5);
+  text-align: center;
 }
 
 main input[type="text"] {
   width: 200px;
   padding-left: 10px;
   background-color: white;
+  text-align: center;
 }
 
 main input[type="submit"] {
   padding: 0 20px;
   color: white;
   background-color: purple;
+  text-align: center;
 }
 
 main .submission {
@@ -54,8 +63,10 @@ main .submission {
 
 main .submission #addMore {
   background-color: orange;
+  text-align: center;
 }
 
 main .submission #uploadAll {
   background-color: green;
+  text-align: center;
 }

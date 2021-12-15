@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
   </head>
   <body>
+    
+<!--NAVIGATION BAR-->
     <nav>
       <div class="logo">
-        <h6 id="logo">Student portal</h6>
+        <h6 id="logo">STUDENT PORTAL</h6>
       </div>
       <div class="toggle-btn">
         <span class="bar"></span>
@@ -25,36 +24,47 @@
       </div>
       <div class="nav-links">
         <ul>
-          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#tools">Tools</a></li>
           <li><a href="#news">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
         </ul>
       </div>
     </nav>
+  
+<!--MAIN NAME-->
     <header>
       <div class="main-name">
-        <img class="logo" src="logo.png" alt="" />
+      <!--- img class="logo" src="logo.png" alt="/" --->
         <h1 class="heading">STUDENT PORTAL</h1>
+        <h2 class="sub-heading"> The best student success platform for all ! </h2>
+        <h2 class="intro"> 
+          <p class="line-1 anim-typewriter">Now convert images to pdfs or extract zip files and so much more, using just one website</h2>
+          </p>
       </div>
     </header>
+
+
+<!--TOOLS SECTION-->
     <main>
+      <section id="tools">
       <div class="tools-heading">
         <h2>Tools</h2>
       </div>
       <div class="tools-items">
         <div class="row">
           <img class="tools-img" src="image.png" alt="" />
-          <button><a href="./Img-to-Pdf/index.html">Image to PDF</a></button>
+          <button><a href="./Img-to-Pdf/index.html" >Image to PDF</a></button>
         </div>
         <div class="row">
           <img
             class="tools-img"
             src="docs.png"
-            alt=""
+            alt="/"
             style="padding-bottom: 25px"
           />
-          <button><a href="#">Document to PDF</a></button>
+          <button><a href="#" >Doc to PDF</a></button>
         </div>
         <div class="row">
           <img class="tools-img" src="text.png" alt="" />
@@ -65,7 +75,27 @@
           <button><a href="#">Extract zip file</a></button>
         </div>
       </div>
+    </section>
     </main>
+
+    <!------About Section------->	
+	<section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        <h2>About Us</h2>
+          <div class="about-content">
+          <h4>ipsum dolor sit amet consectetur adipisicing elit. <br>
+            Ducimus libero quam atque perferendis molestiae cumque labore dignissimos <br>
+            commodi tenetur officia quasi possimus illum, ab iusto quod quaerat fugiat! Id, quas!<br></h4> 
+          </div>
+        <button class="button">Read More </button>
+        
+        </div>
+      </div>
+      
+    </div>	
+
     <script src="./script.js"></script>
   </body>
 </html>

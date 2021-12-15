@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 body {
-  background-color: #152a79;
+  background-color: black;
   /* background: url(background.jpg); */
   /* background-color: #0d0d6a; */
   min-height: 100vh;
@@ -21,11 +23,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0;
-  background-color: #020225a9;
-  color: aliceblue;
+  top: 2;
+  background-color: white;
+  color: black;
   z-index: 5;
-  padding: 3px;
+  padding: 7px; 
+  white-space: nowrap;
 }
 #logo {
   font-size: 1.4rem;
@@ -47,17 +50,14 @@ nav {
   margin: 2px 5px;
 }
 .nav-links a {
-  color: aliceblue;
+  color: black;
   text-decoration: none;
   padding: inherit;
 }
-li .active {
-  color: yellow;
-  background-color: #0d0d772f;
-}
+
 nav a:hover {
   background-color: #0d0d772f;
-  color: yellow;
+  color: rgb(104, 104, 102);
 }
 .toggle-btn {
   position: absolute;
@@ -75,6 +75,7 @@ nav a:hover {
   border-radius: 1rem;
   background-color: white;
 }
+
 header {
   height: 100vh;
   display: flex;
@@ -82,11 +83,65 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-header h1 {
+
+
+
+.heading {
   color: white;
-  font-size: 6.5rem;
+  font-size: 5.5rem;
+  height: 40%;
+  position:absolute;
 }
 
+.sub-heading {
+  color: rgb(114, 110, 110);
+  font-size: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 8%;
+  position:absolute;
+  text-align: center;
+}
+
+.intro{
+  color: rgb(170, 165, 165);
+  font-size: 1rem;
+  font-family: monospace;
+  height: 0.03%;
+  position:absolute;
+  padding-top: 6%;
+  margin-right: 5%;
+  margin-left: 7%;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 6s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* TOOLS SECTION */
 main button {
   border: none;
 }
@@ -102,10 +157,10 @@ main h2 {
   font-size: 4rem;
   color: white;
   padding: 2rem 7rem;
-  box-shadow: 0 4px 20px 0 #020225a9, 0 0 0 0 #020225a9;
+  box-shadow: 0 4px 20px 0 #78787ea9, 0 0 0 0 #3c3c3da9;
 }
 
-main > .tools-items {
+.tools-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -113,19 +168,22 @@ main > .tools-items {
   margin: 50px auto;
 }
 
+
 main .row {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px 0 #020225a9, 0 6px 20px 0 #020225a9;
+  box-shadow: 0 4px 8px 0 #78787ea9, 0 6px 20px 0 #3c3c3da9;
   padding: 10px 20px;
   margin: 20px 0;
   border-radius: 5px;
   height: 15vh;
-  width: 35vw;
+  width: 25vw;
   /* top: 550px; */
   /* position: relative; */
 }
+
 main .row a {
   font-family: "Bakbak One", sans-serif;
   text-decoration: none;
@@ -137,7 +195,6 @@ main .row a {
   top: 50vh;
   transition: all 200ms ease-in-out;
 }
-
 main .row a:hover {
   font-size: 40px;
 }
@@ -218,4 +275,50 @@ main button {
   main h2 {
     font-size: 2rem;
   }
+}
+
+/* About section */
+
+#about{
+	background: rgb(37, 37, 37);
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: white;
+  font-family: cursive;
+}
+
+#about h2{
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  padding: 1rem 5rem;
+  box-shadow: 0 4px 20px 0 #78787ea9, 0 0 0 0 #3c3c3da9;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 20vw;
+  margin: 50px auto;
+}
+
+#about h4{
+  color: rgb(170, 165, 165);
+  font-size: 1rem;
+  text-align: center;
+  font-family: cursive;
+  margin-right: 5%;
+  margin-left: 7%;
+  padding-bottom: 50px;
+}
+
+.button {
+  align-items: center;
+  background-color: #007bff; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin:auto;
+  display:block;
 }
