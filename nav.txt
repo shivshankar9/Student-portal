@@ -1,0 +1,18 @@
+<nav>
+    <div class="logo">
+    <h6 id="logo">Student portal</h6>
+    </div>
+    <div class="toggle-btn">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    </div>
+    <div class="nav-links">
+    <ul>
+        <li><a class="active" href="https://abaran803.github.io/Student-portal/">Home</a></li>
+        <li><a href="https://abaran803.github.io/Student-portal/#news">Services</a></li>
+        <li><a href="https://abaran803.github.io/Student-portal/contact.html">Contact</a></li>
+        <li><a href="https://abaran803.github.io/Student-portal/#about">About</a></li>
+    </ul>
+    </div>
+</nav>
