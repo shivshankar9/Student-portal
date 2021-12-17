@@ -28,11 +28,6 @@ nav {
   z-index: 5;
   padding: 3px;
 }
-#logo {
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  margin: 0.5rem;
-}
 .nav-links {
   transition: all 1s linear;
 }
@@ -144,7 +139,9 @@ main .row a:hover {
 }
 
 .logo {
-  width: 15%;
+  width: 10vw;
+  border-radius: 100px;
+  margin-right: 3vw;
 }
 
 main button {
