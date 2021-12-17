@@ -1,4 +1,4 @@
-fetch("https://abaran803.github.io/Student-portal/nav.txt")
+fetch("https://shivshankar9.github.io/Student-portal/nav.txt")
   .then((data) => data.text())
   .then((data) => {
     console.log(data);
