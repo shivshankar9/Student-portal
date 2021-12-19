@@ -28,6 +28,11 @@ nav {
   z-index: 5;
   padding: 3px;
 }
+#logo {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin: 0.5rem;
+}
 .nav-links {
   transition: all 1s linear;
 }
