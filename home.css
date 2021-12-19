@@ -144,7 +144,9 @@ main .row a:hover {
 }
 
 .logo {
-  width: 15%;
+  width: 9vw;
+  border-radius: 100px;
+  margin-right: 3vw;
 }
 
 main button {
