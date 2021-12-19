@@ -14,27 +14,10 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <h6 id="logo">Student portal</h6>
-      </div>
-      <div class="toggle-btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <div class="nav-links">
-        <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#news">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="navbar"></div>
     <header>
       <div class="main-name">
-        <img class="logo" src="logo.png" alt="" />
+        <img class="logo" src="logo.png" alt="">
         <h1 class="heading">STUDENT PORTAL</h1>
       </div>
     </header>
@@ -67,5 +50,29 @@
       </div>
     </main>
     <script src="./script.js"></script>
+
+    <!-- chatbot implementation-->
+    <span> 
+      <section id="section_chatbot">
+          <a class="float" id="float">
+              <img src="chatrobot.jpg" id="roboImg">
+          </a>
+          <div class="popup" style="width:500px;height:500px;">
+              <div class="textarea">
+                  <div class="roboside">
+                      <img src="logo.png" class="avatar" alt="" style="width:90px;height:90px;">
+                      <span class="robomsg">Hello! Are you a new Student?</span>
+                  </div>   
+              </div>
+              <div class="input-area">
+                  <input type="text" id="msg" placeholder="Yes or No">
+                  <button class="submit"> <b>Send</b></button>
+              </div>
+          </div>
+      </section>
+  </span>
+    <script src="popup_chatbot.js"></script>
+    <!-- chatbot implementation-->
+
   </body>
 </html>
