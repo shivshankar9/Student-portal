@@ -93,28 +93,28 @@ git push -u origin <your_branch_name>
 
 # 💥 How to Contribute
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/mohit200008/FoodSaver20008/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/shivshankar9/Student-portal/pulls)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 - Take a look at the existing [Issues](https://github.com/ssurbhi09/Student-portal/issues) or [create a new issue](https://github.com/ssurbhi09/Student-portal/issues/new/choose)!
 - [Fork the Repo](https://github.com/ssurbhi09/Student-portal/fork), create a branch for any issue that you are working on and commit your work.
-- Create a **[Pull Request](https://github.com/mohit200008/FoodSaver20008/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
+- Create a **[Pull Request](https://github.com/shivshankar9/Student-portal/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
 ## ⭐ HOW TO MAKE A PULL REQUEST:
 
-**1.** Start by making a fork the [**Student-portal**](https://github.com/Student-portal) repository. Click on the <a href="https://github.com/mohit200008/FoodSaver20008/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
+**1.** Start by making a fork the [**Student-portal**](https://github.com/Student-portal) repository. Click on the <a href="https://github.com/shivshankar9/Student-portal/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
 **2.** Clone your new fork of the repository:
 
 ```bash
-git clone https://github.com/<your-github-username>/FoodSaver20008
+git clone https://github.com/<your-github-username>/Student-portal
 ```
 
 **3.** Set upstream command:
 
 ```bash
-git remote add upstream https://github.com/mohit200008/FoodSaver20008.git
+git remote add upstream https://github.com/shivshankar9/Student-portal.git
 ```
 
 **4.** Navigate to the new project directory:
