@@ -3,7 +3,7 @@ In this project, we will try to include all types of work that students and work
 
 <div align="center">
  
- ![Hacking-Scripts](https://socialify.git.ci/shivshankar9/Student-portal/image?description=1&theme=Light)
+ ![Student-portal](https://socialify.git.ci/shivshankar9/Student-portal/image?description=1&theme=Light)
  
 ![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)  &nbsp; 
 <a href="https://github.com/shivshankar9/Student-portal"><img src="https://sloc.xyz/github/shivshankar9/Student-portal" alt="LOC"/></a> &nbsp;
