@@ -88,3 +88,26 @@ git push -u origin <your_branch_name>
 **14.** Congrats !! You made your first PR 🥳.
 
 <p align="center"><img alt="Hooray" width=35% src="https://media.giphy.com/media/TdfyKrN7HGTIY/giphy.gif"></p>
+
+
+## Our valuable Contributors👩‍💻👨‍💻 :
+
+<a href="https://github.com/shivshankar9/Student-portal/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shivshankar9/Student-portal" />
+</a>
+
+
+ <br>
+ <br>
+ 
+## Project Admin 👷👷:
+
+ 
+<table>
+<tr>
+<td align="center"><a href="https://github.com/shivshankar9"><img src="https://avatars.githubusercontent.com/u/69760883?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Shiv</h4>
+<a href="https://www.linkedin.com/in/shivshankarkumar281/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
+
+</tr>
+</table>
+<br>
