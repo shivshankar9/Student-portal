@@ -1,8 +1,23 @@
 # Student-portal
 In this project, we will try to include all types of work that students and working professionals need to do in a short time, using this web application.  
 
-![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
+<div align="center">
+ 
+ ![Student-portal](https://socialify.git.ci/shivshankar9/Student-portal/image?description=1&theme=Light)
+ 
+![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)  &nbsp; 
+<a href="https://github.com/shivshankar9/Student-portal"><img src="https://sloc.xyz/github/shivshankar9/Student-portal" alt="LOC"/></a> &nbsp;
+<a href="https://github.com/shivshankar9/Student-portal/stargazers"><img src="https://img.shields.io/github/stars/shivshankar9/Student-portal" alt="Stars Badge"/></a> &nbsp;<a href="https://github.com/shivshankar9/Student-portal/network/members"><img src="https://img.shields.io/github/forks/shivshankar9/Student-portal" alt="Forks Badge"/></a> &nbsp;
+![GitHub contributors](https://img.shields.io/github/contributors/shivshankar9/Student-portal?color=blue) &nbsp;
+![GitHub last commit](https://img.shields.io/github/last-commit/shivshankar9/Student-portal?color=red&style=plastic) &nbsp;
+![Repo. Size](https://img.shields.io/github/repo-size/shivshankar9/Student-portal?color=white) &nbsp;  
+<a href="https://github.com/shivshankar9/Student-portal/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?v=103"></a>&nbsp;
+<a href="https://github.com/shivshankar9/Student-portal/issues"><img src="https://img.shields.io/github/issues/shivshankar9/Student-portal?color=0059b3"></a>&nbsp;
+<a href="https://github.com/shivshankar9/Student-portal/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/shivshankar9/Student-portal?color=yellow"></a>&nbsp;
+<a href="https://github.com/shivshankar9/Student-portal/pulls"><img src="https://img.shields.io/github/issues-pr/shivshankar9/Student-portal?color=brightgreen"></a>&nbsp;
+<a href="https://github.com/shivshankar9/Student-portal/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/shivshankar9/Student-portal?color=0059b3"></a> &nbsp;
 
+</div>
 <p align="center"><img alt="Logo" width=55% src="https://user-images.githubusercontent.com/71459989/144653495-ec7b077d-fdb3-47a8-b74e-9306e53d1c7a.png"></p>
 
 <hr>
