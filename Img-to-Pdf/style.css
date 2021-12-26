@@ -9,7 +9,7 @@
 input {
   height: 35px;
   border: none;
-  margin: 4px;
+  margin: 4px 4px 4px 0;
   border-radius: 2px;
 }
 
@@ -19,6 +19,15 @@ button {
   color: white;
   border: none;
   border-radius: 2px;
+}
+
+.remove-button {
+  background-color: red;
+  height: 35px;
+  margin-top: 4px;
+  padding: 0;
+  text-align: center;
+  width: 35px;
 }
 
 /* -----------x----------Global--------------x-------- */

@@ -263,8 +263,8 @@ border-radius:50px;
   position: fixed;
   bottom:75px;
   right:115px;
-  height: 550px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   background-color: whitesmoke;
   flex-direction: column;
   justify-content: space-between;
@@ -355,12 +355,22 @@ input[type="text"]{
   main .row {
     width: 100vw;
   }
+
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 435px) {
   header h1 {
     font-size: 2rem;
 
   }
+
+  main .row a {
+    font-size: 1.1rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+
   .toggle-btn {
     display: flex;
   }
@@ -382,27 +392,100 @@ input[type="text"]{
   nav .display {
     display: flex;
   }
+
 }
 
-@media screen and (min-width: 426px) and (max-width: 769px) {
+/*trial*/
+@media screen and (min-width: 425px) and (max-width: 768px) {
   .heading {
     font-size: 2.5rem;
   }
+
+  #roboImg{
+  width:70px;
+    height:70px;
+    margin-bottom: 15px;
+  }
+
+  .popup{
+    margin-right: -80px; 
+    margin-bottom: 20px;
+    height: 380px;
+    width: 300px;
+  }
 }
-@media screen and (min-width: 769px) and (max-width: 1105px) {
+
+@media screen and (min-width: 768px) and (max-width: 1105px) {
   .heading {
     font-size: 4.2rem;
   }
+
+  #roboImg{
+    width:90px;
+      height:90px;
+      margin-bottom: 15px;
+    }
+
+  .popup{
+    margin-right: -80px; 
+    margin-bottom: 20px;
+    height: 500px;
+    width: 550px;
+  }
+
+
 }
 
-@media screen and (max-width: 435px) {
-  main .row a {
-    font-size: 1.1rem;
+/*works*/
+
+@media screen and (min-width : 360px) and (max-width : 425px)
+{
+  #roboImg{
+    width:70px;
+    height:70px;
+    margin-bottom: 15px;
   }
 
-  main h2 {
-    font-size: 2rem;
+  .popup{
+    margin-right: -80px; 
+    margin-bottom: 20px;
+    height: 370px;
+    width: 290px;
   }
+}
+
+@media screen and (max-width : 320px)
+{
+  #roboImg{
+    width:70px;
+    height:70px;
+    margin-bottom: 15px;
+  }
+
+  .popup{
+    margin-right: -80px; 
+    margin-bottom: 20px;
+    height: 350px;
+    width: 220px;
+  }
+
+}
+
+@media screen and (max-width : 280px)
+{
+  #roboImg{
+    width:70px;
+    height:70px;
+    margin-bottom: 15px;
+  }
+
+  .popup{
+    margin-right: -80px; 
+    margin-bottom: 70px;
+    height: 400px;
+    width: 200px;
+  }
+
 }
 
 /* About section */
