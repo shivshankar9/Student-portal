@@ -1,3 +1,8 @@
+body {
+    background: url("contactbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .contactme {
     display: flex;
     justify-content: center;
@@ -10,15 +15,8 @@
     border-radius: 8%;
     width: 50%;
     text-align: center;
-    margin: auto;
+    margin: 150px 0 0 390px;                       /*top,right,bottom,left*/
 }
-
-body {
-    background: url("contactbg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .content1 {
     background-color: #acf8dc;
     width: 100%;
@@ -34,7 +32,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
-.contactme input {
+.contactme input[type="text"], .contactme input[type="email"] {
     padding: 10px;
     margin-bottom: 10px;
     border: 3px solid white;
@@ -42,7 +40,14 @@ body {
     box-shadow: 0px 0px 2px;
     width: 82%;
 }
-
+#contactform textarea
+{
+    height: 120px;
+    width: 82%;
+    font: 16px/16px "Source Sans Pro", sans-serif;
+    border-radius: 23px;
+    padding: 10px;
+}
 .content {
     padding: 2rem;
     justify-content: center;
@@ -51,16 +56,27 @@ body {
     max-height: fit-content;
     width: 60%;
 }
-
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
 #contactsubmit {
     margin-top: 1em;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 0px 2px white;
     background-color: black;
     color: white;
     font-family: "Source Sans Pro", sans-serif;
     padding: 10px;
     text-align: center;
-    width: 50%;
-}
+    width: 85%;
+  }
+  #contactsubmit:hover
+  {
+      transition-duration: 0.4s;
+      background-color: darkcyan;
+  }

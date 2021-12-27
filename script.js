@@ -10,3 +10,13 @@ fetch("https://shivshankar9.github.io/Student-portal/nav.txt")
       navLinks.classList.toggle("display");
     });
   });
+  function notempty(elem,mssg)
+  {
+    if(elem.value.length==0)
+    {
+      alert(mssg);
+      elem.focus();
+      return false;
+    }
+    return true;
+  }

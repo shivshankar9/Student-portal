@@ -23,15 +23,21 @@
             <h2>Contact us</h2>
         </div>
         <div class="content">
-            <input type="text" placeholder="Your Name">
-            <br>
-            <input type="email" placeholder="xyz@gmail.com">
-            <br>
-            <input type="text" placeholder="Subject">
-            <br>
-            <input type="text" placeholder="Your Message">
-            <br>
-            <button id="contactsubmit">Submit</button>
+            <form id="contactform" name="contact-form" method="post">
+                <fieldset>
+                    <input placeholder="Your Full Name" id="req1" type="text" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Email Address" type="email" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Subject" type="text" tabindex="3">
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type Your Message Here" type="text"></textarea>
+                </fieldset>
+                <button id="contactsubmit" type="submit" onclick="notempty(document.getElementById('req1'),'Name can not be empty');">Submit</button>
+            </form>
         </div>
     </section>
     <script src="./script.js"></script>
