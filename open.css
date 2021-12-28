@@ -3,6 +3,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.contactsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+  }
 .contactme {
     display: flex;
     justify-content: center;
@@ -15,7 +22,7 @@ body {
     border-radius: 8%;
     width: 50%;
     text-align: center;
-    margin: 150px 0 0 390px;                       /*top,right,bottom,left*/
+    margin: auto;                      /*top,right,bottom,left*/
 }
 .content1 {
     background-color: #acf8dc;
