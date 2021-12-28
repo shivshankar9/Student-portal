@@ -18,24 +18,30 @@
     <div id="navbar"></div>
     
 
-    <section id="contact-section" class="">
-      <div class="contactme">
-        <div class="content1">
-          <h2>Contact us</h2>
-        </div>
-        <div class="content">
-          <input type="text" placeholder="Your Name" />
-          <br />
-          <input type="email" placeholder="xyz@gmail.com" />
-          <br />
-          <input type="text" placeholder="Subject" />
-          <br />
-          <input type="text" placeholder="Your Message" />
-          <br />
-          <button id="contactsubmit">Submit</button>
-        </div>
+    <div class="contactsection">
+      <section id="contactme" class="contactme">
+          <div class="content1">
+              <h2>Contact us</h2>
+          </div>
+          <div class="content">
+              <form id="contactform" name="contact-form" method="post">
+                  <fieldset>
+                      <input placeholder="Your Full Name" id="req1" type="text" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                      <input placeholder="Email Address" type="email" required>
+                  </fieldset>
+                  <fieldset>
+                      <input placeholder="Subject" type="text" tabindex="3">
+                  </fieldset>
+                  <fieldset>
+                      <textarea placeholder="Type Your Message Here" type="text"></textarea>
+                  </fieldset>
+                  <button id="contactsubmit" type="submit" onclick="notempty(document.getElementById('req1'),'Name can not be empty');">Submit</button>
+              </form>
+          </div>
+      </section>
       </div>
-    </section>
     <script src="./js/script.js"></script>
 </body>
 </html>

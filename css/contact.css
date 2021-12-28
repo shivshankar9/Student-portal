@@ -1,10 +1,14 @@
-
-#contact-section {
+body {
+  background-color: #152a79;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactsection {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .contactme {
@@ -21,11 +25,7 @@
   text-align: center;
 }
 
-body {
-  background-color: #152a79;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 .content1 {
   background-color: #acf8dc;
@@ -42,7 +42,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.contactme input {
+.contactme input[type="text"], .contactme input[type="email"] {
   padding: 10px;
   margin-bottom: 10px;
   border: 3px solid white;
@@ -50,7 +50,14 @@ body {
   box-shadow: 0px 0px 2px;
   width: 82%;
 }
-
+#contactform textarea
+{
+  height: 120px;
+  width: 82%;
+  font: 16px/16px "Source Sans Pro", sans-serif;
+  border-radius: 23px;
+  padding: 10px;
+}
 .content {
   padding: 2rem;
   justify-content: center;
@@ -59,7 +66,13 @@ body {
   max-height: fit-content;
   width: 60%;
 }
-
+fieldset {
+border: medium none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
 #contactsubmit {
   margin-top: 1em;
   border: none;
@@ -72,3 +85,8 @@ body {
   text-align: center;
   width: 50%;
 }
+#contactsubmit:hover
+  {
+      transition-duration: 0.4s;
+      background-color: darkcyan;
+  }

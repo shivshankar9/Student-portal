@@ -23,3 +23,13 @@ const navLinks = document.getElementsByClassName("nav-links")[0];
 toggleBtn.addEventListener("click", () => {
   navLinks.classList.toggle("display");
 });
+function notempty(elem,mssg)
+  {
+    if(elem.value.length==0)
+    {
+      alert(mssg);
+      elem.focus();
+      return false;
+    }
+    return true;
+  }
