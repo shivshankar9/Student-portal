@@ -30,7 +30,7 @@ In this project, we will try to include all types of work that students and work
 
 
 <h4> Star ⭐️ the repo to get frequent updates & appreciate the efforts.</h4>
-<img alt="Github Star" src="https://user-images.githubusercontent.com/75671152/132321870-a1f14163-fece-46cb-b109-12f598a773c5.png" />
+<img alt="Github Star" src="https://i.imgur.com/kR1jWis.png" />
 
 
   
