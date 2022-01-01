@@ -6,68 +6,77 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home page</title>
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="./css/homepage.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+
+
   <div id="navbar"></div>
+
   <header>
     <div class="main-name">
-      <img class="logo" src="logo.png" alt="">
+      <img class="logo" src="./images/logo.png" alt="">
       <h1 class="heading">STUDENT PORTAL</h1>
     </div>
   </header>
+
   <main>
     <div class="tools-heading">
       <h2>Tools</h2>
     </div>
     <div class="tools-items">
       <div class="row">
-        <img class="tools-img" src="image.png" alt="" />
-        <button><a href="./Img-to-Pdf/index.html">Image to PDF</a></button>
+        <img class="tools-img" src="./images/image.png" alt="" />
+        <button><a href="./indeximgpdf.html">Image to PDF</a></button>
       </div>
       <div class="row">
-        <img class="tools-img" src="docs.png" alt="" style="padding-bottom: 25px" />
+        <img class="tools-img" src="./images/docs.png" alt="" style="padding-bottom: 25px" />
         <button><a href="./Word-to-Pdf/index.html">Document to PDF</a></button>
       </div>
       <div class="row">
-        <img class="tools-img" src="text.png" alt="" />
+        <img class="tools-img" src="./images/text.png" alt="" />
         <button><a href="#">Text to PDF</a></button>
       </div>
       <div class="row">
-        <img class="tools-img" src="zip.png" alt="" />
+        <img class="tools-img" src="./images/zip.png" alt="" />
         <button><a href="#">Extract zip file</a></button>
       </div>
     </div>
   </main>
-  <script src="./script.js"></script>
+
+  <!-- Javascript  -->
+  <script src="./js/script.js"></script>
 
   <!-- chatbot implementation-->
   <span>
     <section id="section_chatbot">
       <a class="float" id="float">
-        <img src="chatrobot.jpg" id="roboImg">
+        <img src="./images/chatbot.png" id="roboImg">
       </a>
-      <div class="popup" style="width:500px;height:500px;">
+      <!-- <div class="popup" style="width:500px;height:500px;"> -->
+      <div class="popup">
         <div class="textarea">
           <div class="roboside">
-            <img src="logo.png" class="avatar" alt="" style="width:90px;height:90px;">
+            <img src="./images/logo.png" class="avatar" alt="">
             <span class="robomsg">Hello! Are you a new Student?</span>
           </div>
         </div>
         <div class="input-area">
           <input type="text" id="msg" placeholder="Yes or No">
-          <button class="submit"> <b>Send</b></button>
+          <button type="submit" class="submit">Send</button>
         </div>
       </div>
     </section>
   </span>
-  <script src="popup_chatbot.js"></script>
-  <!-- chatbot implementation-->
 
-</body>
+  <!-- Scripts for Chatbot -->
+  <script src="./js/popup_chatbot.js"></script>
+
+  <!-- chatbot implementation-->
 
 </html>
