@@ -81,5 +81,6 @@ sendMsgBtn.addEventListener('click', ()=>{
         chatbotArea.insertAdjacentHTML("beforeend", creatingRoboBlock);
     }
     textInput.value = '';
+    chatbotArea.scrollTo(0,chatbotArea.scrollHeight);
 
 });
