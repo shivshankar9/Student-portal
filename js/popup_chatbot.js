@@ -3,6 +3,7 @@ const floatActionBtn = document.querySelector('.float');
 const sendMsgBtn = document.querySelector('.submit');
 const chatbotArea = document.querySelector('.textarea');
 const textInput = document.querySelector('input');
+const msgArea = document.getElementById('msg');
 let questions = {"yes":"Have you seen all the functionalities?","yeah":"Good to hear that!, Have you used any of it?",
 "yupp":"Glad to hear that, our functionalities are benefitting someone!",
 "notyet":"Ahhh! Make use of all available tools and functionalities, in case of further queries mail us. Thank You!",
@@ -13,6 +14,13 @@ let questions = {"yes":"Have you seen all the functionalities?","yeah":"Good to 
 var arr=new Array();
 floatActionBtn.addEventListener('click', ()=>{
     popup.classList.toggle('show');
+});
+
+msgArea.addEventListener('keydown',function(event){
+    if(event.keyCode ==13){
+    event.preventDefault();
+        sendMsgBtn.click();
+    }
 });
 
 sendMsgBtn.addEventListener('click', ()=>{
@@ -73,5 +81,5 @@ sendMsgBtn.addEventListener('click', ()=>{
         chatbotArea.insertAdjacentHTML("beforeend", creatingRoboBlock);
     }
     textInput.value = '';
-
+    chatbotArea.scrollTo(0,chatbotArea.scrollHeight);
 });
