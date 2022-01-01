@@ -1,3 +1,13 @@
+body{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 img {
-            width: 90%;
+    width: 90%;
+}
+input{
+    padding-bottom: 7px;
 }
