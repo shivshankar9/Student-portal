@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+
+  
 <!--NAVIGATION BAR-->
     <nav>
       <div class="logo">
@@ -34,6 +35,7 @@
     </nav>
   
 <!--MAIN NAME-->
+
     <header>
       <div class="main-name">
       <!--- img class="logo" src="logo.png" alt="/" --->
@@ -97,5 +99,30 @@
     </div>	
 
     <script src="./script.js"></script>
+
+    <!-- chatbot implementation-->
+    <span> 
+      <section id="section_chatbot">
+          <a class="float" id="float">
+              <img src="chatrobot.jpg" id="roboImg">
+          </a>
+          <div class="popup" style="width:500px;height:500px;">
+              <div class="textarea">
+                  <div class="roboside">
+                      <img src="logo.png" class="avatar" alt="" style="width:90px;height:90px;">
+                      <span class="robomsg">Hello! Are you a new Student?</span>
+                  </div>   
+              </div>
+              <div class="input-area">
+                  <input type="text" id="msg" placeholder="Yes or No">
+                  <button class="submit"> <b>Send</b></button>
+              </div>
+          </div>
+      </section>
+  </span>
+    <script src="popup_chatbot.js"></script>
+    <!-- chatbot implementation-->
+
   </body>
 </html>
+

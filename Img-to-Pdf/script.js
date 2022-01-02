@@ -1,35 +1,57 @@
 // All the html elements used
-const allFiles = {};
-const upload = document.getElementById("upload");
 const addMore = document.getElementById("addMore");
-const allForms = document.getElementById("allForms");
+const allUploads = document.getElementById("all-uploads");
 const uploadAll = document.getElementById("uploadAll");
 
+// Data used throughout the functions
+const allFiles = {};
+let uploadStaticId = 0;
+
 // Description of all the functions
-const submissionFunction = (data) => {
-  // perform some action
+const submissionFunction = () => {
+  event.preventDefault()
+  // perform some action with all files
+  console.log(Object.values(allFiles));
 };
 
 const addMoreInputField = () => {
+  event.preventDefault();
   // Create a form tag
-  const formTag = document.createElement("form");
+  const divTag = document.createElement("div");
+  divTag.classList.add('upload');
+  divTag.id = 'upload-' + uploadStaticId;
 
   // Putting input tag inside for tag
-  formTag.innerHTML =
-    '<input type="text" id="imageData" placeholder="Select Image" disabled><input onclick="addFiles(event)" type="submit" id="upload" value="upload">';
+  divTag.innerHTML = `
+    <input type="text" placeholder="Select Image" class="value-box" disabled>
+    <input onclick="addFiles(${uploadStaticId})" type="submit" value="upload">
+    <button class="remove-button" onclick="removeUpload(${uploadStaticId})" type="button">X</button>
+  `;
 
-  // Adding form tag to as a child in allForms
-  allForms.appendChild(formTag);
+  // Adding form tag to as a child in allUploads
+  allUploads.appendChild(divTag);
+  uploadStaticId++;
 };
 
-const addFiles = (event) => {
+const removeUpload = (number) => {
+  const target = document.getElementById('upload-' + number);
+  if(allUploads.children.length === 1) return;
+  target.parentNode.removeChild(target);
+  delete allFiles['upload-' + number];
+}
+
+const addFiles = (number) => {
   event.preventDefault();
   document.getElementsByTagName("span")[0].innerHTML = '<input type="file" style="display: none;" id="fileUpload">'
   document.getElementById("fileUpload").click();
   document.getElementById("fileUpload").addEventListener("change", () => {
-    event.target.parentNode.childNodes[0].value = document.getElementById(
-      "fileUpload"
-    ).value;
+    const box = document
+      .getElementById('upload-' + number)
+      .getElementsByClassName('value-box')[0];
+    // TODO: fix the result displayed "C:/fakepath/FILENAME"
+    const value = document.getElementById("fileUpload").value;
+    allFiles['upload-' + number] = value;
+    box.value = value;
   });
 }
 
