@@ -12,7 +12,20 @@
     /* transition: initial; */
     font-family: "Bakbak One", sans-serif;
   }
+
+  #about-section {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+  }
   
+  .about-content {
+    color: white;
+    margin: auto 5rem;
+    padding-bottom: 4rem;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+  }
+
   nav {
     width: 100%;
     display: flex;
@@ -379,7 +392,8 @@
   }
   
   /*works*/
-  
+
+ 
   @media screen and (min-width : 360px) and (max-width : 425px)
   {
     #roboImg{
@@ -429,4 +443,13 @@
     }
   
   }
+
+  @media screen and (max-width: 426px) {
+    .about-content {
+      margin: auto 1rem;
+      font-size: 1.1rem;
+    letter-spacing: 3px;
+    }
+  }
+  
   
