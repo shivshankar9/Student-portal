@@ -13,7 +13,7 @@ navbar.innerHTML = `<nav>
     <li><a class="active" href="./index.html">Home</a></li>
     <li><a href="./index.html">Services</a></li>
     <li><a href="./contact.html">Contact</a></li>
-    <li><a href="./index.html">About</a></li>
+    <li><a href="#about-section">About</a></li>
 </ul>
 </div>
 </nav>`
