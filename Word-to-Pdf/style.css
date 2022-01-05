@@ -1,13 +1,26 @@
 #w2p{
     text-align: center;
+    width: 36%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 36px;
+    background-color: rgba(173, 216, 230, 0.5);
 }
 img {
     width: 90%;
 }
 input{
-    padding-bottom: 7px;
+    padding-bottom: 28px;
+}
+#dwpdf{
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #28a745;
+    border: 2px solid #1f8036;
+
 }
