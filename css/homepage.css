@@ -39,6 +39,13 @@
     z-index: 5;
     padding: 3px;
   }
+#navlogo {
+    width: 59%;
+    height: 58px;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+
   #logo {
     font-size: 1.4rem;
     letter-spacing: 2px;
@@ -155,6 +162,7 @@
   }
   
   .logo {
+    display:flex;
     width: 9vw;
     border-radius: 100px;
     margin-right: 3vw;
