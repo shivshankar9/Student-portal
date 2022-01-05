@@ -1,6 +1,7 @@
 const navbar = document.getElementById('navbar')
 navbar.innerHTML = `<nav>
 <div class="logo">
+<img src="logo.png" id="navlogo" alt="">
     <h6 id="logo">Student Portal</h6>
 </div>
 <div class="toggle-btn">
