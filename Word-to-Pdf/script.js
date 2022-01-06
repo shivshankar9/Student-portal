@@ -15,24 +15,27 @@ var opt = {
     jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
 };
 addfile.addEventListener('change', (e) => {
-    console.time();
-    var reader = new FileReader();
-    reader.onloadend = function (event) {
-        var arrayBuffer = reader.result;
-        mammoth.convertToHtml({ arrayBuffer: arrayBuffer }).then(function (resultObject) {
-            pdf.innerHTML = resultObject.value
-            console.log(resultObject.value)
-        })
-        console.timeEnd();
+    // addfile.files[0].name.substring(addfile.files[0].name.length - 4)
+    if (addfile.files[0].name.substring(addfile.files[0].name.length - 4) === 'docx') {
+        console.log(addfile.files[0].name.substring(addfile.files[0].name.length - 4));
+        console.time();
+        var reader = new FileReader();
+        reader.onloadend = function (event) {
+            var arrayBuffer = reader.result;
+            mammoth.convertToHtml({ arrayBuffer: arrayBuffer }).then(function (resultObject) {
+                pdf.innerHTML = resultObject.value
+                console.log(resultObject.value)
+            })
+            console.timeEnd();
+        }
+        reader.readAsArrayBuffer(addfile.files[0]);
+        pdf.style.display = 'none';
+        dwpdf.disabled = false;
+        if (addfile.value != null) {
+            addfilelab.innerHTML = '<i class="fa fa-check" aria-hidden="true" ></i> Uploaded .doc file';
+            addfilelab.style.pointerEvents = 'none';
+        }
     }
-    reader.readAsArrayBuffer(addfile.files[0]);
-    pdf.style.display = 'none';
-    dwpdf.disabled = false;
-    if (addfile.value != null) {
-        addfilelab.innerHTML = '<i class="fa fa-check" aria-hidden="true" ></i> Uploaded .doc file';
-        addfilelab.style.pointerEvents = 'none';
-    }
-
 })
 function dwnldpdf() {
     pdf.style.display = 'block';
