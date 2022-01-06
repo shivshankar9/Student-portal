@@ -6,15 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word-to-Pdf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../css/homepage.css">
 </head>
 
 <body>
     <div id="navbar"></div>
+
     <section id="w2p">
-        <input type="file" class="addfile"><br>
-        <button onclick="dwnldpdf()" id="dwpdf">Download pdf</button>
+        <label for="addfile" class="custom-file-upload" id="addfilelab">
+            <i class="fa fa-cloud-upload"></i> Upload .doc file
+        </label>
+        <input type="file" id="addfile"><br>
+        <button id="dwpdf" disabled><i class="fa fa-download" aria-hidden="true"></i> Download
+            pdf</button>
         <div class="pdf"> </div>
     </section>
 </body>

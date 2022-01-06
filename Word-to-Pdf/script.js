@@ -1,5 +1,7 @@
-var addfile = document.querySelector(".addfile");
+var addfile = document.querySelector("#addfile");
 var pdf = document.querySelector(".pdf");
+var dwpdf = document.querySelector('#dwpdf');
+
 var opt = {
     margin: 1,
     pagebreak: { mode: 'avoid-all' },
@@ -24,6 +26,7 @@ addfile.addEventListener('change', (e) => {
     }
     reader.readAsArrayBuffer(addfile.files[0]);
     pdf.style.display = 'none';
+    dwpdf.disabled = false;
 })
 
 
@@ -33,3 +36,12 @@ function dwnldpdf() {
     html2pdf().set(opt).from(pdf).save();
     setTimeout(() => { pdf.style.display = 'none'; }, 1);
 }
+dwpdf.addEventListener('click', dwnldpdf)
+dwpdf.addEventListener('mouseover', () => {
+    dwpdf.classList.add('dwpdf_hover');
+    dwpdf.style.backgroundColor = '#1f8036';
+})
+dwpdf.addEventListener('mouseout', () => {
+    dwpdf.style.backgroundColor = '#28a745';
+    dwpdf.classList.remove('dwpdf_hover');
+})

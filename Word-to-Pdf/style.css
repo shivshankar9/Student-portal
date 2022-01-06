@@ -13,14 +13,30 @@
 img {
     width: 90%;
 }
-input{
+#addfile{
     padding-bottom: 28px;
+    display: none;
+}
+#addfilelab{
+    margin-bottom: 28px;
 }
 #dwpdf{
     border-radius: 7px;
-    padding: 5px;
+    padding: 6px;
     font-size: 1em;
     background-color: #28a745;
     border: 2px solid #1f8036;
-
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.dwpdf_hover{
+    box-shadow: 0 0.7em 0.5em -0.4em #042e0d;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
 }
