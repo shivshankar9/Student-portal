@@ -21,7 +21,7 @@ img {
     margin-bottom: 28px;
 }
 #dwpdf{
-    border-radius: 7px;
+    border-radius: 18px;
     padding: 6px;
     font-size: 1em;
     background-color: #28a745;
@@ -39,4 +39,14 @@ img {
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
+}
+#reset{
+    margin-left: 10%;
+    border-radius: 18px;
+    padding: 6px;
+    font-size: 1em;
+    background-color: #dc3545;
+    border: 2px solid #880b18;
+    cursor: pointer;
+
 }

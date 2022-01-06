@@ -1,6 +1,8 @@
 var addfile = document.querySelector("#addfile");
 var pdf = document.querySelector(".pdf");
 var dwpdf = document.querySelector('#dwpdf');
+var reset = document.querySelector('#reset');
+
 
 var opt = {
     margin: 1,
@@ -11,13 +13,10 @@ var opt = {
     jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
 };
 addfile.addEventListener('change', (e) => {
-
     console.time();
     var reader = new FileReader();
     reader.onloadend = function (event) {
         var arrayBuffer = reader.result;
-        // debugger
-
         mammoth.convertToHtml({ arrayBuffer: arrayBuffer }).then(function (resultObject) {
             pdf.innerHTML = resultObject.value
             console.log(resultObject.value)
@@ -28,14 +27,13 @@ addfile.addEventListener('change', (e) => {
     pdf.style.display = 'none';
     dwpdf.disabled = false;
 })
-
-
 function dwnldpdf() {
     pdf.style.display = 'block';
     console.log('Saving Pdf');
     html2pdf().set(opt).from(pdf).save();
     setTimeout(() => { pdf.style.display = 'none'; }, 1);
 }
+
 dwpdf.addEventListener('click', dwnldpdf)
 dwpdf.addEventListener('mouseover', () => {
     dwpdf.classList.add('dwpdf_hover');
@@ -44,4 +42,9 @@ dwpdf.addEventListener('mouseover', () => {
 dwpdf.addEventListener('mouseout', () => {
     dwpdf.style.backgroundColor = '#28a745';
     dwpdf.classList.remove('dwpdf_hover');
+})
+
+reset.addEventListener('click', () => {
+    addfile.value = null;
+    dwpdf.disabled = true;
 })
