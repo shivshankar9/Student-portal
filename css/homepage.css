@@ -4,7 +4,7 @@
   }
   
   body {
-    background-color: #152a79;
+    background-color: #252525;
     min-height: 100vh;
     background-position: center;
     background-size: cover;
@@ -12,20 +12,25 @@
     /* transition: initial; */
     font-family: "Bakbak One", sans-serif;
   }
-
+   /* about section*/
   #about-section {
-    margin-top: 10rem;
-    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    padding: 2rem 7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .about-content {
-    color: white;
-    margin: auto 5rem;
-    padding-bottom: 4rem;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
+    color: rgb(19, 19, 18);
+    padding: 10px;
+    margin: 30px;
+    font-size: 30px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    background-color: rgba(245, 245, 245, 0.918);
   }
-
+   /* nav bar*/
   nav {
     width: 100%;
     display: flex;
@@ -34,7 +39,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #020225a9;
+    background-color: #9d9fa0a9;
     color: aliceblue;
     z-index: 5;
     padding: 3px;
@@ -103,7 +108,7 @@
     flex-direction: column;
   }
   header h1 {
-    color: white;
+    color: rgb(230, 243, 248);
     font-size: 6.5rem;
   }
   
@@ -116,21 +121,28 @@
     justify-content: center;
     align-items: center;
   }
-  
+   main.tools-heading{
+     border:  2px;
+     border-radius: 3px;
+     border-color: whitesmoke;
+     padding: 2px;
+   }
   main h2 {
     text-align: center;
     font-size: 4rem;
     color: white;
     padding: 2rem 7rem;
-    box-shadow: 0 4px 20px 0 #020225a9, 0 0 0 0 #020225a9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   main > .tools-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 85vw;
+    padding: 15vh;
     margin: 50px auto;
+    background-color: rgba(248, 242, 242, 0.877);
+    
   }
   
   main .row {
@@ -141,15 +153,18 @@
     padding: 10px 20px;
     margin: 20px 0;
     border-radius: 5px;
-    height: 15vh;
+    height: 30vh;
     width: 35vw;
+    background-color: rgba(15, 15, 15, 0.945);
+
+
     /* top: 550px; */
     /* position: relative; */
   }
   main .row a {
-    font-family: "Bakbak One", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    color: white;
+    color: rgb(250, 225, 4);
     text-align: center;
     letter-spacing: 1px;
     font-size: 30px;
