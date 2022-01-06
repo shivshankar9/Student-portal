@@ -7,8 +7,9 @@
     transform: translate(-50%, -50%);
     border: 2px solid black;
     border-radius: 10px;
-    padding: 36px;
+    padding: 48px 36px;
     background-color: rgba(173, 216, 230, 0.5);
+    font-weight: 600;
 }
 img {
     width: 90%;
@@ -22,8 +23,8 @@ img {
 }
 #dwpdf{
     border-radius: 18px;
-    padding: 6px;
-    font-size: 1em;
+    padding: 8px;
+    font-size: 1.2em;
     background-color: #28a745;
     border: 2px solid #1f8036;
     transition: all 0.2s;
@@ -48,5 +49,24 @@ img {
     background-color: #dc3545;
     border: 2px solid #880b18;
     cursor: pointer;
+}
+#reset:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }

@@ -2,6 +2,8 @@ var addfile = document.querySelector("#addfile");
 var pdf = document.querySelector(".pdf");
 var dwpdf = document.querySelector('#dwpdf');
 var reset = document.querySelector('#reset');
+var addfilelab = document.querySelector('#addfilelab');
+
 
 
 var opt = {
@@ -26,6 +28,11 @@ addfile.addEventListener('change', (e) => {
     reader.readAsArrayBuffer(addfile.files[0]);
     pdf.style.display = 'none';
     dwpdf.disabled = false;
+    if (addfile.value != null) {
+        addfilelab.innerHTML = '<i class="fa fa-check" aria-hidden="true" ></i> Uploaded .doc file';
+        addfilelab.style.pointerEvents = 'none';
+    }
+
 })
 function dwnldpdf() {
     pdf.style.display = 'block';
@@ -47,4 +54,6 @@ dwpdf.addEventListener('mouseout', () => {
 reset.addEventListener('click', () => {
     addfile.value = null;
     dwpdf.disabled = true;
+    addfilelab.innerHTML = '<i class="fa fa-cloud-upload"></i> Upload .doc file';
+    addfilelab.style.pointerEvents = 'auto';
 })
