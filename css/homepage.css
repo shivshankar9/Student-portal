@@ -22,13 +22,12 @@
   }
   
   .about-content {
-    color: rgb(19, 19, 18);
+    color: rgba(253, 217, 16, 0.932);
     padding: 10px;
-    margin: 30px;
+    margin: 50px;
     font-size: 30px;
     border-radius: 5px;
     font-family: sans-serif;
-    background-color: rgba(245, 245, 245, 0.918);
   }
    /* nav bar*/
   nav {
