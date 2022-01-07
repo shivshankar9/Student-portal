@@ -344,7 +344,16 @@ input[type="text"] {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   word-break: break-all;
 }
-
+footer{
+    background-color: rgba(128, 128, 128, 0.836);
+  }
+  footer h3{
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+  }
 .submit:hover {
   transform: scale(1.2);
 }
