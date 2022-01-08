@@ -20,8 +20,15 @@ tTpButton.addEventListener('click', () => {
 })
 // Auto Resize textarea
 const textarea = document.querySelector("#txtarea");
-textarea.addEventListener("keyup", e => {
+const sizeReset = (e) => {
     textarea.style.height = "100px";
     let scHeight = e.target.scrollHeight;
     textarea.style.height = `${scHeight}px`;
-});
+}
+textarea.addEventListener("keyup", sizeReset)
+
+var reset = document.querySelector('#reset');
+reset.addEventListener('click', () => {
+    textarea.value = "";
+    textarea.style.height = "150px";
+})
