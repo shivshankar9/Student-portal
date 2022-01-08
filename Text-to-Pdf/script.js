@@ -3,7 +3,7 @@
 /*==================== GENERATE PDF ====================*/
 // PDF generated area
 var areaCv = document.getElementById('txtarea');
-var tTpButton = document.getElementById('convertBTN');
+var tTpButton = document.getElementById('convert');
 
 
 
