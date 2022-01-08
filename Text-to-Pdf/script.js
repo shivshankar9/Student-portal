@@ -4,7 +4,7 @@
 // PDF generated area
 var areaCv = document.getElementById('txtarea');
 var tTpButton = document.getElementById('convert');
-
+const textarea = document.querySelector("#txtarea");
 
 
 function generateResume() {
@@ -19,13 +19,23 @@ tTpButton.addEventListener('click', () => {
     generateResume();
 })
 // Auto Resize textarea
-const textarea = document.querySelector("#txtarea");
+
 const sizeReset = (e) => {
     textarea.style.height = "100px";
     let scHeight = e.target.scrollHeight;
     textarea.style.height = `${scHeight}px`;
 }
 textarea.addEventListener("keyup", sizeReset)
+textarea.addEventListener("keyup", () => {
+    if (textarea.value) {
+        tTpButton.disabled = false;
+        tTpButton.style.pointerEvents = "auto";
+    }
+    else {
+        tTpButton.disabled = true;
+        tTpButton.style.pointerEvents = "none";
+    }
+})
 
 var reset = document.querySelector('#reset');
 reset.addEventListener('click', () => {

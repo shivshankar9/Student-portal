@@ -35,6 +35,7 @@
     border: 2px solid #1f8036;
     transition: all 0.2s;
     cursor: pointer;
+    pointer-events: none;
 }
 #convert:hover{
     box-shadow: 0 0.7em 0.5em -0.4em #042e0d;
