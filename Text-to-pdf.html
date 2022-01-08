@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal</title>
+  <link rel="shortcut icon" href="./images/logo_title_bar.png">
+  <link rel="stylesheet" href="./css/homepage.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="textToPdf.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js" integrity="sha384-CchuzHs077vGtfhGYl9Qtc7Vx64rXBXdIAZIPbItbNyWIRTdG0oYAqki3Ry13Yzu" crossorigin="anonymous"></script>
+  
+  
+
+</head>
+
+<body>
+
+  <div id="loader">
+    <div id="loading-content"></div>
+  </div>
+  <div id="allContent" style="display: none;">
+    <div id="navbar"></div>
+    
+    
+      <div class="textarea">
+        <h3>Text To PDF</h3>
+        <textarea id="txtarea" name="text" placeholder="Enter Text Here"></textarea> 
+        <button class="convertTP" id="convertBTN">Convert To pdf</button> 
+      </div>
+
+
+    <!-- Javascript  -->
+
+    <script src="js/main.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- chatbot implementation-->
+    <span>
+      <section id="section_chatbot">
+        <a class="float" id="float">
+          <img src="./images/chatbot.png" id="roboImg">
+        </a>
+        <!-- <div class="popup" style="width:500px;height:500px;"> -->
+        <div class="popup">
+          <div class="textarea">
+            <div class="roboside">
+              <img src="./images/logo.png" class="avatar" alt="">
+              <span class="robomsg">Hello! Are you a new Student?</span>
+            </div>
+          </div>
+          <div class="input-area">
+            <input type="text" id="msg" placeholder="Yes or No">
+            <button type="submit" class="submit">Send</button>
+          </div>
+        </div>
+      </section>
+    </span>
+
+    <!-- Scripts for Chatbot -->
+    <script src="./js/popup_chatbot.js"></script>
+
+    <!-- chatbot implementation-->
+
+  </div>
+
+</html>
