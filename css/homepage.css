@@ -13,6 +13,45 @@ body {
     font-family: "Bakbak One", sans-serif;
 }
 
+/* animation */
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes rotateimg {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* about section*/
   #about-section {
     text-align: center;
@@ -133,10 +172,13 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: fadeIn 0.8s 0.2s forwards ease-in-out;
+
 }
 header h1 {
  color: rgb(230, 243, 248);
   font-size: 6.5rem;
+  
 }
 
 main button {
@@ -147,6 +189,10 @@ main button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.toolsicon{
+ animation: rotateimg 1s 1s 2 forwards ease-in;
 }
 main.tools-heading{
      border:  2px;
