@@ -31,3 +31,6 @@ window.onload = function () {
   loader.style.display = "none";
   page.style.display = "";
 };
+function submit() {
+    alert("Thank you, we will respond to you soon.");
+};
