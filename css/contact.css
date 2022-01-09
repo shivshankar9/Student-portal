@@ -1,74 +1,81 @@
-
 #contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15%;
 }
 
 .contactme {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #efffff;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #132945;
-  box-shadow: 0px 1px 20px;
-  border-radius: 8%;
-  width: 50%;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9d9fa0a9;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #252525;
+    box-shadow: 0px 1px 21px yellow;
+    border-radius: 8%;
+    width: 50%;
+    text-align: center;
+    border: 2px solid yellow;
 }
 
 body {
-  background-color: #152a79;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-color: #252525;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .content1 {
-  background-color: #acf8dc;
-  width: 100%;
-  text-align: center;
-  /* border-radius: 8%; */
-  border-top-left-radius: 34px;
-  border-top-right-radius: 34px;
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+    /* border-radius: 8%; */
+    border-top-left-radius: 34px;
+    border-top-right-radius: 34px;
 }
 
 .contactme h2 {
-  font-size: 50px;
-  position: relative;
-  font-family: "Source Sans Pro", sans-serif;
+    font-size: 50px;
+    position: relative;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .contactme input {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 3px solid white;
-  border-radius: 23px;
-  box-shadow: 0px 0px 2px;
-  width: 82%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 23px;
+    width: 82%;
+    background: black;
+    color: yellow;
+    border: 2px solid yellow;
 }
 
 .content {
-  padding: 2rem;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-height: fit-content;
-  width: 60%;
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: fit-content;
+    width: 60%;
 }
 
 #contactsubmit {
-  margin-top: 1em;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0px 0px 2px white;
-  background-color: black;
-  color: white;
-  font-family: "Source Sans Pro", sans-serif;
-  padding: 10px;
-  text-align: center;
-  width: 50%;
+    margin-top: 1em;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 22px yellow;
+    background-color: yellow;
+    color: black;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+}
+
+#contactsubmit:hover {
+    background-color: black;
+    color: yellow;
 }
