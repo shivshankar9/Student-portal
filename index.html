@@ -12,6 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+  <!---stylesheet for animation--->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+ 
 </head>
 
 <body>
@@ -29,14 +33,14 @@
       </div>
     </header>
 
-    <main>
+    <main data-aos="fade-left">
       <div class="tools-heading">
-        <h2>Tools ⚙️</h2>
+        <h2>Tools<span class="toolsicon">⚙️</span></h2>
       </div>
       <div class="tools-items">
         <div class="row">
           <img class="tools-img" src="./images/image.png" alt="" />
-          <button><a href="./indeximgpdf.html">Image to PDF</a></button>
+          <button><a href="./Img-to-Pdf/index.html">Image to PDF</a></button>
         </div>
         <div class="row">
           <img class="tools-img" src="./images/docs.png" alt="" style="padding-bottom: 25px" />
@@ -44,14 +48,14 @@
         </div>
         <div class="row">
           <img class="tools-img" src="./images/text.png" alt="" />
-          <button><a href="#">Text to PDF</a></button>
+          <button><a href="Text-to-pdf.html">Text to PDF</a></button>
         </div>
         <div class="row">
           <img class="tools-img" src="./images/zip.png" alt="" />
           <button><a href="#">Extract zip file</a></button>
         </div>
       </div>
-
+    <div data-aos="fade-right">
       <div class="tools-heading about-section" id="about-section">
         <h2>About 📑</h2>
       </div>
@@ -65,7 +69,11 @@
           style="text-decoration: underline; color: aliceblue;">mail</a>.
 
       </div>
+    </div>
     </main>
+    <footer>
+     <h3>Student-Portal@copyright2022</h3>
+   </footer>
 
     <!-- Javascript  -->
     <script src="./js/script.js"></script>
@@ -98,6 +106,15 @@
 
     <!-- chatbot implementation-->
 
+    <!---scripts for animation--->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:400,
+        duration:1000
+      });
+    </script>
+ 
   </div>
 
 </html>
