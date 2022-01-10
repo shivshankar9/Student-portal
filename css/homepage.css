@@ -274,6 +274,18 @@ main button {
   display: flex;
   margin-top: 10px;
 }
+.crossbtn {
+  width:20px;
+  height:20px;
+  margin-top: 20px;
+  background-color:#152a79;
+  color:white;
+}
+.crossbtn:hover{
+  background-color:#2d418b;
+  color: solid black;
+  cursor: pointer;
+}
 .avatar {
   width: 55px;
   height: 55px;
