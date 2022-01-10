@@ -290,8 +290,8 @@ main button {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 25px;
-  right: 25px;
+  bottom: 55px;
+  right: 55px;
   text-align: center;
   /* box-shadow: 2px 2px 3px #020225a9; */
   cursor: pointer;
@@ -299,10 +299,10 @@ main button {
   z-index: 1;
 }
 .img-float {
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 50px;
   border-radius: 50px;
 }
 .float:hover {
@@ -313,8 +313,8 @@ main button {
   position: fixed;
   bottom: 75px;
   right: 115px;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background-color: whitesmoke;
   flex-direction: column;
   justify-content: space-between;
@@ -335,9 +335,9 @@ main button {
   margin-top: 10px;
 }
 .crossbtn {
-  width:20px;
-  height:20px;
-  margin-top: 20px;
+  width:30px;
+  height:30px;
+  margin-top: 10px;
   background-color:#152a79;
   color:white;
 }
@@ -416,8 +416,8 @@ footer{
   transform: scale(1.2);
 }
 #roboImg {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   /* border-radius: 50px; */
   /* border: 2px solid #020225a9; */
 }
