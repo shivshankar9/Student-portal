@@ -14,11 +14,9 @@
     background-color: #9d9fa0a9;
     font-family: "Source Sans Pro", sans-serif;
     color: #252525;
-    box-shadow: 0px 1px 21px yellow;
-    border-radius: 8%;
+    border-radius: 80px;
     width: 50%;
     text-align: center;
-    border: 2px solid yellow;
 }
 
 body {
@@ -31,13 +29,12 @@ body {
     background-color: yellow;
     width: 100%;
     text-align: center;
-    /* border-radius: 8%; */
-    border-top-left-radius: 34px;
-    border-top-right-radius: 34px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
 }
 
 .contactme h2 {
-    font-size: 50px;
+    font-size: 2.9em;
     position: relative;
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -65,7 +62,6 @@ body {
     margin-top: 1em;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 0px 22px yellow;
     background-color: yellow;
     color: black;
     font-family: "Source Sans Pro", sans-serif;
@@ -73,6 +69,7 @@ body {
     text-align: center;
     width: 50%;
     cursor: pointer;
+    transition: 1s;
 }
 
 #contactsubmit:hover {
