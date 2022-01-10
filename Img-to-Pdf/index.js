@@ -57,12 +57,29 @@ handleDelete= (e)=>{
 embedImages= async ()=>{
     const pdfDoc= await PDFLib.PDFDocument.create();
     for(var i=0;i<data.length;i++){
-        const jpgUrl= data[i].list.result;
-        const jpgImageBytes= await fetch(jpgUrl).then((res) => res.arrayBuffer());
-
-        const jpgImage = await pdfDoc.embedJpg(jpgImageBytes);
-
+        if(data[i].fileName.slice(-3) === 'png' ){
+       
+        const pngUrl =  data[i].list.result;
+        const pngImageBytes = await fetch(pngUrl).then((res) => res.arrayBuffer());
+        const pngImage = await pdfDoc.embedPng(pngImageBytes)
+        console.log(pngImage);
         //Add a blank page to the document
+        const page= pdfDoc.addPage();
+
+        //set page size
+        page.setSize(width,height);
+        page.drawImage(pngImage, {
+            x: 20,
+            y: 50,
+            width: page.getWidth()-40,
+            height: page.getHeight()-100,
+        })
+    }
+    else{
+         const jpgUrl= data[i].list.result;
+          const jpgImageBytes= await fetch(jpgUrl).then((res) => res.arrayBuffer());
+           const jpgImage = await pdfDoc.embedJpg(jpgImageBytes);
+            //Add a blank page to the document
         const page= pdfDoc.addPage();
 
         //set page size
@@ -74,8 +91,9 @@ embedImages= async ()=>{
             height: page.getHeight()-100,
         })
     }
+}
 
-    //save the padf pages
+    //save the pdf pages
     const pdfBytes= await pdfDoc.save();
 
     //download pdf file 
