@@ -64,4 +64,4 @@ git push -u origin <your_branch_name>
 
 **14.** Click on `Create Pull Request`.
 
-**15.** Voila! You have made a PR to the project. Sit back and relax while your PR is reviewed by the maintainers.
+**15.** Voila! You have made a PR to the project. Sit back and relax while your PR is reviewed by the maintainers..
