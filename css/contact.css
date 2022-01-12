@@ -14,7 +14,7 @@
     background-color: #9d9fa0a9;
     font-family: "Source Sans Pro", sans-serif;
     color: #252525;
-    border-radius: 80px;
+    border-radius: 62px;
     width: 50%;
     text-align: center;
 }
@@ -29,8 +29,8 @@ body {
     background-color: yellow;
     width: 100%;
     text-align: center;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
+    border-top-left-radius: 62px;
+    border-top-right-radius: 62px;
 }
 
 .contactme h2 {
@@ -76,3 +76,22 @@ body {
     background-color: black;
     color: yellow;
 }
+ @media screen and (max-width: 600px) {
+        #contactsubmit {
+            width: 100%;
+            margin-top: 0;
+        }
+        .contactme {
+            border-radius: 25px;
+        }
+        .content1 {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .contactme h2 {
+            font-size: 2.2em;
+        }
+        #contact-section {
+            margin-top: 25%;
+        }
+    }
