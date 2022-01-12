@@ -108,7 +108,7 @@ main{
 .create-pdf{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .file-item{
@@ -118,19 +118,18 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   transition: 0.3s all ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.377) 0px 3px 8px;
 }
 .modify button{
   padding: 0.5rem;
-  /* color: rgb(250, 64, 64); */
   border-radius: 50%;
 }
-
 #img{
   position: relative;
-  max-width: 9rem;
-  max-height: 11rem;
+  max-width: 7rem;
+  max-height: 9rem;
   background: white;
   overflow: hidden;
   box-sizing: border-box;
@@ -145,7 +144,6 @@ main{
   transition: 0.3s all ease-in-out;
   opacity: 0;
   padding: 0.3rem 0.5rem;
-
 }
 .file-item button:hover{
   background: rgb(224, 248, 251);
@@ -160,10 +158,9 @@ main{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 8.5rem;
+  width: 7rem;
   text-align: center;
   margin: 1rem auto;
-  color:yellow;  
 }
 
 .add-more-file{
@@ -215,6 +212,10 @@ main{
   #upload-file{
   height: 15vh;
   width: 15vh;
+  }
+  #img{
+    max-width: 6rem;
+    max-height: 8rem;
   }
 }
 /* .img-container{   
