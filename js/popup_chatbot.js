@@ -22,7 +22,9 @@ msgArea.addEventListener('keydown',function(event){
         sendMsgBtn.click();
     }
 });
-
+function hide(){
+    document.getElementById("popup").classList.toggle('show');
+}
 sendMsgBtn.addEventListener('click', ()=>{
     let userText = textInput.value;
     let creatingUserBlock = `<div class='userSideMsg'>

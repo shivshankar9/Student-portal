@@ -13,6 +13,45 @@ body {
     font-family: "Bakbak One", sans-serif;
 }
 
+/* animation */
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes rotateimg {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* about section*/
   #about-section {
     text-align: center;
@@ -133,10 +172,13 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: fadeIn 0.8s 0.2s forwards ease-in-out;
+
 }
 header h1 {
  color: rgb(230, 243, 248);
   font-size: 6.5rem;
+  
 }
 
 main button {
@@ -147,6 +189,10 @@ main button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.toolsicon{
+ animation: rotateimg 1s 1s 2 forwards ease-in;
 }
 main.tools-heading{
      border:  2px;
@@ -229,6 +275,11 @@ main button {
   width: 20%;
 }
 
+.resize-img{
+  width:50px;
+  height: 50px;
+}
+
 .submit {
   border: none;
   outline: none;
@@ -253,10 +304,10 @@ main button {
   z-index: 1;
 }
 .img-float {
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 50px;
   border-radius: 50px;
 }
 .float:hover {
@@ -267,8 +318,8 @@ main button {
   position: fixed;
   bottom: 75px;
   right: 115px;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background-color: whitesmoke;
   flex-direction: column;
   justify-content: space-between;
@@ -287,6 +338,18 @@ main button {
 .roboside {
   display: flex;
   margin-top: 10px;
+}
+.crossbtn {
+  width:30px;
+  height:30px;
+  margin-top: 10px;
+  background-color:#152a79;
+  color:white;
+}
+.crossbtn:hover{
+  background-color:#2d418b;
+  color: solid black;
+  cursor: pointer;
 }
 .avatar {
   width: 55px;
