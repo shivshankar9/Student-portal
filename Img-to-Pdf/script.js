@@ -162,7 +162,7 @@ function convertToPDF() {
 
     const p = document.createElement('p');
     const i = document.createElement('i');
-    i.setAttribute('class', 'fa fa-plus');
+    i.setAttribute('class', 'fa fa-plus fa-2x');
 
     p.appendChild(i);
 

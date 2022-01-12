@@ -60,8 +60,8 @@ main{
 .inp-container{
   cursor: pointer;
   text-align: center;
-  height: 25vh;
-  width: 25vh;
+  height: 12rem;
+  width: 12rem;
   border-radius: 50%;
   border: 1px dashed rgb(195, 193, 193);
   margin: auto;
@@ -73,8 +73,8 @@ main{
 #upload-file{
   opacity: 0;
   display: block;
-  height: 25vh;
-  width: 25vh;
+  height: 12rem;
+  width: 12rem;
   position: absolute;
   cursor: pointer;
 }
@@ -162,32 +162,65 @@ main{
   text-align: center;
   margin: 1rem auto;
 }
-
-.add-more-file{
-    padding: 0 1rem;
-    background: none;
-    text-align: center;
-    position: relative;
-    margin: 0.5rem;
-    display: inline-block;
-    transition: 0.3s all ease-in-out;   
-    width: 10rem;
-    height: 16rem; 
-    vertical-align: top;
+/* 
+.input-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 36%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 48px 36px;
+  background-color: rgba(173, 216, 230, 0.5);
+  font-weight: 600;
+  font-size: 13px;
 }
- .inp-cont{
+.inp-container{
+  cursor: pointer;
+  text-align: center;
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+  border: 1px dashed rgb(195, 193, 193);
+  margin: auto;
+  border-width: 0.15rem;
   display: flex;
   flex-direction: column;
-  flex-flow: column-reverse;
+  justify-content: center;
+}
+#upload-file{
+  opacity: 0;
+  display: block;
+  height: 25vh;
+  width: 25vh;
+  position: absolute;
+  cursor: pointer;
+} */
+.add-more-file{
+    margin: 0.5rem;
+    transition: 0.3s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inp-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
   border-radius: 50%;
   position: relative;
   text-align: center;
-  border: none;
-  background: rgb(241, 246, 246); 
+  border: 1px dashed rgb(195, 193, 193);
+  border-width: 0.15rem;
+  /* background: rgb(241, 246, 246);  */
   width: 9rem;
   height: 9rem;
-  margin: 3rem auto;
+  margin: auto;
+  font-size: large;
 }
+
 #inp{
   opacity: 0;
   display: block;
@@ -198,24 +231,28 @@ main{
   cursor: pointer;
 }
 
-.create-pdf .add-more-file p{
+/* .create-pdf .add-more-file p{
   position: relative;
   top: -3.5rem;
-}
+} */
 
 @media(max-width:500px){
   .inp-container{
-    width: 15vh;
-    height: 15vh;
+    width: 5rem;
+    height: 5rem;
     font-size: 6px;
   }
   #upload-file{
-  height: 15vh;
-  width: 15vh;
+  height: 5rem;
+  width: 5rem;
   }
   #img{
     max-width: 6rem;
     max-height: 8rem;
+  }
+  .inp-cont,#inp{
+    height: 7rem;
+    width: 7rem;
   }
 }
 /* .img-container{   
