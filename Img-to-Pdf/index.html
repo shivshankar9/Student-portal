@@ -31,7 +31,7 @@
             </div> -->
 
         <div class="input-page" id="input-page">
-            <div class="add-more-files">
+            <div class="add-more-files" id="add-more-files">
                 <div class="inp-container">
                     <input type="file" id="upload-file" onChange={encodeImageFileAsURL(this)} multiple
                         accept="image/*" />
@@ -45,15 +45,13 @@
                     <label htmlFor="upload-file" id="custom-file">CHOOSE FILES</label>
                 </div>
             </div>
+            <div class="pdf-page" id="pdf-page">
+                <div class="create-pdf" id="create-pdf">
+                </div>
+            </div>
         </div>
     </main>
 
-    <div class="pdf-page" id="pdf-page">
-        <div class="create-pdf" id="create-pdf">
-
-        </div>
-    </div>
-    </div>
 
     <script src="./script.js"></script>
     <script src="./main.js"></script>

@@ -99,40 +99,34 @@ main{
   width:100%;
   display: none;
   overflow: hidden;
-}
-.create-pdf{
+} */
+/* .create-pdf{
   position: relative;
   padding: 1rem;
   margin: auto;
+} */
+.create-pdf{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .file-item{
   padding: 0 1rem;
-  background: none;
-  text-align: center;
-  position: relative;
-  width: 10rem;
-  height: 16rem; 
   text-align: center;
   margin: 1rem;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: 0.3s all ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 3px 8px;
 }
 .modify button{
-  padding: 0.3rem;
-  color: rgb(250, 64, 64);
+  padding: 0.5rem;
+  /* color: rgb(250, 64, 64); */
   border-radius: 50%;
 }
-.img-container{   
-  width: 8.5rem;
-  margin: auto;
-  height: 11rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
+
 #img{
   position: relative;
   max-width: 9rem;
@@ -210,7 +204,7 @@ main{
 .create-pdf .add-more-file p{
   position: relative;
   top: -3.5rem;
-} */
+}
 
 @media(max-width:500px){
   .inp-container{
@@ -223,3 +217,13 @@ main{
   width: 15vh;
   }
 }
+/* .img-container{   
+  width: 8.5rem;
+  margin: auto;
+  height: 11rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+} */
