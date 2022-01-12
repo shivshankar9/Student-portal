@@ -5,10 +5,20 @@ var pdfName;
 var fileName = '';
 
 const createPDF = document.getElementById('create-pdf');
+const pdf_page = document.querySelector('#pdf-page');
+const convertBtn = document.querySelector('#convertBtn');
+
+
 
 encodeImageFileAsURL = (element) => {
     document.getElementById('add-more-files').style.display = 'none';
-    document.getElementById('pdf-page').style.display = 'inline-block';
+    document.getElementById('pdf-page').style.display = 'flex';
+    convertBtn.style.display = 'block';
+    // const btn = document.createElement('button');
+    // btn.innerText = 'Download';
+    // btn.setAttribute('id', 'convertBtn');
+    // btn.addEventListener('click', embedImages)
+    // pdf_page.append(btn);
 
     const length = element.files.length;
     for (var i = 0; i < length; i++) {
@@ -28,15 +38,15 @@ encodeImageFileAsURL = (element) => {
             pdfName = pdfname.name
         }
     }
-
-    setTimeout(convertToPDF, 1000);
+    // convertToPDF();
+    setTimeout(convertToPDF, 50);
     document.getElementById('upload-file').value = null;
-    setTimeout(saveAsPDF, 1000);
+    // setTimeout(saveAsPDF, 1000);
 }
 
 
 saveAsPDF = () => {
-    document.getElementById('upload-msg').style.display = 'none';
+    //     document.getElementById('upload-msg').style.display = 'none';
     document.getElementById('convertBtn').style.display = 'inline-block';
 }
 
@@ -105,6 +115,7 @@ embedImages = async () => {
 
 //display pdf images
 function convertToPDF() {
+
     createPDF.innerHTML = '';
     data.map((item, i) => {
         const fileItem = document.createElement('div');
@@ -179,6 +190,7 @@ function convertToPDF() {
 
     //addMoreFile is the child of createPDF
     createPDF.appendChild(addMoreFile);
+
 }
 
 //back to home 

@@ -31,6 +31,7 @@
             </div> -->
 
         <div class="input-page" id="input-page">
+
             <div class="add-more-files" id="add-more-files">
                 <div class="inp-container">
                     <input type="file" id="upload-file" onChange={encodeImageFileAsURL(this)} multiple
@@ -47,7 +48,10 @@
             </div>
             <div class="pdf-page" id="pdf-page">
                 <div class="create-pdf" id="create-pdf">
+
                 </div>
+                <button id="convertBtn" onclick="embedImages()"><i class="fa fa-download" aria-hidden="true"></i>
+                    Download pdf</button>
             </div>
         </div>
     </main>
