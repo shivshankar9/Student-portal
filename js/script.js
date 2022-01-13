@@ -34,3 +34,23 @@ window.onload = function () {
 function submit() {
     alert("Thank you, we will respond to you soon.");
 };
+function validatef() {
+    var regex = /^[a-zA-Z]+$/;
+    var name = document.getElementById("firstname").value;
+    if (!regex.test(name))
+        alert("invalid first name")
+};
+
+function validatel() {
+    var regex = /^[a-zA-Z]+$/;
+    var name = document.getElementById("lastname").value
+    if (!regex.test(name))
+        alert("invalid last name")
+};
+
+function validatemail() {
+    var regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+    var name = document.getElementById("email").value;
+    if (!regex.test(name))
+        alert("invalid email")
+};
