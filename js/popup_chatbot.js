@@ -3,6 +3,7 @@ const floatActionBtn = document.querySelector('.float');
 const sendMsgBtn = document.querySelector('.submit');
 const chatbotArea = document.querySelector('.textarea');
 const textInput = document.querySelector('input');
+const msgArea = document.getElementById('msg');
 let questions = {"yes":"Have you seen all the functionalities?","yeah":"Good to hear that!, Have you used any of it?",
 "yupp":"Glad to hear that, our functionalities are benefitting someone!",
 "notyet":"Ahhh! Make use of all available tools and functionalities, in case of further queries mail us. Thank You!",
@@ -15,11 +16,20 @@ floatActionBtn.addEventListener('click', ()=>{
     popup.classList.toggle('show');
 });
 
+msgArea.addEventListener('keydown',function(event){
+    if(event.keyCode ==13){
+    event.preventDefault();
+        sendMsgBtn.click();
+    }
+});
+function hide(){
+    document.getElementById("popup").classList.toggle('show');
+}
 sendMsgBtn.addEventListener('click', ()=>{
     let userText = textInput.value;
     let creatingUserBlock = `<div class='userSideMsg'>
                                 <span class="userActualMsg">${userText}</span>
-                                <img src="../images/user.png" class="avatar">
+                                <img src="./images/user.png" class="avatar">
                             </div>`;
 
     chatbotArea.insertAdjacentHTML("beforeend", creatingUserBlock);
@@ -27,7 +37,7 @@ sendMsgBtn.addEventListener('click', ()=>{
     if(questions[userText] && (!arr.includes(userText))){
         let roboText=questions[userText];
         let creatingRoboBlock = `<div class="roboside">
-                                        <img src="../images/chatbot.png" class="avatar" alt="">
+                                        <img src="./images/chatbot.png" class="avatar" alt="">
                                         <span class="robomsg">${roboText}</span>
                                     </div>`;
         chatbotArea.insertAdjacentHTML("beforeend", creatingRoboBlock);
@@ -67,11 +77,11 @@ sendMsgBtn.addEventListener('click', ()=>{
     }else{
         let roboText="I don't understand you! Please respond as per given texts in chatbox.";
         let creatingRoboBlock = `<div class="roboside">
-                                        <img src="../images/chatbot.png" class="avatar" alt="">
+                                        <img src="./images/chatbot.png" class="avatar" alt="">
                                         <span class="robomsg">${roboText}</span>
                                     </div>`;
         chatbotArea.insertAdjacentHTML("beforeend", creatingRoboBlock);
     }
     textInput.value = '';
-
+    chatbotArea.scrollTo(0,chatbotArea.scrollHeight);
 });
