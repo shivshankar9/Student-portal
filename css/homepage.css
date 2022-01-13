@@ -431,6 +431,9 @@ footer{
   main .row {
     width: 100vw;
   }
+  main > .tools-items {
+    padding: 5vh;
+  }
 }
 @media screen and (max-width: 435px) {
   header h1 {
