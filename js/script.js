@@ -31,26 +31,57 @@ window.onload = function () {
   loader.style.display = "none";
   page.style.display = "";
 };
-function submit() {
-    alert("Thank you, we will respond to you soon.");
-};
 function validatef() {
     var regex = /^[a-zA-Z]+$/;
     var name = document.getElementById("firstname").value;
-    if (!regex.test(name))
-        alert("invalid first name")
+    if (!regex.test(name)) {
+        // alert("invalid first name");
+        document.getElementById("fname").style.color = "red";
+        document.getElementById("fname").innerHTML = "invalid";
+        return false;
+    } else {
+        document.getElementById("fname").style.color = "yellow";
+        document.getElementById("fname").innerHTML = "valid";
+        return true;
+    }
+
 };
 
 function validatel() {
     var regex = /^[a-zA-Z]+$/;
     var name = document.getElementById("lastname").value
-    if (!regex.test(name))
-        alert("invalid last name")
+    if (!regex.test(name)) {
+        //alert("invalid last name");
+        document.getElementById("lname").style.color = "red";
+        document.getElementById("lname").innerHTML = "invalid";
+        return false;
+    } else {
+        document.getElementById("lname").style.color = "yellow";
+        document.getElementById("lname").innerHTML = "valid";
+        return true;
+    }
+
 };
 
 function validatemail() {
     var regex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
     var name = document.getElementById("email").value;
-    if (!regex.test(name))
-        alert("invalid email")
+    if (!regex.test(name)) {
+        // alert("invalid email");
+        document.getElementById("mail").style.color = "red";
+        document.getElementById("mail").innerHTML = "invalid";
+        return false;
+    } else {
+        document.getElementById("mail").style.color = "yellow";
+        document.getElementById("mail").innerHTML = "valid";
+        return true;
+    }
+
+};
+
+function submit() {
+    if (validatef() == false || validatel() == false || validatemail() == false)
+        alert("Please enter valid values");
+    else
+        alert("Thank you, we will respond to you soon.");
 };
