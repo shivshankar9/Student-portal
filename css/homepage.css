@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -563,4 +565,51 @@ footer{
     font-size: 1.1rem;
     letter-spacing: 3px;
   }
+}
+
+
+/* footer  */
+
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 1rem;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+  color: #eee;
+}
+
+footer div i{
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #aaa;
+  padding: 5px 10px;
+  transition: all 0.5s;
+
+}
+
+footer div i:hover{
+  font-weight: 400;
+  font-size: 2rem;
+  color: lime;
+}
+
+footer .author {
+  background-color: #4a4a4a;
+  margin: -1rem;
+  padding: 0.1rem;
+  color: aliceblue;
+}
+
+footer p a {
+  color: lime;
+  text-decoration: none;
+}
+
+.red-heart{
+  color: red;
 }
