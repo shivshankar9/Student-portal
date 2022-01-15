@@ -4,27 +4,72 @@
 }
 
 body {
-  background-color: #152a79;
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-attachment: initial;
-  /* transition: initial; */
-  font-family: "Bakbak One", sans-serif;
+  background-color: #252525;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: initial;
+    /* transition: initial; */
+    font-family: "Bakbak One", sans-serif;
 }
 
-#about-section {
-  margin-top: 10rem;
-  margin-bottom: 3rem;
+/* animation */
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
-.about-content {
-  color: white;
-  margin: auto 5rem;
-  padding-bottom: 4rem;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes rotateimg {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* about section*/
+  #about-section {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    padding: 2rem 7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .about-content {
+    color: rgba(253, 217, 16, 0.932);
+    padding: 10px;
+    margin: 50px;
+    font-size: 30px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    
+  }
 
 #loader {
   height: 100vh;
@@ -60,7 +105,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #020225a9;
+  background-color: #9d9fa0a9;
   color: aliceblue;
   z-index: 5;
   padding: 3px;
@@ -127,10 +172,13 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: fadeIn 0.8s 0.2s forwards ease-in-out;
+
 }
 header h1 {
-  color: white;
+ color: rgb(230, 243, 248);
   font-size: 6.5rem;
+  
 }
 
 main button {
@@ -143,20 +191,31 @@ main button {
   align-items: center;
 }
 
+.toolsicon{
+ animation: rotateimg 1s 1s 2 forwards ease-in;
+}
+main.tools-heading{
+     border:  2px;
+     border-radius: 3px;
+     border-color: whitesmoke;
+     padding: 2px;
+   }
+
 main h2 {
   text-align: center;
   font-size: 4rem;
   color: white;
   padding: 2rem 7rem;
-  box-shadow: 0 4px 20px 0 #020225a9, 0 0 0 0 #020225a9;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main > .tools-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 85vw;
+  padding: 15vh;
   margin: 50px auto;
+  background-color: rgba(248, 242, 242, 0.877);
 }
 
 main .row {
@@ -167,21 +226,22 @@ main .row {
   padding: 10px 20px;
   margin: 20px 0;
   border-radius: 5px;
-  height: 15vh;
+  height: 30vh;
   width: 35vw;
+  background-color: rgba(15, 15, 15, 0.945);
   /* top: 550px; */
   /* position: relative; */
 }
 main .row a {
-  font-family: "Bakbak One", sans-serif;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 30px;
-  font-weight: 600;
-  top: 50vh;
-  transition: all 200ms ease-in-out;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: rgb(250, 225, 4);
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 600;
+    top: 50vh;
+    transition: all 200ms ease-in-out;
 }
 
 main .row a:hover {
@@ -215,6 +275,11 @@ main button {
   width: 20%;
 }
 
+.resize-img{
+  width:50px;
+  height: 50px;
+}
+
 .submit {
   border: none;
   outline: none;
@@ -239,10 +304,10 @@ main button {
   z-index: 1;
 }
 .img-float {
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 50px;
   border-radius: 50px;
 }
 .float:hover {
@@ -253,8 +318,8 @@ main button {
   position: fixed;
   bottom: 75px;
   right: 115px;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   background-color: whitesmoke;
   flex-direction: column;
   justify-content: space-between;
@@ -273,6 +338,18 @@ main button {
 .roboside {
   display: flex;
   margin-top: 10px;
+}
+.crossbtn {
+  width:30px;
+  height:30px;
+  margin-top: 10px;
+  background-color:#152a79;
+  color:white;
+}
+.crossbtn:hover{
+  background-color:#2d418b;
+  color: solid black;
+  cursor: pointer;
 }
 .avatar {
   width: 55px;
@@ -330,7 +407,16 @@ input[type="text"] {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   word-break: break-all;
 }
-
+footer{
+    background-color: rgba(128, 128, 128, 0.836);
+  }
+  footer h3{
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+  }
 .submit:hover {
   transform: scale(1.2);
 }
@@ -344,6 +430,9 @@ input[type="text"] {
 @media only screen and (max-width: 960px) {
   main .row {
     width: 100vw;
+  }
+  main > .tools-items {
+    padding: 5vh;
   }
 }
 @media screen and (max-width: 435px) {

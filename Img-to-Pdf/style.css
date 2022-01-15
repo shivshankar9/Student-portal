@@ -1,70 +1,204 @@
-/* ------------------------Global---------------------- */
-
-* {
+body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-input {
-  height: 35px;
-  border: none;
-  margin: 4px 4px 4px 0;
-  border-radius: 2px;
+#space{
+  width: 100%;
+  height: 24vh;
+  min-height: 75px;
 }
 
-button {
-  width: 48%;
-  height: 30px;
-  color: white;
-  border: none;
-  border-radius: 2px;
-}
-
-.remove-button {
-  background-color: red;
-  height: 35px;
-  margin-top: 4px;
-  padding: 0;
-  text-align: center;
-  width: 35px;
-}
-
-/* -----------x----------Global--------------x-------- */
-
-body {
-  height: 80vh;
+main{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-main {
-  padding: 20px;
-  background-color: rgba(173, 216, 230, 0.5);
-}
-
-main input[type="text"] {
-  width: 200px;
-  padding-left: 10px;
-  background-color: white;
-}
-
-main input[type="submit"] {
-  padding: 0 20px;
-  color: white;
-  background-color: purple;
-}
-
-main .submission {
+.input-page{
   display: flex;
-  margin-top: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 36%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 48px 36px;
+  background-color: rgba(173, 216, 230, 0.5);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.inp-container{
+  cursor: pointer;
+  text-align: center;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  border: 1px dashed rgb(195, 193, 193);
+  margin: auto;
+  border-width: 0.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#upload-file{
+  opacity: 0;
+  display: block;
+  height: 12rem;
+  width: 12rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.img-icon{
+  padding: 5px;
+}
+
+#pdf-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.create-pdf{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.file-item{
+  padding: 0 1rem;
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 3px 8px;
 }
 
-main .submission #addMore {
-  background-color: orange;
+.modify button{
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
-main .submission #uploadAll {
-  background-color: green;
+#img{
+  position: relative;
+  max-width: 7rem;
+  max-height: 9rem;
+  background: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 0.1rem solid rgb(223, 222, 222);
+}
+
+.file-item button{
+  margin: 0 0.2rem;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  padding: 0.3rem 0.5rem;
+}
+.file-item button:hover{
+  background: rgb(224, 248, 251);
+}
+.file-item:hover button{
+  opacity: 1;
+}
+
+.delete{
+  pointer-events: none;
+}
+
+#img-name{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 7rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.add-more-file{
+  margin: 0.5rem;
+  transition: 0.3s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inp-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  border: 1px dashed rgb(195, 193, 193);
+  border-width: 0.15rem;
+  width: 9rem;
+  height: 9rem;
+  margin: auto;
+  font-size: large;
+}
+
+#inp{
+  opacity: 0;
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+#convertBtn{
+  display: none;
+  margin-top: 7px;
+  cursor: pointer;
+  border-radius: 18px;
+  padding: 8px;
+  font-size: 1.2em;
+  background-color: #28a745;
+  border: 2px solid #1f8036;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-size: large;
+}
+
+#convertBtn:hover{
+  box-shadow: 0 0.7em 0.5em -0.4em #042e0d;
+  transform: scale(0.95);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media(max-width:500px){
+  .inp-container{
+    width: 6rem;
+    height: 6rem;
+    font-size: 8px;
+  }
+  #upload-file{
+    height: 6rem;
+    width: 6rem;
+  }
+  #img{
+    max-width: 6rem;
+    max-height: 8rem;
+  }
+  .inp-cont,#inp{
+    height: 7rem;
+    width: 7rem;
+  }
 }
