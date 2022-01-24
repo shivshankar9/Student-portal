@@ -15,16 +15,47 @@
 <body>
 	<div id="navbar"></div>
 	<div id="space"></div>
-	<div id="container">
-		<h2>EXTRACT FILES</h2>
-		<ul id="demo-container">
-			<li>
-				<label>
-					<span class="form-label">choose a zip file</span>
+	<!-- <div id="container"> -->
+	<i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+	<section id="container">
+		<label for="addfile" class="custom-file-upload">
+			<i class="fa fa-cloud-upload"></i> Upload zip file
+		</label>
+		<button id="reset"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>
+		<input type="file" id="addfile" accept="application/zip">
+		<br>
+		<label>
+			<span class="form-label">download uncompressed files</span>
+			<ul id="file-list" class="empty">
+			</ul>
+		</label>
+
+		<!-- <label for="addfile" class="custom-file-upload" id="addfilelab">
+			<i class="fa fa-cloud-upload"></i> Upload .doc file
+		</label>
+		<button id="reset"><i class="fas fa-undo"></i> Reset</button>
+		<br>
+		<input type="file" id="addfile"><br>
+		<button id="dwpdf" disabled><i class="fa fa-download" aria-hidden="true"></i> Download
+			pdf</button>
+		<div class="pdf"> </div> -->
+	</section>
+
+	<!-- <section id="cat">
+			<label for="addfile" class="custom-file-upload">
+				<i class="fa fa-cloud-upload"></i> Upload zip file
+			</label>
+			<button id="reset"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>
+			<input type="file" id="addfile" accept="application/zip">
+			<br>
+		</section> -->
+
+	<!-- <span class="form-label">choose a zip file</span>
 					<button id="file-input-button">Open...</button>
-					<input type="file" id="file-input" accept="application/zip" hidden>
-				</label>
-			</li>
+					<input type="file" id="file-input" accept="application/zip" hidden> -->
+	<ul id="demo-container">
+		<div hidden>
 			<li id="encoding-item">
 				<label>
 					<span class="form-label">select the encoding of names</span>
@@ -87,18 +118,19 @@
 					</select>
 				</label>
 			</li>
-			<li>
-				<label>
-					<span class="form-label">download uncompressed files</span>
-					<ul id="file-list" class="empty">
-					</ul>
-				</label>
-			</li>
-		</ul>
+		</div>
+		<li>
+			<label>
+				<span class="form-label">download uncompressed files</span>
+				<ul id="file-list" class="empty">
+				</ul>
+			</label>
+		</li>
+	</ul>
 
 	</div>
 	<script type="text/javascript" src="lib/zip.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 
