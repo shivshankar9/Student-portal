@@ -40,6 +40,7 @@
 		reset.addEventListener('click', () => {
 			fileInput.value = "";
 			document.querySelector('#file-list').innerText = "";
+			fileList.style.height = "5vh"
 		})
 
 		async function downloadFile(event) {
@@ -85,6 +86,7 @@
 		}
 
 		async function loadFiles(filenameEncoding) {
+			fileList.style.height = "auto";
 			entries = await model.getEntries(selectedFile, { filenameEncoding });
 			if (entries && entries.length) {
 				fileList.classList.remove("empty");
@@ -102,15 +104,16 @@
 			const newFileList = fileList.cloneNode();
 			entries.forEach((entry, entryIndex) => {
 				const li = document.createElement("li");
-				const filenameContainer = document.createElement("span");
+				const filenameContainer = document.createElement("div");
 				const filename = document.createElement("a");
 				filenameContainer.classList.add("filename-container");
 				li.appendChild(filenameContainer);
 				filename.classList.add("filename");
 				filename.dataset.entryIndex = entryIndex;
 				filename.textContent = filename.title = entry.filename;
-				filename.style.textDecoration = "none";
-				filename.style.color = "white";
+				// filename.style.textDecoration = "none";
+				// filename.style.color = "white";
+
 				filename.title = `${entry.filename}\n  Last modification date: ${entry.lastModDate.toLocaleString()}`;
 				if (!entry.directory) {
 					filename.href = "";
