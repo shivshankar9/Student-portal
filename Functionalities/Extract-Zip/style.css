@@ -11,6 +11,9 @@
     background-color: rgba(173, 216, 230, 0.5);
     font-weight: 600;
 }
+.addn{
+  margin-bottom: 25px;
+}
 img {
     width: 90%;
 }
@@ -18,28 +21,13 @@ img {
     padding-bottom: 28px;
     display: none;
 }
-#addfilelab{
-    margin-bottom: 28px;
-}
-#dwpdf{
-    border-radius: 18px;
-    padding: 8px;
-    font-size: 1.2em;
-    background-color: #28a745;
-    border: 2px solid #1f8036;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-.dwpdf_hover{
-    box-shadow: 0 0.7em 0.5em -0.4em #042e0d;
-    transform: scale(0.95);
-    cursor: pointer;
-}
+
 .custom-file-upload {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
+    margin-bottom: 8px;
 }
 #reset{
     margin-left: 10%;
@@ -70,10 +58,25 @@ img {
     transform: translate3d(4px, 0, 0);
   }
 }
-/* #space{
-  width: 100%;
-  height: 200px;
+ul{
+  list-style: none;
 }
+
+#file-list{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  overflow-x: hidden;
+  padding: 6px;
+  height: 10vh;
+  /* display: none; */
+}
+
+.filename{
+  color: black;
+  text-decoration: none;
+}
+/* 
 #container{
   margin: 2px auto;
   box-sizing: border-box;
