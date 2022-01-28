@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <link rel="icon" href="../../images/logo_title_bar.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/homepage.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+    <!---stylesheet for animation--->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="loader">
+        <div id="loading-content"></div>
+    </div>
+    <div id="allContent" style="display: none;">
+        <div id="navbar"></div>
+
+        <div class="container">
+            <div class="resizer">
+                <input type="file" class="resizer__file">
+                <a id="dwn-btn" href="" download="image.jpg">Download</a>
+                <div class="dimensions">
+                    <input type="text" class="resizer__input resizer__input--width" value="0">
+                    x
+                    <input type="text" class="resizer__input resizer__input--height" value="0">
+                    <label>
+                        <input type="checkbox" class="resizer__aspect" checked>
+                        Keep Aspect Ratio
+                    </label>
+
+                </div>
+                <div class="preview">
+                    <canvas class="resizer__canvas" width="500" height="500"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+        <!-- Javascript  -->
+        <script src="main.js"></script>
+        <!---scripts for animation--->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 1000
+            });
+        </script>
+
+    </div>
+
+</html>

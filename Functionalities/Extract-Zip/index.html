@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Extract zip</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="../../css/homepage.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="../../images/logo_title_bar.png" type="image/x-icon">
+	<title>Student Portal</title>
+</head>
+
+<body>
+	<div id="navbar"></div>
+	<i class="fa fa-file-archive-o" aria-hidden="true"></i>
+
+	<section id="container">
+		<div class="addn">
+			<label for="addfile" class="custom-file-upload">
+				<i class="fa fa-cloud-upload"></i> Upload zip file
+			</label>
+			<button id="reset"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>
+			<input type="file" id="addfile" accept="application/zip">
+		</div>
+		<div class="form-label">Select files to download</div>
+		<ul id="file-list" class="empty">
+		</ul>
+	</section>
+
+	<div hidden>
+		<li id="encoding-item">
+			<label>
+				<span class="form-label">select the encoding of names</span>
+				<select id="encoding-input" disabled>
+					<option>utf-8</option>
+					<option>cp437</option>
+					<option>ibm866</option>
+					<option>iso-8859-2</option>
+					<option>iso-8859-3</option>
+					<option>iso-8859-4</option>
+					<option>iso-8859-5</option>
+					<option>iso-8859-6</option>
+					<option>iso-8859-7</option>
+					<option>iso-8859-8</option>
+					<option>iso-8859-10</option>
+					<option>iso-8859-13</option>
+					<option>iso-8859-14</option>
+					<option>iso-8859-15</option>
+					<option>iso-8859-16</option>
+					<option>koi8-r</option>
+					<option>koi8-u</option>
+					<option>macintosh</option>
+					<option>windows-874</option>
+					<option>windows-1250</option>
+					<option>windows-1251</option>
+					<option>windows-1252</option>
+					<option>windows-1253</option>
+					<option>windows-1254</option>
+					<option>windows-1255</option>
+					<option>windows-1256</option>
+					<option>windows-1257</option>
+					<option>windows-1258</option>
+					<option>x-mac-cyrillic</option>
+					<option>gbk</option>
+					<option>gb18030</option>
+					<option>big5</option>
+					<option>euc-jp</option>
+					<option>iso-2022-jp</option>
+					<option>shift-jis</option>
+					<option>euc-kr</option>
+					<option>utf-16be</option>
+					<option>utf-16le</option>
+					<option>x-user-defined</option>
+				</select>
+			</label>
+		</li>
+		<li>
+			<label hidden>
+				<span class="form-label">set the password</span>
+				<input type="password" id="password-input" value="" disabled>
+			</label>
+		</li>
+		<li>
+			<label>
+				<span class="form-label">choose inflate implementation</span>
+				<select id="inflate-implementation-input">
+					<option>zip.js</option>
+					<option>fflate</option>
+					<option>pako</option>
+				</select>
+			</label>
+		</li>
+		<li>
+			<label>
+				<span class="form-label">download uncompressed files</span>
+				<ul id="file-list" class="empty">
+				</ul>
+			</label>
+		</li>
+
+	</div>
+	<script type="text/javascript" src="lib/zip.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
