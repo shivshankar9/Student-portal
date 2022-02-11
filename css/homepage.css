@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -6,34 +6,54 @@
 }
 
 body {
-    min-height: 100vh;
-    font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
 /* animation */
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes rotateimg {
@@ -48,23 +68,21 @@ body {
   }
 }
 
-
 /* about section*/
-  #about-section {
-    text-align: center;
-    font-size: 3rem;
-    color: #8A39E1;
-    padding: 2rem 7rem;
-  }
-  
-  .about-content {
-    padding: 10px;
-    margin: 50px;
-    font-size: 30px;
-    border-radius: 5px;
-    font-family: sans-serif;
-    
-  }
+#about-section {
+  text-align: center;
+  font-size: 3rem;
+  color: #8a39e1;
+  padding: 2rem 7rem;
+}
+
+.about-content {
+  padding: 10px;
+  margin: 50px;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
 
 #loader {
   height: 100vh;
@@ -100,7 +118,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #8A39E1;
+  background-color: #8a39e1;
   color: aliceblue;
   z-index: 5;
   padding: 3px;
@@ -118,7 +136,7 @@ nav {
   letter-spacing: 2px;
   margin: 1rem 0.5rem;
 }
-.nav-links {  
+.nav-links {
   transition: all 0.3s ease;
 }
 .nav-links ul {
@@ -136,18 +154,18 @@ nav {
   text-decoration: none;
   padding: inherit;
   font-weight: 600;
-  font-size: 1rem;  
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 li .active {
-  color: #8A39E1;
+  color: #8a39e1;
   background-color: #fff;
   border: 4px;
   border-radius: 50px;
 }
 nav a:hover {
   background-color: #fff;
-  color: #8A39E1;  
+  color: #8a39e1;
   border: 4px;
   border-radius: 50px;
 }
@@ -174,46 +192,44 @@ header {
   justify-content: center;
   flex-direction: column;
   animation: fadeIn 0.8s 0.2s forwards ease-in-out;
-
 }
 header h1 {
- color: rgb(230, 243, 248);
+  color: rgb(230, 243, 248);
   font-size: 6.5rem;
-  
 }
 
 main button {
   border: none;
 }
 
-.home{
+.home {
   display: flex;
   background: url("./images/bg.png") no-repeat;
   background-size: cover;
   /* background-color: #90E0EF ; */
-  height: 100vh;  
+  height: 100vh;
   color: #fff;
-  min-height: 500px ;
-  font-family: 'Ubuntu', sans-serif;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
 }
-.home .max-width{
+.home .max-width {
   margin: auto 0 auto 40px;
 }
 
-.toolsicon{
- animation: rotateimg 1s 1s 2 forwards ease-in;
+.toolsicon {
+  animation: rotateimg 1s 1s 2 forwards ease-in;
 }
-main.tools-heading{
-     border:  2px;
-     border-radius: 3px;
-     border-color: whitesmoke;
-     padding: 2px;
-   }
+main.tools-heading {
+  border: 2px;
+  border-radius: 3px;
+  border-color: whitesmoke;
+  padding: 2px;
+}
 
 main h2 {
   text-align: center;
   font-size: 4rem;
-  color: #8A39E1;
+  color: #8a39e1;
   padding: 2rem 7rem;
 }
 
@@ -242,25 +258,26 @@ main .row {
   /* position: relative; */
 }
 main .row a {
-    text-decoration: none;
-    color:#8A39E1;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    font-weight: 700;
-    top: 50vh;
-    transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  color: #8a39e1;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 700;
+  top: 50vh;
+  transition: all 0.5s ease-in-out;
 }
 
 main .row:hover {
   height: 38vh;
-  width: 37vw;  
-  background-color: #8A39E1;
+  width: 37vw;
+  background-color: #8a39e1;
+  /* border: 2px solid white; */
 }
 
-main .row:hover a{
+main .row:hover a {
   font-size: 3rem;
-  color:#fff;
+  color: #fff;
 }
 
 .logo {
@@ -276,8 +293,6 @@ main button {
   background-color: transparent;
 }
 
-
-
 .row:hover {
   cursor: pointer;
 }
@@ -286,15 +301,15 @@ main button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #8A39E1;
+  color: #8a39e1;
 }
 
 .tools-img {
   width: 20%;
 }
 
-.resize-img{
-  width:50px;
+.resize-img {
+  width: 50px;
   height: 50px;
 }
 
@@ -358,14 +373,14 @@ main button {
   margin-top: 10px;
 }
 .crossbtn {
-  width:30px;
-  height:30px;
+  width: 30px;
+  height: 30px;
   margin-top: 10px;
-  background-color:#152a79;
-  color:white;
+  background-color: #152a79;
+  color: white;
 }
-.crossbtn:hover{
-  background-color:#2d418b;
+.crossbtn:hover {
+  background-color: #2d418b;
   color: solid black;
   cursor: pointer;
 }
@@ -425,16 +440,16 @@ input[type="text"] {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   word-break: break-all;
 }
-footer{
-    background-color: #8A39E1;
-  }
-  footer h3{
-    font-size: 20px;
-    color: white;
-    padding: 10px;
-    margin: 2px;
-    text-align: center;
-  }
+footer {
+  background-color: #8a39e1;
+}
+footer h3 {
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  margin: 2px;
+  text-align: center;
+}
 .submit:hover {
   transform: scale(1.2);
 }
@@ -583,11 +598,10 @@ footer{
   }
 }
 
-
 /* footer  */
 
 footer {
-  background-color: #8A39E1;
+  background-color: #8a39e1;
   text-align: center;
   padding: 1rem;
   font-size: 16px;
@@ -598,23 +612,22 @@ footer p {
   color: #eee;
 }
 
-footer div i{
+footer div i {
   font-weight: 400;
   font-size: 1.8rem;
   color: #dcdcdc;
   padding: 5px 10px;
   transition: all 0.5s;
-
 }
 
-footer div i:hover{
+footer div i:hover {
   font-weight: 400;
   font-size: 2rem;
-  color: #03045E;
+  color: #03045e;
 }
 
 footer .author {
-  background-color: #8A39E1;
+  background-color: #8a39e1;
   font-size: 0.7rem;
   margin: -1rem;
   padding: 1rem;
@@ -622,10 +635,10 @@ footer .author {
 }
 
 footer p a {
-  color: #03045E;
+  color: #03045e;
   text-decoration: none;
 }
 
-.red-heart{
+.red-heart {
   color: red;
 }
