@@ -9,7 +9,9 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
 }
-
+html{
+  scroll-behavior:smooth;
+}
 /* animation */
 @keyframes fadeIn {
   0% {
@@ -94,10 +96,9 @@ body {
 #loading-content {
   width: 5rem;
   height: 5rem;
-  border-radius: 50%;
-  background-color: #152a79;
+  border-radius: 100%;
   border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #8A39E1;
   animation: loadContent 500ms linear infinite;
 }
 
