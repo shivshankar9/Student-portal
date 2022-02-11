@@ -243,6 +243,38 @@ main button {
 .home .max-width {
   margin: auto 0 auto 40px;
 }
+.home .home-content .text-1{
+  font-size: 27px;
+}
+.home .home-content .text-2{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3{
+  font-size: 30px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span{
+  color: #8A39E1;
+  font-weight: 500;
+}
+.home .home-content a {
+  text-decoration: none;
+  display: inline-block;
+  background: #8A39E1;
+  color: #fff;
+  font-size: 23px;
+  padding: 10px 32px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #8A39E1;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+ color: #8A39E1; 
+ background: none;
+}
 
 .toolsicon {
   animation: rotateimg 1s 1s 2 forwards ease-in;
