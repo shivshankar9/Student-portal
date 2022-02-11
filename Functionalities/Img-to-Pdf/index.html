@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/pdf-lib"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    <link rel="stylesheet" href="../../css/homepage.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../../images/logo_title_bar.png" type="image/x-icon">
+    <title>Student Portal</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main>
+        <div id="space"></div>
+        <div class="input-page" id="input-page">
+            <div class="add-more-files" id="add-more-files">
+                <div class="inp-container">
+                    <input type="file" id="upload-file" onChange={encodeImageFileAsURL(this)} multiple
+                        accept="image/*" />
+                    <h4 class="drop">
+                        DRAG & DROP OR
+                    </h4>
+                    <p>
+                        <i class="fa fa-file-image-o fa-4x img-icon"></i>
+
+                    </p>
+                    <label htmlFor="upload-file" id="custom-file">CHOOSE FILES</label>
+                </div>
+            </div>
+            <div class="pdf-page" id="pdf-page">
+                <div class="create-pdf" id="create-pdf">
+
+                </div>
+                <button id="convertBtn" onclick="embedImages()"><i class="fa fa-download" aria-hidden="true"></i>
+                    Download pdf</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
