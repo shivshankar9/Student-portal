@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: #111111;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
 }
@@ -79,6 +80,7 @@ html{
 }
 
 .about-content {
+  color: white;
   padding: 10px;
   margin: 50px;
   font-size: 30px;
@@ -226,11 +228,12 @@ header h1 {
 main button {
   border: none;
 }
-
+.max-width{
+  background-image: url("./images/bg.png") no-repeat;
+  background-size: cover;
+}
 .home {
   display: flex;
-  background: url("./images/bg.png") no-repeat;
-  background-size: cover;
   /* background-color: #90E0EF ; */
   height: 100vh;
   color: #fff;
@@ -271,13 +274,13 @@ main .row {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px 0 #4c4c4c, 0 6px 20px 0 #4c4c4c;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 10px 20px;
   margin: 20px 0;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 30vh;
   width: 35vw;
-  background-color: white;
+  background-color: #222;
   transition: all 0.5s ease-in-out;
   /* top: 550px; */
   /* position: relative; */
