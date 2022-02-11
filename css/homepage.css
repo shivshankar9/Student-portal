@@ -346,11 +346,12 @@ main button {
   outline: none;
   cursor: pointer;
 }
+#float img{
+  height: 50px;
+  width: 50px;
+}
 #section_chatbot {
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-  padding: 0 1rem;
+  margin: 0;
 }
 .float {
   position: fixed;
