@@ -85,7 +85,29 @@ html{
   border-radius: 5px;
   font-family: sans-serif;
 }
-
+.about-content p{
+  margin-bottom: 30px;
+}
+.mail{
+  background-color: #8A39E1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+.mail a{
+  color: white;
+  text-decoration: none;
+}
+.mail:hover{
+  background-color: #8A39E1;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 30px;
+  padding: 12px 22px;
+  border-radius: 6px;
+}
 #loader {
   height: 100vh;
   display: flex;
