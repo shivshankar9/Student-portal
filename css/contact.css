@@ -4,51 +4,57 @@
     align-items: center;
     width: 100%;
     margin-top: 10%;
+    margin-bottom: 100px;
 }
-
 .contactme {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #9d9fa0a9;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #252525;
-    border-radius: 62px;
+    background-color: #222222;
+    color: #f2f2f2;
+    border-radius: 10px;
     width: 50%;
     text-align: center;
 }
-
 body {
-    background-color: #252525;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #111111;
+    font-family: "Inter", sans-serif;
 }
-
 .content1 {
-    background-color: yellow;
+    background-color:#222;
     width: 100%;
     text-align: center;
-    border-top-left-radius: 62px;
-    border-top-right-radius: 62px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
 .contactme h2 {
-    font-size: 2.9em;
+    font-size: 2em;
     position: relative;
-    font-family: "Source Sans Pro", sans-serif;
+    padding: 20px;
 }
-
-.contactme input {
+.contactme .content input, .mesg {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Inter";
     padding: 10px;
+    padding-left: 30px;
     margin-bottom: 10px;
-    border-radius: 23px;
-    width: 82%;
-    background: black;
-    color: yellow;
-    border: 2px solid yellow;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    width: 80%;
+    background: #111111;
+    color: #fff;
 }
-
+.mesg{
+    resize: none;
+    padding-top: 20px;
+}
+#email{    
+    padding-top:20px;
+    padding-bottom:20px;
+}
 .content {
     padding: 2rem;
     justify-content: center;
@@ -57,24 +63,23 @@ body {
     max-height: fit-content;
     width: 60%;
 }
-
 #contactsubmit {
-    margin-top: 1em;
+    margin-top: 1.5em;
     border: none;
-    border-radius: 20px;
-    background-color: yellow;
-    color: black;
-    font-family: "Source Sans Pro", sans-serif;
-    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #8A39E1;
+    background-color: #8A39E1;
+    color: white;
+    font-size: 1rem;
+    padding: 15px 30px;
+    font-weight: 600;
     text-align: center;
-    width: 50%;
     cursor: pointer;
-    transition: 1s;
+    transition: all 0.3s ease;
 }
-
 #contactsubmit:hover {
-    background-color: black;
-    color: yellow;
+    background: none;
+    color: #8A39E1;
 }
  @media screen and (max-width: 600px) {
         #contactsubmit {
