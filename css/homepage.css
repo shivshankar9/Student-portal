@@ -228,10 +228,6 @@ header h1 {
 main button {
   border: none;
 }
-.max-width{
-  background-image: url("./images/bg.png") no-repeat;
-  background-size: cover;
-}
 .home {
   display: flex;
   /* background-color: #90E0EF ; */
@@ -275,7 +271,15 @@ main button {
  color: #8A39E1; 
  background: none;
 }
-
+.img-home img{
+  margin-top: 130px;
+  margin-left: 100px;
+  height: 400px;
+  width: 400px;
+}
+.img-home , .max-width{
+  display: inline;
+}
 .toolsicon {
   animation: rotateimg 1s 1s 2 forwards ease-in;
 }
