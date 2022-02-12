@@ -1,5 +1,4 @@
 /* globals zip, document, URL, MouseEvent, AbortController, alert */
-
 (() => {
 
 	const INFLATE_IMPLEMENTATIONS = {
@@ -22,11 +21,10 @@
 	})();
 
 	(() => {
-
+		var reset = document.querySelector('#reset');
 		const appContainer = document.getElementById("container");
-		const fileInput = document.getElementById("file-input");
+		const fileInput = document.getElementById("addfile");
 		const encodingInput = document.getElementById("encoding-input");
-		const fileInputButton = document.getElementById("file-input-button");
 		const passwordInput = document.getElementById("password-input");
 		const inflateImplementationInput = document.getElementById("inflate-implementation-input");
 		let fileList = document.getElementById("file-list");
@@ -37,8 +35,13 @@
 		encodingInput.onchange = selectEncoding;
 		inflateImplementationInput.onchange = selectInflateImplementation;
 		appContainer.onclick = downloadFile;
-		fileInputButton.onclick = () => fileInput.dispatchEvent(new MouseEvent("click"));
 		selectInflateImplementation();
+
+		reset.addEventListener('click', () => {
+			fileInput.value = "";
+			document.querySelector('#file-list').innerText = "";
+			fileList.style.height = "5vh"
+		})
 
 		async function downloadFile(event) {
 			const target = event.target;
@@ -58,14 +61,12 @@
 
 		async function selectFile() {
 			try {
-				fileInputButton.disabled = true;
 				encodingInput.disabled = true;
 				selectedFile = fileInput.files[0];
 				await loadFiles();
 			} catch (error) {
 				alert(error);
 			} finally {
-				fileInputButton.disabled = false;
 				fileInput.value = "";
 			}
 		}
@@ -73,12 +74,9 @@
 		async function selectEncoding() {
 			try {
 				encodingInput.disabled = true;
-				fileInputButton.disabled = true;
 				await loadFiles(encodingInput.value);
 			} catch (error) {
 				alert(error);
-			} finally {
-				fileInputButton.disabled = false;
 			}
 		}
 
@@ -88,6 +86,7 @@
 		}
 
 		async function loadFiles(filenameEncoding) {
+			fileList.style.height = "auto";
 			entries = await model.getEntries(selectedFile, { filenameEncoding });
 			if (entries && entries.length) {
 				fileList.classList.remove("empty");
@@ -105,15 +104,16 @@
 			const newFileList = fileList.cloneNode();
 			entries.forEach((entry, entryIndex) => {
 				const li = document.createElement("li");
-				const filenameContainer = document.createElement("span");
+				const filenameContainer = document.createElement("div");
 				const filename = document.createElement("a");
 				filenameContainer.classList.add("filename-container");
 				li.appendChild(filenameContainer);
 				filename.classList.add("filename");
 				filename.dataset.entryIndex = entryIndex;
 				filename.textContent = filename.title = entry.filename;
-                filename.style.textDecoration="none";
-                filename.style.color="white";
+				// filename.style.textDecoration = "none";
+				// filename.style.color = "white";
+
 				filename.title = `${entry.filename}\n  Last modification date: ${entry.lastModDate.toLocaleString()}`;
 				if (!entry.directory) {
 					filename.href = "";
@@ -124,6 +124,7 @@
 			});
 			fileList.replaceWith(newFileList);
 			fileList = newFileList;
+
 		}
 
 		async function download(entry, li, a) {
@@ -147,7 +148,7 @@
 						},
 						signal
 					});
-                    
+
 					a.href = blobURL;
 					a.download = entry.filename;
 					const clickEvent = new MouseEvent("click");
