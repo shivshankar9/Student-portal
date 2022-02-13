@@ -2,6 +2,8 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #111;
+  font-family: "Inter";
 }
 
 #space{
@@ -21,20 +23,24 @@ main{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 36%;
-  border: 2px solid black;
+  width: 70%;
+  height: 500px;
   border-radius: 10px;
   padding: 48px 36px;
-  background-color: rgba(173, 216, 230, 0.5);
+  color: #8A39E1;
+  background-color: #222;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   font-weight: 600;
   font-size: 13px;
+  margin-bottom: 100px;
 }
+
 
 .inp-container{
   cursor: pointer;
   text-align: center;
-  height: 12rem;
-  width: 12rem;
+  height: 14rem;
+  width: 14rem;
   border-radius: 50%;
   border: 1px dashed rgb(195, 193, 193);
   margin: auto;
@@ -42,8 +48,33 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.5s ease;
 }
-
+.inp-container:hover{
+  height: 16rem;
+  width: 16rem;
+}
+.drop{
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+#custom-file{
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.img-icon{
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+.inp-container:hover .drop, .inp-container:hover  #custom-file {
+  font-size: 1.2rem ;
+}
+.inp-container:hover .img-icon{
+  padding-bottom: 20px;
+}
 #upload-file{
   opacity: 0;
   display: block;
@@ -51,10 +82,6 @@ main{
   width: 12rem;
   position: absolute;
   cursor: pointer;
-}
-
-.img-icon{
-  padding: 5px;
 }
 
 #pdf-page{
@@ -79,8 +106,16 @@ main{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s all ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.377) 0px 3px 8px;
+  background-color: #8A39E1;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.5s ease;
+}
+.file-item:hover {
+ background-color: #fff;
+  color: #8A39E1;
+  padding: 0.3rem 1.3rem;
 }
 
 .modify button{
@@ -92,24 +127,26 @@ main{
   position: relative;
   max-width: 7rem;
   max-height: 9rem;
-  background: white;
+  background: black;
   overflow: hidden;
   box-sizing: border-box;
   border: 0.1rem solid rgb(223, 222, 222);
 }
 
 .file-item button{
-  margin: 0 0.2rem;
+  margin: 0.5rem 0.5rem;
   background: none;
   border: none;
   outline: none;
   font-size: 1.2rem;
-  transition: 0.3s all ease-in-out;
   opacity: 0;
   padding: 0.3rem 0.5rem;
+  color: #8A39E1;
+  transition: all 0.5s ease;
 }
 .file-item button:hover{
-  background: rgb(224, 248, 251);
+  background: #8A39E1;
+  color: #fff;
 }
 .file-item:hover button{
   opacity: 1;
@@ -130,7 +167,6 @@ main{
 
 .add-more-file{
   margin: 0.5rem;
-  transition: 0.3s all ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,24 +200,24 @@ main{
 
 #convertBtn{
   display: none;
-  margin-top: 7px;
+  margin-top: 50px;
   cursor: pointer;
-  border-radius: 18px;
-  padding: 8px;
+  border-radius: 10px;
+  padding: 20px 25px;
   font-size: 1.2em;
-  background-color: #28a745;
-  border: 2px solid #1f8036;
-  transition: all 0.2s;
+  background-color: #8A39E1;
+  color: white;
   cursor: pointer;
   font-size: large;
+  transition: all 0.3s ease;
 }
 
-#convertBtn:hover{
-  box-shadow: 0 0.7em 0.5em -0.4em #042e0d;
-  transform: scale(0.95);
-  cursor: pointer;
-  font-weight: 600;
+#convertBtn:hover{  
+  padding: 25px 30px;
+  color: #8A39E1;
+  background-color: white;
 }
+
 
 @media(max-width:500px){
   .inp-container{
