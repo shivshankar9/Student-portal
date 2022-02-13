@@ -166,7 +166,7 @@ main{
 }
 
 .add-more-file{
-  margin: 0.5rem;
+  margin: 0.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -185,7 +185,13 @@ main{
   width: 9rem;
   height: 9rem;
   margin: auto;
-  font-size: large;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+.inp-cont:hover{
+  width: 11rem;
+  height: 11rem;
+  font-size: 1.4rem;
 }
 
 #inp{
