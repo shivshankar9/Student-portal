@@ -193,7 +193,6 @@ main{
   font-size: 1.2em;
   background-color: #8A39E1;
   color: white;
-  cursor: pointer;
   font-size: large;
   transition: all 0.3s ease;
 }
