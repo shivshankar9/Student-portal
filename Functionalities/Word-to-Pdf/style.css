@@ -42,9 +42,11 @@ img {
     color: #8A39E1;
 }
 .custom-file-upload {
-    border: 1px solid #ccc;
+    border: 2px solid #8A39E1;
+    border-radius: 10px;
     display: inline-block;
-    padding: 6px 12px;
+    padding: 12px 20px;
+    color: #fff;
     cursor: pointer;
 }
 .reset{
