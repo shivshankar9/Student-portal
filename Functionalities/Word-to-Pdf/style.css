@@ -47,16 +47,19 @@ img {
     padding: 6px 12px;
     cursor: pointer;
 }
-#reset{
+.reset{
     margin-left: 10%;
-    border-radius: 18px;
-    padding: 6px;
+    border-radius: 10px;
+    padding: 10px 15px;
     font-size: 1em;
-    background-color: #dc3545;
-    border: 2px solid #880b18;
-    cursor: pointer;
+    background-color: #FF1700;
+    color: #541212;
+    border: none;
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
-#reset:hover {
+.reset_hover {
+  cursor: pointer;
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   perspective: 1000px;
