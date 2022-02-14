@@ -48,32 +48,18 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: all 0.5s ease;
-}
-.inp-container:hover{
-  height: 16rem;
-  width: 16rem;
 }
 .drop{
   font-size: 1rem;
   margin-bottom: 20px;
   margin-top: 20px;
-  transition: all 0.5s ease;
 }
 #custom-file{
   font-size: 1rem;
   margin-bottom: 20px;
-  transition: all 0.5s ease;
 }
 .img-icon{
   padding: 10px;
-  transition: all 0.5s ease;
-}
-.inp-container:hover .drop, .inp-container:hover  #custom-file {
-  font-size: 1.2rem ;
-}
-.inp-container:hover .img-icon{
-  padding-bottom: 20px;
 }
 #upload-file{
   opacity: 0;
@@ -186,12 +172,6 @@ main{
   height: 9rem;
   margin: auto;
   font-size: 1.2rem;
-  transition: all 0.5s ease;
-}
-.inp-cont:hover{
-  width: 11rem;
-  height: 11rem;
-  font-size: 1.4rem;
 }
 
 #inp{
