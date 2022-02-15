@@ -1,6 +1,6 @@
 var addfile = document.querySelector("#addfile");
 var pdf = document.querySelector(".pdf");
-var dwpdf = document.querySelector(".dwpdf");
+var tTpButton = document.querySelector(".dwpdf");
 var reset = document.querySelector(".reset");
 var addfilelab = document.querySelector("#addfilelab");
 
@@ -35,8 +35,8 @@ addfile.addEventListener("change", (e) => {
     };
     reader.readAsArrayBuffer(addfile.files[0]);
     pdf.style.display = "none";
-    dwpdf.disabled = false;
-    dwpdf.style.opacity = "1";
+    tTpButton.disabled = false;
+    tTpButton.style.opacity = "1";
     reset.disabled = false;
     reset.style.opacity = "1";
     if (addfile.value != null) {
@@ -53,23 +53,23 @@ function dwnldpdf() {
   setTimeout(() => {
     pdf.style.display = "none";
   }, 1);
-  dwpdf.classList.remove("dwpdf_hover");
+  tTpButton.classList.remove("dwpdf_hover");
   addfile.value = null;
-  dwpdf.disabled = true;
-  dwpdf.style.opacity = "0.5";
+  tTpButton.disabled = true;
+  tTpButton.style.opacity = "0.5";
   reset.disabled = true;
   reset.style.opacity = "0.5";
   addfilelab.innerHTML = '<i class="fa fa-cloud-upload"></i> Upload .doc file';
   addfilelab.style.pointerEvents = "auto";
 }
 
-dwpdf.addEventListener("click", dwnldpdf);
+tTpButton.addEventListener("click", dwnldpdf);
 
-dwpdf.addEventListener("mouseover", () => {
-  dwpdf.classList.add("dwpdf_hover");
+tTpButton.addEventListener("mouseover", () => {
+  tTpButton.classList.add("dwpdf_hover");
 });
-dwpdf.addEventListener("mouseout", () => {
-  dwpdf.classList.remove("dwpdf_hover");
+tTpButton.addEventListener("mouseout", () => {
+  tTpButton.classList.remove("dwpdf_hover");
 });
 reset.addEventListener("mouseover", () => {
   reset.classList.add("reset_hover");
@@ -80,8 +80,8 @@ reset.addEventListener("mouseout", () => {
 
 reset.addEventListener("click", () => {
   addfile.value = null;
-  dwpdf.disabled = true;
-  dwpdf.style.opacity = "0.5";
+  tTpButton.disabled = true;
+  tTpButton.style.opacity = "0.5";
   reset.disabled = true;
   reset.style.opacity = "0.5";
   addfilelab.innerHTML = '<i class="fa fa-cloud-upload"></i> Upload .doc file';

@@ -1,59 +1,72 @@
-#t2p{
-  margin: 2px auto;
-  box-sizing: border-box;
-  width: 48%;
-  padding: 20px;
+body{
+  font-family: "Inter";
+}  
+.t2p {
+  margin: 120px auto;
+  width: 70%;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
   border-radius: 10px;
-  background-color: rgba(173, 216, 230, 0.5);
+  background-color: #222;
   font-weight: 600;
   text-align: center;
   overflow: hidden;
 }
-#space{
-  width: 100%;
-  height: 200px;
+#filename{
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 400;  
+  width: 80%;
+  padding-left: 20px;
+  outline: 2px solid #8a39e1;
 }
-#txtarea{
-  outline: none;
+#txtarea {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 500;
+  outline: 2px solid #8a39e1;
   width: 84%;
   max-width: 700px;
-  margin: 20px 0px;
+  margin: 20px 0px 30px 0px;
   height: 150px;
-  padding: 12px;
-  font-size: 18px;
+  padding: 20px;
+  border-radius: 10px;
 }
-#convert{
-    border-radius: 18px;
-    margin: 5px 35px;
-    padding: 8px;
-    font-size: 1.2em;
-    background-color: #28a745;
-    border: 2px solid #1f8036;
-    transition: all 0.2s;
-    cursor: pointer;
-    pointer-events: none;
+.convert {
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  background-color: #8a39e1;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  opacity: 0.5;
+  transition: all 0.3s ease;
 }
-#convert:hover{
-    box-shadow: 0 0.7em 0.5em -0.4em #042e0d;
-    transform: scale(0.95);
-    background-color: #1f8036;
+.convert_hover {
+  cursor: pointer;
+  padding: 20px 25px;
+  font-size: 1.3em;
+  background-color: #fff;
+  color: #8a39e1;
 }
-#reset{
-    border-radius: 18px;
-    padding: 8px;
-    margin: 5px 35px;
-    font-size: 1.2em;
-    background-color: #dc3545;
-    border: 2px solid #af1222;
-    transition: all 0.2s;
-    cursor: pointer;
+.reset {
+  margin:50px auto;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  background-color: #FF1700;
+  color: #541212;
+  border: none;
+  opacity: 0.5;
+  transition: all 0.3s ease;
 }
-#reset:hover{
-    box-shadow: 0 0.7em 0.5em -0.4em #47050c;
-    transform: scale(0.95);
-    background-color:#af1222;
+.reset_hover {
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
 }
