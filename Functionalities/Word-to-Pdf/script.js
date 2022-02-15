@@ -81,6 +81,8 @@ reset.addEventListener("mouseout", () => {
 
 reset.addEventListener("click", () => {
   addfile.value = null;
+  tTpButton.classList.remove("dwpdf_hover");
+  reset.classList.remove("reset_hover");
   tTpButton.disabled = true;
   tTpButton.style.opacity = "0.5";
   reset.disabled = true;
