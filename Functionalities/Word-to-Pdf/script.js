@@ -3,7 +3,7 @@ var pdf = document.querySelector(".pdf");
 var tTpButton = document.querySelector(".dwpdf");
 var reset = document.querySelector(".reset");
 var addfilelab = document.querySelector("#addfilelab");
-
+reset.disabled = true;
 var opt = {
   margin: 1,
   pagebreak: { mode: "avoid-all" },
@@ -53,7 +53,8 @@ function dwnldpdf() {
   setTimeout(() => {
     pdf.style.display = "none";
   }, 1);
-  tTpButton.classList.remove("dwpdf_hover");
+  tTpButton.classList.remove("dwpdf_hover");  
+  reset.classList.remove("reset_hover");
   addfile.value = null;
   tTpButton.disabled = true;
   tTpButton.style.opacity = "0.5";

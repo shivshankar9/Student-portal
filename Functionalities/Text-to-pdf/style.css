@@ -60,13 +60,18 @@ body{
   font-size: 1.2em;
   background-color: #FF1700;
   color: #541212;
+  border: 2px solid #FF1700;
+  border-radius: 10px;  
   border: none;
   opacity: 0.5;
   transition: all 0.3s ease;
 }
-.reset_hover {
+.reset_hover{
+  color: #FF1700;
+  background: none;
+  border: 2px solid #FF1700;
+  border-radius: 10px;  
   cursor: pointer;
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  perspective: 1000px;
+  padding: 20px 25px;
+  font-size: 1.3em;
 }

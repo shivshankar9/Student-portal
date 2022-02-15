@@ -1,4 +1,3 @@
-/*==================== GENERATE PDF ====================*/
 // PDF generated area
 var areaCv = document.getElementById("txtarea");
 var tTpButton = document.querySelector(".convert");
@@ -43,36 +42,6 @@ tTpButton.addEventListener("click", () => {
   generateResume();
 });
 
-filename.addEventListener("keyup", () => {
-  if (validate() && filename.value) {
-    document.getElementById("fname").style.color = "#06FF00";
-    document.getElementById("fname").innerHTML = "Valid filename";
-    tTpButton.disabled = checktext();    
-    tTpButton.disabled = true;
-    tTpButton.style.opacity = "0.5";
-    reset.disabled = false;
-    reset.style.opacity = "1";
-    tTpButton.style.pointerEvents = "auto";
-  } else if (filename.value == "") {
-    tTpButton.style.pointerEvents = "none";
-    tTpButton.disabled = true;
-    tTpButton.style.opacity = "0.5";
-    reset.disabled = false;
-    reset.style.opacity = "1";
-    document.getElementById("fname").style.color = "#8a39e1";
-    document.getElementById("fname").innerHTML = "Fill the filename";
-  } else {
-    document.getElementById("fname").style.color = "red";
-    tTpButton.disabled = true;
-    tTpButton.style.opacity = "0.5";
-    reset.disabled = false;
-    reset.style.opacity = "1";
-    document.getElementById("fname").innerHTML =
-      "Invalid filename. filename should contain only letters and numbers";
-    tTpButton.style.pointerEvents = "none";
-  }
-});
-
 // Auto Resize textarea
 const sizeReset = (e) => {
   textarea.style.height = "100px";
@@ -81,25 +50,13 @@ const sizeReset = (e) => {
 };
 
 textarea.addEventListener("keyup", sizeReset);
-textarea.addEventListener("keyup", () => {
-  if (textarea.value) {
-    tTpButton.disabled = checkfilename(); tTpButton.disabled=false;
-    reset.disabled = false;
-    reset.style.opacity = "1";
-    tTpButton.style.opacity = "1";
-    tTpButton.style.pointerEvents = "auto";
-  } else {
-    tTpButton.disabled=true;
-    reset.disabled = true;
-    reset.style.opacity = "0.5";
-    tTpButton.style.opacity = "0.5";
-    tTpButton.style.pointerEvents = "none";
-  }
-});
+
+
 
 reset.addEventListener("click", () => {
   tTpButton.disabled = true;
-  tTpButton.style.opacity = "0.5";
+  tTpButton.style.opacity = "0.5";  
+  reset.classList.remove("reset_hover");
   reset.disabled=true;
   reset.style.opacity="0.5";
   textarea.value = "";
@@ -122,16 +79,8 @@ function validate() {
 //function for checking the filename and to enable download button.
 function checkfilename() {
   if (filename.value) {
-    tTpButton.disabled = true;
-    tTpButton.style.opacity = "0.5";
-    reset.disabled = true;
-    reset.style.opacity = "0.5";
     return false;
   } else {
-      tTpButton.disabled=false;
-    reset.disabled = false;
-    reset.style.opacity = "1";
-    tTpButton.style.opacity = "1";
     return true;
   }
 }
@@ -139,16 +88,59 @@ function checkfilename() {
 //function to check the textarea and to enable the download button.
 function checktext() {
   if (textarea.value) {
-    tTpButton.disabled = true;
-    tTpButton.style.opacity = "0.5";
-    reset.disabled = true;
-    reset.style.opacity = "0.5";
     return false;
   } else {
-    tTpButton.disabled = false;
-    reset.disabled = false;
-    reset.style.opacity = "1";
-    tTpButton.style.opacity = "1";
     return true;
   }
 }
+
+
+
+
+filename.addEventListener("keyup", () => {
+  if (validate() && filename.value) {
+    document.getElementById("fname").style.color = "#06FF00";
+    document.getElementById("fname").innerHTML = "Valid filename";
+    tTpButton.disabled = checktext();    
+    tTpButton.disabled = false;
+    tTpButton.style.opacity = "1";
+    reset.disabled = false;
+    reset.style.opacity = "1";
+    tTpButton.style.pointerEvents = "auto";
+  } else if (filename.value == "") {
+    tTpButton.style.pointerEvents = "none";
+    tTpButton.disabled = true;
+    tTpButton.style.opacity = "0.5";    
+  reset.classList.remove("reset_hover");
+    reset.disabled = true;
+    reset.style.opacity = "0.5";
+    document.getElementById("fname").style.color = "#8a39e1";
+    document.getElementById("fname").innerHTML = "Fill the filename";
+  } else {
+    document.getElementById("fname").style.color = "red";
+    tTpButton.disabled = true;
+    tTpButton.style.opacity = "0.5";
+    reset.disabled = false;
+    reset.style.opacity = "1";
+    document.getElementById("fname").innerHTML =
+      "Invalid filename. filename should contain only letters and numbers";
+    tTpButton.style.pointerEvents = "none";
+  }
+});
+
+textarea.addEventListener("keyup", () => {
+  if (textarea.value) {
+    tTpButton.disabled = checkfilename();   
+    tTpButton.disabled = false;
+    tTpButton.style.opacity = "1";
+    reset.disabled = false;
+    reset.style.opacity = "1";
+    tTpButton.style.pointerEvents = "auto";
+  } else {
+    tTpButton.disabled=true;
+    reset.disabled = true;
+    reset.style.opacity = "0.5";
+    tTpButton.style.opacity = "0.5";
+    tTpButton.style.pointerEvents = "none";
+  }
+});
