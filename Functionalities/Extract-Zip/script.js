@@ -21,7 +21,7 @@
 	})();
 
 	(() => {
-		var reset = document.querySelector('#reset');
+		var reset = document.querySelector('.reset');
 		const appContainer = document.getElementById("container");
 		const fileInput = document.getElementById("addfile");
 		const encodingInput = document.getElementById("encoding-input");
@@ -30,14 +30,17 @@
 		let fileList = document.getElementById("file-list");
 		let entries;
 		let selectedFile;
+		reset.disabled=true;
 		passwordInput.onchange = async () => fileList.querySelectorAll("a[download]").forEach(anchor => anchor.download = "");
-		fileInput.onchange = selectFile;
+		fileInput.onchange = selectFile;	
 		encodingInput.onchange = selectEncoding;
 		inflateImplementationInput.onchange = selectInflateImplementation;
 		appContainer.onclick = downloadFile;
 		selectInflateImplementation();
 
 		reset.addEventListener('click', () => {
+			reset.disabled=true;
+			reset.style.opacity ="0.5";
 			fileInput.value = "";
 			document.querySelector('#file-list').innerText = "";
 			fileList.style.height = "5vh"
@@ -68,6 +71,8 @@
 				alert(error);
 			} finally {
 				fileInput.value = "";
+				reset.disabled=true;
+				reset.style.opacity ="0.5";
 			}
 		}
 
