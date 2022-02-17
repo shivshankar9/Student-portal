@@ -30,7 +30,6 @@
 		let fileList = document.getElementById("file-list");
 		let entries;
 		let selectedFile;
-		reset.disabled=true;
 		passwordInput.onchange = async () => fileList.querySelectorAll("a[download]").forEach(anchor => anchor.download = "");
 		fileInput.onchange = selectFile;	
 		encodingInput.onchange = selectEncoding;
@@ -39,8 +38,6 @@
 		selectInflateImplementation();
 
 		reset.addEventListener('click', () => {
-			reset.disabled=true;
-			reset.style.opacity ="0.5";
 			fileInput.value = "";
 			document.querySelector('#file-list').innerText = "";
 			fileList.style.height = "5vh"
@@ -67,14 +64,10 @@
 				encodingInput.disabled = true;
 				selectedFile = fileInput.files[0];
 				await loadFiles();
-				reset.disabled=false;
-				reset.style.opacity ="1";
 			} catch (error) {
 				alert(error);
 			} finally {
 				fileInput.value = "";
-				reset.disabled=true;
-				reset.style.opacity ="0.5";
 			}
 		}
 
@@ -175,9 +168,3 @@
 	})();
 
 })();
-reset.addEventListener("mouseover", () => {
-	reset.classList.add("reset_hover");
-  });
-  reset.addEventListener("mouseout", () => {
-	reset.classList.remove("reset_hover");
-  });
