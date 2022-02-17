@@ -8,7 +8,9 @@
     border-radius: 10px;
     padding: 40px 100px;
     background-color: #222;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     font-weight: 600;
+    margin-bottom: 100px;
 }
 img {
     width: 90%;
@@ -69,22 +71,24 @@ ul{
   color: #8a39e1;
   border-radius: 18px;
   overflow-x: hidden;
-  padding: 6px;
+  padding: 10px;
   height: 5vh;
   margin-bottom: 60px;
 }
 
 .filename{
-  color: black;
+  width: 100%;
+  color: #8a39e1;
   text-decoration: none;
   display: block;
   font-weight: 400;
-  padding: 6px;
-  border-radius: 8px;
+  padding: 10px auto 10px 20px;
   text-align: left;
+  transition: all 0.3s ease;
 }
 .filename:hover{
-  background-color: #5cb85c;
+  background-color: #8a39e1;
+  color: white;
   font-weight: 600;
 }
 .form-label{

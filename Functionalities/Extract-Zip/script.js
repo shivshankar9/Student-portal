@@ -67,6 +67,8 @@
 				encodingInput.disabled = true;
 				selectedFile = fileInput.files[0];
 				await loadFiles();
+				reset.disabled=false;
+				reset.style.opacity ="1";
 			} catch (error) {
 				alert(error);
 			} finally {
@@ -173,3 +175,9 @@
 	})();
 
 })();
+reset.addEventListener("mouseover", () => {
+	reset.classList.add("reset_hover");
+  });
+  reset.addEventListener("mouseout", () => {
+	reset.classList.remove("reset_hover");
+  });
