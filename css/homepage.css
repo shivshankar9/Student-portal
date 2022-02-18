@@ -9,6 +9,7 @@ body {
   background-color: #111111;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden
 }
 html{
   scroll-behavior:smooth;
