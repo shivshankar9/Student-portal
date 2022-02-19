@@ -3,17 +3,19 @@ body{
   color: white;
 }
 .container {
+  padding: 100px;
+  border-radius: 10px;
+  background-color: #222;
   text-align: center;
-  padding: 0px 10px;
-  padding-top: 100px;
+  margin: 110px 50px 100px 50px;
 }
 
 #dwn-btn {
   font-weight: 700;
   text-decoration: none;
   padding: 12px 22px;
-  background-color: tomato;
-  border: 2px solid tomato;
+  background-color: #F92F60;
+  border: 2px solid #F92F60;
   color: white;
   border-radius: 10px;
   display: none;
@@ -22,25 +24,27 @@ body{
 #dwn-btn:hover{
   padding: 15px 25px;
   background: none;
-  color: tomato;
+  color: #F92F60;
 }
 
 .dimensions {
-  display: flex;
-  margin: 10px 0px;
-  align-items: center;
+  margin: 30px auto 50px auto;
+  text-align: center;
 }
 
 .dimensions input {
+  font-weight: 700;
+  color: #8A39E1;
   width: 40px;
   height: 20px;
 }
 
 .preview {
   margin: auto;
-  width: 98%;
+  width: 70%;
   max-height: 600px;
   display: flex;
+  text-align: center;
   align-items: center;
   max-width: 1200px;
   overflow: auto;
