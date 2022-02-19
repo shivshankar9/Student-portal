@@ -1,34 +1,47 @@
-    .container {
-      padding: 0px 10px;
-      padding-top: 100px;
+body{
+  font-family: "Inter";
+  color: white;
+}
+.container {
+  text-align: center;
+  padding: 0px 10px;
+  padding-top: 100px;
+}
 
-    }
+#dwn-btn {
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 22px;
+  background-color: tomato;
+  border: 2px solid tomato;
+  color: white;
+  border-radius: 10px;
+  display: none;
+  transition: all 0.3s ease;
+}
+#dwn-btn:hover{
+  padding: 15px 25px;
+  background: none;
+  color: tomato;
+}
 
-    #dwn-btn {
-      padding: 10px 20px;
-      background-color: tomato;
-      color: white;
-      border-radius: 10px;
-      display: none;
-    }
+.dimensions {
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+}
 
-    .dimensions {
-      display: flex;
-      margin: 10px 0px;
-      align-items: center;
-    }
+.dimensions input {
+  width: 40px;
+  height: 20px;
+}
 
-    .dimensions input {
-      width: 40px;
-      height: 20px;
-    }
-
-    .preview {
-      margin: auto;
-      width: 98%;
-      max-height: 600px;
-      display: flex;
-      align-items: center;
-      max-width: 1200px;
-      overflow: auto;
-    }
+.preview {
+  margin: auto;
+  width: 98%;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  overflow: auto;
+}
