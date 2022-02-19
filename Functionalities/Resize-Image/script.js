@@ -63,7 +63,7 @@ function resize(width, height) {
     widthInput.value = Math.floor(width);
     heightInput.value = Math.floor(height);
     canvasCtx.drawImage(activeImage, 0, 0, Math.floor(width), Math.floor(height));
-    downloadbtn.style.display = "inline-block";    
+    downloadbtn.style.display = "inline-block";
     img.style.display="block";
     let dataurl = canvas.toDataURL(activeImage.type);
     downloadbtn.href = dataurl;
