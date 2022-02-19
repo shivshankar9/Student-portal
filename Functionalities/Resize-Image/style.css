@@ -7,22 +7,51 @@ body{
   border-radius: 10px;
   background-color: #222;
   text-align: center;
-  margin: 110px 50px 100px 50px;
+  margin: 110px 50px 70px 50px;
+}
+input{
+  text-align: center;
+}
+.resizer__file{
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #8A39E1;
+}
+::-webkit-file-upload-button {
+  font-family: "Inter";
+  background: #fff;
+  color: #8A39E1;
+  padding: 8px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  line-height: 1.5;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
 }
 
 #dwn-btn {
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
-  padding: 12px 22px;
+  padding: 20px 30px;
   background-color: #F92F60;
   border: 2px solid #F92F60;
   color: white;
-  border-radius: 10px;
+  border-radius: 6px;
   display: none;
   transition: all 0.3s ease;
 }
 #dwn-btn:hover{
-  padding: 15px 25px;
   background: none;
   color: #F92F60;
 }
