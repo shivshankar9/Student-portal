@@ -1,34 +1,80 @@
-    .container {
-      padding: 0px 10px;
-      padding-top: 100px;
+body{
+  font-family: "Inter";
+  color: white;
+}
+.container {
+  padding: 100px;
+  border-radius: 10px;
+  background-color: #222;
+  text-align: center;
+  margin: 110px 50px 70px 50px;
+}
+input{
+  text-align: center;
+}
+.resizer__file{
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #8A39E1;
+}
+::-webkit-file-upload-button {
+  font-family: "Inter";
+  background: #fff;
+  color: #8A39E1;
+  padding: 8px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  line-height: 1.5;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+}
 
-    }
+#dwn-btn {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px 30px;
+  background-color: #F92F60;
+  border: 2px solid #F92F60;
+  color: white;
+  border-radius: 6px;
+  display: none;
+  transition: all 0.3s ease;
+}
+#dwn-btn:hover{
+  background: none;
+  color: #F92F60;
+}
 
-    #dwn-btn {
-      padding: 10px 20px;
-      background-color: tomato;
-      color: white;
-      border-radius: 10px;
-      display: none;
-    }
+.dimensions {
+  margin: 30px auto 50px auto;
+  text-align: center;
+}
 
-    .dimensions {
-      display: flex;
-      margin: 10px 0px;
-      align-items: center;
-    }
+.dimensions input {
+  font-weight: 700;
+  color: #8A39E1;
+  width: 40px;
+  height: 20px;
+}
 
-    .dimensions input {
-      width: 40px;
-      height: 20px;
-    }
-
-    .preview {
-      margin: auto;
-      width: 98%;
-      max-height: 600px;
-      display: flex;
-      align-items: center;
-      max-width: 1200px;
-      overflow: auto;
-    }
+.preview {
+  margin: auto;
+  width: 70%;
+  max-height: 600px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  max-width: 1200px;
+  overflow: auto;
+}

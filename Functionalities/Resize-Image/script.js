@@ -5,6 +5,7 @@ const aspectToggle = document.querySelector(".resizer__aspect");
 const canvas = document.querySelector(".resizer__canvas");
 const canvasCtx = canvas.getContext("2d");
 const downloadbtn = document.querySelector("#dwn-btn");
+const img = document.querySelector(".preview");
 
 
 downloadbtn.addEventListener("click", function () {
@@ -15,7 +16,6 @@ let activeImage, originalWidthToHeightRatio;
 
 fileInput.addEventListener("change", (e) => {
     const reader = new FileReader();
-
     reader.addEventListener("load", () => {
         openImage(reader.result);
     });
@@ -64,6 +64,7 @@ function resize(width, height) {
     heightInput.value = Math.floor(height);
     canvasCtx.drawImage(activeImage, 0, 0, Math.floor(width), Math.floor(height));
     downloadbtn.style.display = "inline-block";
+    img.style.display="block";
     let dataurl = canvas.toDataURL(activeImage.type);
     downloadbtn.href = dataurl;
 }
