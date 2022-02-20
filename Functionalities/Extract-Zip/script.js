@@ -21,7 +21,7 @@
 	})();
 
 	(() => {
-		var reset = document.querySelector('#reset');
+		var reset = document.querySelector('.reset');
 		const appContainer = document.getElementById("container");
 		const fileInput = document.getElementById("addfile");
 		const encodingInput = document.getElementById("encoding-input");
@@ -31,7 +31,7 @@
 		let entries;
 		let selectedFile;
 		passwordInput.onchange = async () => fileList.querySelectorAll("a[download]").forEach(anchor => anchor.download = "");
-		fileInput.onchange = selectFile;
+		fileInput.onchange = selectFile;	
 		encodingInput.onchange = selectEncoding;
 		inflateImplementationInput.onchange = selectInflateImplementation;
 		appContainer.onclick = downloadFile;

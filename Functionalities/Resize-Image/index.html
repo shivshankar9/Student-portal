@@ -33,15 +33,14 @@
                 <a id="dwn-btn" href="" download="image.jpg">Download</a>
                 <div class="dimensions">
                     <input type="text" class="resizer__input resizer__input--width" value="0">
-                    x
+                    ❌
                     <input type="text" class="resizer__input resizer__input--height" value="0">
-                    <label>
-                        <input type="checkbox" class="resizer__aspect" checked>
-                        Keep Aspect Ratio
-                    </label>
-
+                    <input type="checkbox" class="resizer__aspect" checked style="color: #8A39E1;">
+                    <p style="margin-top: 20px;color: #8A39E1; font-weight: 700;">
+                        Change the size as per your requirement                     
+                    </p>
                 </div>
-                <div class="preview">
+                <div class="preview" style="display: none;">
                     <canvas class="resizer__canvas" width="500" height="500"></canvas>
                 </div>
             </div>

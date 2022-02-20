@@ -9,7 +9,11 @@ body {
   background-color: #111111;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
+ student-portal-shlok1999
   color: #fff;
+
+  overflow-x: hidden
+main
 }
 html{
   scroll-behavior:smooth;
