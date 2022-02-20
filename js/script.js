@@ -14,6 +14,12 @@ navbar.innerHTML = `<nav>
 </div>
 <div class="nav-links">
 <ul>
+    <li> <div class="toggle-switch">
+      <label class="switch">
+        <input id = "lightmode-gen" value="on"  type="checkbox" onclick = "light_mode_activate()">
+        <span class="slider round"></span>
+    </label>
+  </div></li>
     <li><a class="active" href="./index.html#home">Home</a></li>
     <li><a href="./index.html#about-section">About</a></li>
     <li><a href="./index.html#services">Services</a></li>
