@@ -115,15 +115,22 @@
         <a class="float" id="float">
           <img src="./images/chatbot2.png" id="roboImg">
         </a>
-        <!-- <div class="popup" style="width:500px;height:500px;"> -->
+        
         <div class="popup" id="popup">
+          <div class="header-chat">
+          <img src="./images/admin.png" class="avatar" alt="">
+          <span class="name"> Botty Man</span>
+              <button class="crossbtn" onclick="hide()">X</button>
+        </div>
+
+        
           <div class="textarea">
             <div class="roboside">
-              <img src="./images/logo.png" class="avatar" alt="">
+              <img src="./images/admin.png" class="avatar-chat" alt="">
               <span class="robomsg">Hello! How can we help you?</span>
-              <button class="crossbtn" onclick="hide()">X</button>
             </div>
           </div>
+
           <div class="input-area">
             <input type="text" id="msg" placeholder="Yes or No">
             <button type="submit" class="submit">Send</button>

@@ -418,18 +418,19 @@ main button {
   right: 115px;
   height: 400px;
   width: 400px;
-  background-color: #8a39e1;
+  background-color: #fff;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.8rem;
   border-radius: 15px;
-  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 .show {
   display: flex;
   z-index: 1;
 }
 .textarea {
+  padding-bottom: 30px;
   height: 80%;
   overflow-y: auto;
 }
@@ -437,51 +438,77 @@ main button {
   display: flex;
   margin-top: 10px;
 }
+.header-chat{
+  border-radius: 10px;
+  padding: 10px;
+  background: #8a39e1;
+  height: 30px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.name{
+  color: #fff;
+  font-weight: 500;
+  margin-top: 6px;
+  padding-left: 10px;
+}
 .crossbtn {
-  border: none;
+  border: 2px solid #fff;
+  border-radius: 6px;
   width: 30px;
   height: 30px;
-  margin-top: 10px;
-  background-color: #152a79;
-  color: white;
+  margin-left: 220px;
+  background-color: #fff;
+  color: #8A39E1;
+  justify-content: right;
+  transition: all 0.3s ease;
 }
 .crossbtn:hover {
-  background-color: #2d418b;
-  color: solid black;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
   cursor: pointer;
 }
 .avatar {
-  width: 55px;
-  height: 55px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.avatar-chat{
+width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 .roboside .robomsg {
-  background-color: #020225a9;
-  color: white;
+  font-size: 0.7rem;
+  background-color: #dcdcdc;
+  color: #222;
   margin: auto;
   margin-left: 8px;
+  margin-right: 10px;
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .input-area {
+  padding-top: 10px;
   position: relative;
   display: flex;
   justify-content: center;
 }
 input[type="text"] {
+  border: 1px solid #222;
   width: 80%;
-  border: 1px solid rgb(192, 191, 191);
-  font-size: 16px;
-  border-radius: 5px;
+  font-size: 0.6rem;
+  border-radius: 6px;
   padding: 10px;
-  height: 40px;
+  height: 10px;
 }
 
 .submit {
   padding: 0.25rem 0.5rem;
   margin-left: 0.5rem;
-  background-color: #152a79;
+  background-color: #8a39e1;
   color: white;
   display: flex;
   justify-content: center;
@@ -495,14 +522,15 @@ input[type="text"] {
   margin-top: 10px;
 }
 .userActualMsg {
+  font-size: 0.6rem;
+  color: #222;
   display: flex;
   justify-content: flex-end;
   margin: auto;
   margin-right: 8px;
   padding: 10px;
-  background-color: #ddd;
-  border-radius: 25px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  background-color: #dcdcdc;
+  border-radius: 10px;
   word-break: break-all;
 }
 footer {
@@ -521,8 +549,6 @@ footer h3 {
 #roboImg {
   margin-top: 40px;
   margin-left: 20px;
-  width: 50px;
-  height: 50px;
 }
 
 @media only screen and (max-width: 960px) {
