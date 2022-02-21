@@ -522,14 +522,17 @@ input[type="text"] {
 }
 
 .submit {
+  font-weight: 600;
   padding: 0.25rem 0.5rem;
   margin-left: 0.5rem;
   background-color: #8a39e1;
+  border: 2px solid #8a39e1;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 .userSideMsg {
   display: flex;
@@ -562,7 +565,9 @@ footer h3 {
   text-align: center;
 }
 .submit:hover {
-  transform: scale(1.2);
+  border: 2px solid #8a39e1;
+  background: none;
+  color: #8a39e1;
 }
 #roboImg {
   margin-top: 40px;
