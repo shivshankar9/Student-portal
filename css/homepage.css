@@ -9,10 +9,10 @@ body {
   background-color: #111111;
   min-height: 100vh;
   font-family: "Inter", sans-serif;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 /* animation */
 @keyframes fadeIn {
@@ -88,23 +88,23 @@ html{
   border-radius: 5px;
   font-family: sans-serif;
 }
-.about-content p{
+.about-content p {
   margin-bottom: 30px;
 }
-.mail{
-  background-color: #8A39E1;
+.mail {
+  background-color: #8a39e1;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 10px 20px;
   border-radius: 6px;
   transition: all 0.5s ease-in-out;
 }
-.mail a{
+.mail a {
   color: white;
   text-decoration: none;
 }
-.mail:hover{
-  background-color: #8A39E1;
+.mail:hover {
+  background-color: #8a39e1;
   font-size: 2rem;
   font-weight: 600;
   margin-top: 30px;
@@ -123,7 +123,7 @@ html{
   height: 5rem;
   border-radius: 100%;
   border: 16px solid #f3f3f3;
-  border-top: 16px solid #8A39E1;
+  border-top: 16px solid #8a39e1;
   animation: loadContent 500ms linear infinite;
 }
 
@@ -180,7 +180,7 @@ nav {
   text-decoration: none;
   padding: inherit;
   font-weight: 600;
-  font-size: 1rem;  
+  font-size: 1rem;
   border: 4px;
   border-radius: 50px;
   transition: all 1s ease;
@@ -240,45 +240,46 @@ main button {
 .home .max-width {
   margin: auto 0 auto 40px;
 }
-.home .home-content .text-1{
+.home .home-content .text-1 {
   font-size: 27px;
 }
-.home .home-content .text-2{
+.home .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .home-content .text-3{
+.home .home-content .text-3 {
   font-size: 30px;
   margin: 5px 0;
 }
-.home .home-content .text-3 span{
-  color: #8A39E1;
+.home .home-content .text-3 span {
+  color: #8a39e1;
   font-weight: 500;
 }
 .home .home-content a {
   text-decoration: none;
   display: inline-block;
-  background: #8A39E1;
+  background: #8a39e1;
   color: #fff;
   font-size: 23px;
   padding: 10px 32px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #8A39E1;
+  border: 2px solid #8a39e1;
   transition: all 0.3s ease;
 }
-.home .home-content a:hover{
- color: #8A39E1; 
- background: none;
+.home .home-content a:hover {
+  color: #8a39e1;
+  background: none;
 }
-.img-home img{
+.img-home img {
   margin-top: 130px;
   margin-left: 100px;
   height: 400px;
   width: 400px;
 }
-.img-home , .max-width{
+.img-home,
+.max-width {
   display: inline;
 }
 .toolsicon {
@@ -383,7 +384,7 @@ main button {
   outline: none;
   cursor: pointer;
 }
-#float img{
+#float img {
   height: 40px;
   width: 40px;
 }
@@ -425,11 +426,26 @@ main button {
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .show {
   display: flex;
   z-index: 1;
 }
 .textarea {
+  margin: 0;
   padding-bottom: 30px;
   height: 80%;
   overflow-y: auto;
@@ -438,7 +454,7 @@ main button {
   display: flex;
   margin-top: 10px;
 }
-.header-chat{
+.header-chat {
   border-radius: 10px;
   padding: 10px;
   background: #8a39e1;
@@ -446,7 +462,7 @@ main button {
   display: flex;
   margin-bottom: 20px;
 }
-.name{
+.name {
   color: #fff;
   font-weight: 500;
   margin-top: 6px;
@@ -457,9 +473,9 @@ main button {
   border-radius: 6px;
   width: 30px;
   height: 30px;
-  margin-left: 220px;
+  margin-left: 250px;
   background-color: #fff;
-  color: #8A39E1;
+  color: #8a39e1;
   justify-content: right;
   transition: all 0.3s ease;
 }
@@ -474,8 +490,8 @@ main button {
   height: 35px;
   border-radius: 50%;
 }
-.avatar-chat{
-width: 30px;
+.avatar-chat {
+  width: 30px;
   height: 30px;
   border-radius: 50%;
 }
@@ -520,6 +536,7 @@ input[type="text"] {
   justify-content: flex-end;
   align-items: center;
   margin-top: 10px;
+  margin-left: 10px;
 }
 .userActualMsg {
   font-size: 0.6rem;
@@ -528,6 +545,7 @@ input[type="text"] {
   justify-content: flex-end;
   margin: auto;
   margin-right: 8px;
+  margin-left: 10px;
   padding: 10px;
   background-color: #dcdcdc;
   border-radius: 10px;
