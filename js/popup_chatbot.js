@@ -37,7 +37,7 @@ sendMsgBtn.addEventListener('click', ()=>{
     if(questions[userText] && (!arr.includes(userText))){
         let roboText=questions[userText];
         let creatingRoboBlock = `<div class="roboside">
-                                        <img src="./images/chatbot.png" class="avatar" alt="">
+                                        <img src="./images/chatbot2.png" class="avatar" alt="">
                                         <span class="robomsg">${roboText}</span>
                                     </div>`;
         chatbotArea.insertAdjacentHTML("beforeend", creatingRoboBlock);
@@ -77,7 +77,7 @@ sendMsgBtn.addEventListener('click', ()=>{
     }else{
         let roboText="I don't understand you! Please respond as per given texts in chatbox.";
         let creatingRoboBlock = `<div class="roboside">
-                                        <img src="./images/chatbot.png" class="avatar" alt="">
+                                        <img src="./images/chatbot2.png" class="avatar" alt="">
                                         <span class="robomsg">${roboText}</span>
                                     </div>`;
         chatbotArea.insertAdjacentHTML("beforeend", creatingRoboBlock);

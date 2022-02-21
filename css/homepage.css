@@ -384,8 +384,8 @@ main button {
   cursor: pointer;
 }
 #float img{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 #section_chatbot {
   margin: 0;
@@ -397,7 +397,6 @@ main button {
   bottom: 55px;
   right: 55px;
   text-align: center;
-  /* box-shadow: 2px 2px 3px #020225a9; */
   cursor: pointer;
   transition: transform 0.4s;
   z-index: 1;
@@ -410,21 +409,21 @@ main button {
   border-radius: 50px;
 }
 .float:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 .popup {
   display: none;
   position: fixed;
-  bottom: 75px;
+  bottom: 40px;
   right: 115px;
   height: 400px;
   width: 400px;
-  background-color: whitesmoke;
+  background-color: #8a39e1;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.8rem;
-  box-shadow: 5px 5px 5px #020225a9;
   border-radius: 15px;
+  border: 2px solid #fff;
 }
 .show {
   display: flex;
@@ -439,6 +438,7 @@ main button {
   margin-top: 10px;
 }
 .crossbtn {
+  border: none;
   width: 30px;
   height: 30px;
   margin-top: 10px;
@@ -460,7 +460,6 @@ main button {
   color: white;
   margin: auto;
   margin-left: 8px;
-
   padding: 10px;
   border-radius: 25px;
 }
@@ -520,10 +519,10 @@ footer h3 {
   transform: scale(1.2);
 }
 #roboImg {
-  width: 90px;
-  height: 90px;
-  /* border-radius: 50px; */
-  /* border: 2px solid #020225a9; */
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 @media only screen and (max-width: 960px) {
