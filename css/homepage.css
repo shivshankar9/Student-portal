@@ -349,6 +349,7 @@ main .row:hover {
 
 main .row:hover a {
   font-size: 3rem;
+  color: white;
 }
 
 .logo {
