@@ -45,8 +45,6 @@
       </div>
     </section>
   
-
-
     <!-- About section  -->
     <div data-aos="fade-right">
       <div class="tools-heading about-section" id="about-section">
@@ -117,22 +115,30 @@
     <span>
       <section id="section_chatbot">
         <a class="float" id="float">
-          <img src="./images/chatbot.png" id="roboImg">
+          <img src="./images/chatbot2.png" id="roboImg">
         </a>
-        <!-- <div class="popup" style="width:500px;height:500px;"> -->
+        
         <div class="popup" id="popup">
+          <div class="header-chat">
+          <img src="./images/admin.png" class="avatar" alt="">
+          <span class="name"> Shirley </span>
+              <button class="crossbtn" onclick="hide()">X</button>
+        </div>
+
+        
           <div class="textarea">
             <div class="roboside">
-              <img src="./images/logo.png" class="avatar" alt="">
-              <span class="robomsg">Hello! Are you a new Student?</span>
-              <button style="position: fixed;" class="crossbtn" onclick="hide()">X</button>
+              <img src="./images/admin.png" class="avatar-chat" alt="">
+              <span class="robomsg">Hello! How can we help you?</span>
             </div>
           </div>
+
           <div class="input-area">
             <input type="text" id="msg" placeholder="Yes or No">
             <button type="submit" class="submit">Send</button>
           </div>
         </div>
+
       </section>
     </span>
 
