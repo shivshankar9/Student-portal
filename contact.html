@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
-    <link rel="stylesheet" href="./css/homepage.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./css/contact.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="navbar"></div>
-    
-    <section id="contact-section" class="">
-      <div class="contactme">
-        <div class="content1">
-          <h2>Contact us</h2>
-        </div>
-        <div class="content">
-                <input type="text" id="firstname" placeholder="First name" onblur="validatef()" /><span id="fname" style="padding: 2px;"></span>
-                <br />
-                <input type="text" id="lastname" placeholder="Last name" onblur="validatel()" /><span id="lname" style="padding: 2px;"></span>
-                <br />
-                <input type="email" placeholder="xyz@gmail.com" id="email" onblur="validatemail()" /><span id="mail" style="padding: 2px;"></span>
-                <br />
-                <input type="text" placeholder="Subject" id="subject" />
-                <br />
-                <textarea name="mesg" id="mesg" cols="43" placeholder="Your message"rows="10" class="mesg"></textarea>
-                <br />
-                <button id="contactsubmit" onclick="submit()">Submit</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us</title>
+  <link rel="shortcut icon" href="./images/logo.png">
+  <link rel="stylesheet" href="./css/homepage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+  <link href="./css/contact.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <section id="contact-section" class="">
+    <div class="contactme">
+      <div class="content1">
+        <h2>Contact us</h2>
       </div>
-    </section>
-    <script src="./js/script.js"></script>
-    <script src="js/darkmode_toggle.js"></script>
+      <div class="content">
+        <input type="text" id="firstname" placeholder="First name" onblur="validatef()" /><span id="fname"
+          style="padding: 2px;"></span>
+        <br />
+        <input type="text" id="lastname" placeholder="Last name" onblur="validatel()" /><span id="lname"
+          style="padding: 2px;"></span>
+        <br />
+        <input type="email" placeholder="xyz@gmail.com" id="email" onblur="validatemail()" /><span id="mail"
+          style="padding: 2px;"></span>
+        <br />
+        <input type="text" placeholder="Subject" id="subject" />
+        <br />
+        <textarea name="mesg" id="mesg" cols="43" placeholder="Your message" rows="10" class="mesg"></textarea>
+        <br />
+        <button id="contactsubmit" onclick="submit()">Submit</button>
+      </div>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+  <script src="js/darkmode_toggle.js"></script>
 </body>
+
 </html>

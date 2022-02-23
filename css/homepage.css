@@ -97,27 +97,41 @@ html {
   background-color: white;
   color: black;
 }
-.mail{
+/* .mail{
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 5px;
   background-color: #8A39E1;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 6px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
   transition: all 0.5s ease-in-out;
-}
-
+} */
 .mail a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  background: #8A39E1;
+  font-size: 23px;
+  padding: 10px 32px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #8a39e1;
+  transition: all 0.3s ease;
+}
+.mail a:hover {
+  color: #8a39e1;
+  background: none;
+}
+/* .mail a {
   text-decoration: none;
   color: white;
 }
 .mail:hover {
-  background-color: #8a39e1;
-  font-size: 2rem;
-  font-weight: 600;
-  margin-top: 30px;
-  padding: 12px 22px;
-  border-radius: 6px;
-}
+  background-color: #000;
+  border-color: #8A39E1;
+  color: #8A39E1;
+} */
 #loader {
   height: 100vh;
   display: flex;
@@ -279,8 +293,8 @@ main button {
   background: none;
 }
 .img-home img {
-  margin-top: 130px;
-  margin-left: 100px;
+  margin-top: 20vh;
+  margin-left: 18vw;
   height: 400px;
   width: 400px;
 }
@@ -307,10 +321,9 @@ main h2 {
 
 main > .tools-items {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 15vh;
-  margin: 50px auto 0px auto;
   background-color: #111;
 }
 
@@ -341,14 +354,12 @@ main .row a {
 }
 
 main .row:hover {
-  height: 38vh;
-  width: 37vw;
   background-color: #8a39e1;
-  /* border: 2px solid white; */
 }
 
 main .row:hover a {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  color: black;
 }
 
 .logo {
