@@ -13,17 +13,17 @@ navbar.innerHTML = `<nav>
 <span class="bar"></span>
 </div>
 <div class="nav-links">
-<ul>
+<ul id="myDIV">
     <li> <div class="toggle-switch">
       <label class="switch">
         <input id = "lightmode-gen" value="on"  type="checkbox" onclick = "light_mode_activate()">
         <span class="slider round"></span>
     </label>
   </div></li>
-    <li><a class="active" href="./index.html#home">Home</a></li>
-    <li><a href="./index.html#about-section">About</a></li>
-    <li><a href="./index.html#services">Services</a></li>
-    <li><a href="./contact.html">Contact</a></li>
+    <li><a class="btn active" href="./index.html#home">Home</a></li>
+    <li><a class="btn"  href="./index.html#about-section">About</a></li>
+    <li><a class="btn" href="./index.html#services">Services</a></li>
+    <li><a class="btn" href="./contact.html">Contact</a></li>
 </ul>
 </div>
 </nav>`;
@@ -82,4 +82,19 @@ function submit() {
   if (validatef() == false || validatel() == false || validatemail() == false)
     alert("Please enter valid values");
   else alert("Thank you, we will respond to you soon.");
+}
+
+// Get the container element
+var btnContainer = document.getElementById("myDIV");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
