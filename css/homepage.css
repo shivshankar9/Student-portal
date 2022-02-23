@@ -94,8 +94,14 @@ html {
 }
 
 .light-mode{
-  background-color: white;
+  background-color: #F5F8FF;
   color: black;
+}
+.light-mode .tools-items{
+  background-color: #F5F8FF;
+}
+.light-mode .row{
+  background-color: #fff;
 }
 .mail{
   background-color: #8A39E1;
@@ -348,6 +354,7 @@ main .row:hover {
 }
 
 main .row:hover a {
+  color: #fff;
   font-size: 3rem;
 }
 
