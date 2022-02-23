@@ -805,8 +805,7 @@ footer div i {
 
 footer div i:hover {
   font-weight: 400;
-  font-size: 2rem;
-  color: #03045e;
+  color: #FBB31C;
 }
 
 footer .author {
@@ -818,7 +817,8 @@ footer .author {
 }
 
 footer p a {
-  color: #03045e;
+  font-weight: 700;
+  color: #FBB31C;
   text-decoration: none;
 }
 
