@@ -552,8 +552,7 @@ input:checked + .slider:before {
   color: #8a39e1;
   justify-content: right;
   transition: all 0.3s ease;
-  margin-top: 10px;
-  background-color: #152a79;
+  background-color: #fff;
 }
 .crossbtn:hover {
   border: 2px solid #fff;
