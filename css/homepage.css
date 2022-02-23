@@ -293,8 +293,8 @@ main button {
   background: none;
 }
 .img-home img {
-  margin-top: 130px;
-  margin-left: 100px;
+  margin-top: 20vh;
+  margin-left: 18vw;
   height: 400px;
   width: 400px;
 }
