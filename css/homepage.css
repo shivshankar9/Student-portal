@@ -94,19 +94,16 @@ html {
 }
 
 .light-mode{
-  background-color: white;
+  background-color: #F5F8FF;
   color: black;
 }
-/* .mail{
-  padding: 10px;
-  font-size: 30px;
-  border-radius: 5px;
-  background-color: #8A39E1;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: white;
-  transition: all 0.5s ease-in-out;
-} */
+.light-mode .tools-items{
+  background-color: #F5F8FF;
+}
+.light-mode .row{
+  background-color: #fff;
+}
+
 .mail a {
   text-decoration: none;
   display: inline-block;
@@ -167,7 +164,7 @@ nav {
   left: 0;
   background-color: #8a39e1;
   color: aliceblue;
-  z-index: 0;
+  z-index: 999;
   padding: 3px;
 }
 #navlogo {
@@ -204,7 +201,7 @@ nav {
   font-size: 1rem;
   border: 4px;
   border-radius: 50px;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
 }
 li .active {
   color: #8a39e1;
@@ -358,8 +355,8 @@ main .row:hover {
 }
 
 main .row:hover a {
-  font-size: 2.5rem;
-  color: black;
+  color: #fff;
+  font-size: 3rem;
 }
 
 .logo {
@@ -501,11 +498,11 @@ main button {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #FBB31C;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #FBB31C;
 }
 
 input:checked + .slider:before {
@@ -556,8 +553,7 @@ input:checked + .slider:before {
   color: #8a39e1;
   justify-content: right;
   transition: all 0.3s ease;
-  margin-top: 10px;
-  background-color: #152a79;
+  background-color: #fff;
 }
 .crossbtn:hover {
   border: 2px solid #fff;
@@ -816,8 +812,7 @@ footer div i {
 
 footer div i:hover {
   font-weight: 400;
-  font-size: 2rem;
-  color: #03045e;
+  color: #FBB31C;
 }
 
 footer .author {
@@ -829,7 +824,8 @@ footer .author {
 }
 
 footer p a {
-  color: #03045e;
+  font-weight: 700;
+  color: #FBB31C;
   text-decoration: none;
 }
 
