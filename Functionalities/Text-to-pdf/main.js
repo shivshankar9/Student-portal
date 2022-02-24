@@ -19,9 +19,9 @@ navbar.innerHTML = `<nav>
   <input id = "lightmode-gen" value="on"  type="checkbox" onclick = "light_mode_activate()">
   <span class="slider round"></span>
 </label>
-    <li><a class="btn active" href="../../index.html">Home</a></li>
-    <li><a class="btn" href="../../index.html#about-section">About</a></li>
-    <li><a class="btn" href="../../index.html">Services</a></li>
+    <li><a class="btn active" href="../../index.html#home">Home</a></li>
+    <li><a class="btn" href="../../index.html#about">About</a></li>
+    <li><a class="btn" href="../../index.html#service">Services</a></li>
     <li><a class="btn" href="../../contact.html">Contact</a></li>
 </ul>
 </div>
