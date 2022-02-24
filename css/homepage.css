@@ -196,7 +196,7 @@ nav {
   font-size: 1rem;
   border: 4px;
   border-radius: 50px;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
 }
 li .active {
   color: #8a39e1;
