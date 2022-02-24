@@ -159,7 +159,7 @@ nav {
   left: 0;
   background-color: #8a39e1;
   color: aliceblue;
-  z-index: 0;
+  z-index: 999;
   padding: 3px;
 }
 #navlogo {

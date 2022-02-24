@@ -1,103 +1,122 @@
 #contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10%;
-    margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 100px;
 }
 .contactme {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #222222;
-    color: #f2f2f2;
-    border-radius: 10px;
-    width: 50%;
-    text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222222;
+  color: #fff;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
 }
 body {
-    background-color: #111111;
-    font-family: "Inter", sans-serif;
+  background-color: #111111;
+  font-family: "Inter", sans-serif;
 }
 .content1 {
-    background-color:#222;
-    width: 100%;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  background-color: #222;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .contactme h2 {
-    font-size: 2em;
-    position: relative;
-    padding: 20px;
+  font-size: 2em;
+  position: relative;
+  padding: 20px;
 }
-.contactme .content input, .mesg {
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: "Inter";
-    padding: 10px;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 10px;
-    align-items: center;
-    width: 80%;
-    background: #111111;
-    color: #fff;
+.contactme .content input,
+.mesg {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Inter";
+  padding: 30px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  width: 80%;
+  background: #111111;
+  color: #fff;
 }
-.mesg{
-    resize: none;
-    padding-top: 20px;
+.mesg {
+  resize: none;
+  padding-top: 20px;
 }
-#email{    
-    padding-top:20px;
-    padding-bottom:20px;
+#email {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .content {
-    padding: 2rem;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-height: fit-content;
-    width: 80%;
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: fit-content;
+  width: 80%;
 }
 #contactsubmit {
-    margin-top: 1.5em;
-    border: none;
-    border-radius: 10px;
-    border: 2px solid #8A39E1;
-    background-color: #8A39E1;
-    color: white;
-    font-size: 1rem;
-    padding: 15px 30px;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  margin-top: 1.5em;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid #8a39e1;
+  background-color: #8a39e1;
+  color: white;
+  font-size: 1rem;
+  padding: 15px 30px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 #contactsubmit:hover {
-    background: none;
-    color: #8A39E1;
+  background: none;
+  color: #8a39e1;
 }
- @media screen and (max-width: 600px) {
-        #contactsubmit {
-            width: 100%;
-            margin-top: 0;
-        }
-        .contactme {
-            border-radius: 25px;
-        }
-        .content1 {
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-        }
-        .contactme h2 {
-            font-size: 2.2em;
-        }
-        #contact-section {
-            margin-top: 25%;
-        }
-    }
+/* light mode styling  */
+.light-mode {
+  background-color: #F5F8FF;
+}
+.light-mode .contactme {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: #fff;
+}
+.light-mode .contactme .content input,
+.light-mode .mesg {
+  background: none;
+  color: #222;
+  border: 2px solid #EBF1FF;
+}
+.light-mode .content1 {
+  background: #8a39e1;
+}
+
+@media screen and (max-width: 600px) {
+  #contactsubmit {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contactme {
+    border-radius: 25px;
+  }
+  .content1 {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .contactme h2 {
+    font-size: 2.2em;
+  }
+  #contact-section {
+    margin-top: 25%;
+  }
+}
