@@ -13,7 +13,7 @@
     align-items: center;
 }
 .light-mode #w2p{
-  background-color: #fff;
+  background-color: #8A39E1;
 }
 img {
     width: 90%;
@@ -37,6 +37,10 @@ img {
     opacity: 0.5;
     transition: all 0.3s ease;
 }
+.light-mode .dwpdf{
+  background-color: #fff;
+  color: #8A39E1;
+}
 .dwpdf_hover{
     cursor: pointer;
     padding: 20px 25px;
@@ -45,8 +49,8 @@ img {
     color: #8A39E1;
 }
 .light-mode .dwpdf_hover{
-  background-color: #8A39E1;
-  color: #fff;
+  background-color: #fff;
+  color: #8A39E1;
 }
 .custom-file-upload {
     border: 2px solid #8A39E1;
@@ -57,7 +61,7 @@ img {
     cursor: pointer;
 }
 .light-mode .custom-file-upload{
-  color: #8A39E1;
+  border: 2px solid #fff;
 }
 .reset{
     margin-left: 10%;
