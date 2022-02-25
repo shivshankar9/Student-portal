@@ -35,7 +35,7 @@ img {
   padding: 15px 20px;
   font-size: 1.2em;
   background-color: #FF1700;
-  color: #541212;
+  color: #fff;
   border: 2px solid #FF1700;
   border-radius: 10px;  
   border: none;
@@ -96,4 +96,20 @@ ul{
   font-size:1.2rem;
   margin-bottom: 15px;
   pointer-events: none;
+}
+.light-mode{
+  background-color: #F5F8FF;
+  color: black;
+}
+.light-mode #container{
+  background-color: #FFF;
+}
+.light-mode .custom-file-upload{
+  color: #222;
+}
+.light-mode #file-list{
+  background-color: #222;
+}
+.light-mode .reset{
+  color: #222;
 }
