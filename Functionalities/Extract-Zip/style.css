@@ -108,7 +108,7 @@ ul{
   color: #222;
 }
 .light-mode #file-list{
-  background-color: #222;
+  border: 2px solid #8a39e1;
 }
 .light-mode .reset{
   color: #222;
