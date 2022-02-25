@@ -40,7 +40,7 @@ body{
   padding: 15px 20px;
   font-size: 1.2em;
   background-color: #8a39e1;
-  color: #fff;
+  color: black;
   box-shadow: none;
   border: none;
   opacity: 0.5;
@@ -52,6 +52,7 @@ body{
   font-size: 1.3em;
   background-color: #fff;
   color: #8a39e1;
+  border: 2px solid #8a39e1;
 }
 .reset {
   margin:50px auto;
@@ -74,4 +75,17 @@ body{
   cursor: pointer;
   padding: 20px 25px;
   font-size: 1.3em;
+}
+.light-mode{
+  background-color: #F5F8FF;
+  color: black;
+}
+.light-mode .t2p{
+  background-color: #fff;
+}
+.light-mode .convert{
+  color: black;
+}
+.light-mode .convert_hover{
+  color: #8a39e1;
 }
