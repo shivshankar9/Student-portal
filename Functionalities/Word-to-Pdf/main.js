@@ -13,12 +13,13 @@ navbar.innerHTML = `<nav>
 <span class="bar"></span>
 </div>
 <div class="nav-links">
-<ul class="myDIV">
-<li> <div class="toggle-switch">
-<label class="switch">
-  <input id = "lightmode-gen" value="on"  type="checkbox" onclick = "light_mode_activate()">
-  <span class="slider round"></span>
-</label>
+<ul id="myDIV">
+    <li> <div class="toggle-switch">
+      <label class="switch">
+        <input id = "lightmode-gen" value="on"  type="checkbox" onclick = "light_mode_activate()">
+        <span class="slider round"></span>
+    </label>
+  </div></li>
     <li><a class="btn active" href="../../index.html#home">Home</a></li>
     <li><a class="btn" href="../../index.html#about">About</a></li>
     <li><a class="btn" href="../../index.html#service">Services</a></li>
@@ -30,9 +31,9 @@ const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
 const navLinks = document.getElementsByClassName("nav-links")[0];
 
 toggleBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("display");
+  navLinks.classList.toggle("display");
 });
 window.onload = function () {
-    loader.style.display = "none";
-    page.style.display = "";
+  loader.style.display = "none";
+  page.style.display = "";
 };

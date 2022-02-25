@@ -34,7 +34,10 @@ main{
   font-size: 13px;
   margin-bottom: 100px;
 }
-
+.light-mode .input-page{
+  background-color: #8A39E1;
+  color: #fff;
+}
 
 .inp-container{
   cursor: pointer;
@@ -98,6 +101,10 @@ main{
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   transition: all 0.5s ease;
 }
+.light-mode .file-item{
+  background-color: #fff;
+  color: #8A39E1;
+}
 .file-item:hover {
  background-color: #fff;
   color: #8A39E1;
@@ -130,6 +137,7 @@ main{
   color: #8A39E1;
   transition: all 0.5s ease;
 }
+
 .file-item button:hover{
   background: #8A39E1;
   color: #fff;
@@ -196,11 +204,21 @@ main{
   font-size: large;
   transition: all 0.3s ease;
 }
-
+.light-mode #convertBtn{
+  background-color: #fff;
+  color: #8A39E1;
+}
 #convertBtn:hover{  
   padding: 25px 30px;
+  font-size: 1.5em;
   color: #8A39E1;
   background-color: white;
+}
+
+/* light mode  */
+.light-mode{
+  background-color: #F5F8FF;
+  color: black;
 }
 
 
