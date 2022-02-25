@@ -36,3 +36,7 @@ window.onload = function () {
     loader.style.display = "none";
     page.style.display = "";
 };
+function light_mode_activate() {
+    let element = document.body
+    element.classList.toggle("light-mode")
+}

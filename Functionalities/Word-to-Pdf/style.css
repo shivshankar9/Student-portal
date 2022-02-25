@@ -55,7 +55,7 @@ img {
     padding: 10px 15px;
     font-size: 1em;
     background-color: #FF1700;
-    color: #541212;
+    color: white;
     border: none;
     opacity: 0.5;
     transition: all 0.3s ease;
@@ -80,4 +80,24 @@ img {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+.light-mode{
+  background-color: #F5F8FF;
+  color: black;
+}
+.light-mode #w2p{
+  background-color: #fff;
+}
+.light-mode .reset{
+  color: black;
+}
+.light-mode .dwpdf{
+  color: black;
+}
+.light-mode .dwpdf_hover{
+  border: 2px solid #8A39E1;
+  color: #8A39E1;
+}
+.light-mode .custom-file-upload{
+  color: black;
 }
