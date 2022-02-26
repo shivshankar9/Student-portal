@@ -650,6 +650,9 @@ footer h3 {
   margin-left: 20px;
 }
 /* testimonils stylng  */
+.testi{
+  margin-top: 100px;
+}
 .hero{
   background: #222;
   height: 100vh;
@@ -662,8 +665,59 @@ footer h3 {
   font-size: 40px;
   color: #8a39e1;
 }
+.slide-row{
+  display: flex;
+  width: 3200px;
+  overflow-x:visible;
+  
+}
+.slide-col{
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+.user-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.user-img img{
+  height:100%;
+border-radius: 10px;
 
+}
+.user-text{
+  background-color: #8a39e1;
+  width: 520px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  color: #fff;
+  padding: 45px;
+  box-sizing:border-box;
+  z-index: 2;
+}
+.user-text p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.user-text h3{
+  margin: 35px 0px 5px;
+  color: #FBB31C;
+}
+.container{
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
 
+}
 
 
 @media only screen and (max-width: 960px) {
