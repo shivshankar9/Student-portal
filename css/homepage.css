@@ -929,6 +929,12 @@ border-radius: 10px;
   overflow: hidden;
 }
 
+/* lightmode testimonials  */
+.light-mode .hero{
+  background: #fff;
+
+}
+
 
 /* Testimonials resposivity  */
 /* @media(max-width:1300px){
