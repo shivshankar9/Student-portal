@@ -203,15 +203,31 @@
   var slide = document.getElementById("slide");
 btn2[0].onclick = function(){
   slide.style.transform ="translateX(0px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
 }
 btn2[1].onclick = function(){
   slide.style.transform ="translateX(-800px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
 }
 btn2[2].onclick = function(){
   slide.style.transform ="translateX(-1600px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
 }
 btn2[3].onclick = function(){
   slide.style.transform ="translateX(-2400px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
 }
 </script>
 
