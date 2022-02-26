@@ -976,6 +976,7 @@ border-radius: 10px;
   }
 } */
 @media(max-width:690px){
+  
   .hero h1{
       font-size: 2.2rem;
     }
@@ -1013,6 +1014,9 @@ border-radius: 10px;
     }
   }
 @media(max-width:500px){
+  .hero{
+    height: 80vh;
+  }
   .hero h1{
     font-size: 2rem;
   }
