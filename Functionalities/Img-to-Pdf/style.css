@@ -223,3 +223,10 @@ main{
     width: 7rem;
   }
 }
+.light-mode{
+  background-color: #F5F8FF;
+  color: black;
+}
+.light-mode .input-page{
+  background-color: #FFF;
+}
