@@ -23,6 +23,7 @@ navbar.innerHTML = `<nav>
     <li><a class="btn" href="./index.html#home">Home</a></li>
     <li><a class="btn"  href="./index.html#about-section">About</a></li>
     <li><a class="btn" href="./index.html#services">Services</a></li>
+    <li><a class="btn" href="./index.html#testi">Testimonials</a></li>
     <li><a class="btn active" href="./contact.html">Contact</a></li>
 </ul>
 </div>

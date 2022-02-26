@@ -635,7 +635,6 @@ footer {
 }
 footer h3 {
   font-size: 20px;
- 
   padding: 10px;
   margin: 2px;
   text-align: center;
@@ -649,6 +648,100 @@ footer h3 {
   margin-top: 40px;
   margin-left: 20px;
 }
+/* testimonils stylng  */
+.testi{
+  margin-top: 100px;
+}
+.hero{
+  background: #222;
+  height: 120vh;
+  width: 100%;
+  position: relative;
+}
+.hero h1{
+  text-align: center;
+  padding-top: 80px;
+  font-size: 4rem;
+  color: #8a39e1;
+}
+.slide-row{
+  display: flex;
+  width: 3200px;
+  overflow-x:visible;
+  transition: all 0.5s;
+}
+.slide-col{
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+.user-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.user-img img{
+  height:100%;
+border-radius: 10px;
+
+}
+.user-text{
+  background-color: #8a39e1;
+  width: 520px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  color: #fff;
+  padding: 45px;
+  box-sizing:border-box;
+  z-index: 2;
+}
+.user-text p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.user-text h3{
+  margin: 35px 0px 5px;
+  color: #FBB31C;
+}
+.container{
+  margin-top: 40px;
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+}
+.indicator{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+}
+.btn2{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  border-radius: 10px;
+  background-color: #8a39e1;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.active2{
+  width: 45px;
+}
+.testimonial{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 
 @media only screen and (max-width: 960px) {
   main .row {

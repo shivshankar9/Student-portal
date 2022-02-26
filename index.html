@@ -66,6 +66,7 @@
           <span class="mail"><a href="mailto:insertemailhere@xyz.com">Email</a></span>
 
 
+
         </div>
       </div>
     </section>
@@ -75,6 +76,7 @@
         <main data-aos="fade-left">
           <div class="tools-heading">
             <h2>Our services<span class="toolsicon">⚙️</span></h2>
+
           </div>
           <div class="tools-items">
             <div class="row">
@@ -98,13 +100,162 @@
               <button><a href="./Functionalities/Resize-Image/index.html">Resize Image</a></button>
             </div>
           </div>
-      </div>
-      </main>
+
+        </div>
+    </main>
   </div>
   </section>
 
-  <!-- Footer part  -->
-  <footer>
+
+<!-- testimonials section  -->
+<section id="testi" class="testi">
+<div class="hero">
+  <h1>Testimonials</h1>
+
+<div class="container">
+  <div class="indicator">
+    <span class="btn2 active2"></span>
+    <span class="btn2"></span>
+    <span class="btn2"></span>
+    <span class="btn2"></span>
+  </div>
+  <div class="testimonial">
+   <div class="slide-row" id="slide">
+    <div class="slide-col">
+      <div class="user-text">
+        <p>
+          Joseph Francis "Joey" Tribbiani Jr., was one of the main characters on Friends (1994–2004) and the title character in the spin-off Joey (2004–2006). He was portrayed by Matt LeBlanc.
+        </p>
+        <h3>
+          Joey tribbiani
+        </h3>
+        <p>Actor</p>
+      </div>
+      <div class="user-img">
+        <img src="./images/person3.png" alt="">
+      </div>
+
+    </div>
+    <div class="slide-col">
+      <div class="user-text">
+        <p>
+          Monica E. Geller is a fictional character on the popular U.S. television sitcom Friends (1994–2004), played by Courteney Cox.
+        </p>
+        <h3>
+          Monika Geller
+        </h3>
+        <p>Actor</p>
+      </div>
+      <div class="user-img">
+        <img src="./images/person1.png" alt="">
+      </div>
+
+    </div>
+    <div class="slide-col">
+      <div class="user-text">
+        <p>
+          Chandler works in statistical analysis and data reconfiguration. 
+        </p>
+        <h3>
+          Chandler Bing
+        </h3>
+        <p>Actor</p>
+      </div>
+      <div class="user-img">
+        <img src="./images/person4.png" alt="">
+      </div>
+
+    </div>
+    <div class="slide-col">
+      <div class="user-text">
+        <p>
+          Rachel Lyman Field (September 19, 1894 – March 15, 1942) was an American novelist, poet, and children's fiction writer.
+        </p>
+        <h3>
+          Rachel feild
+        </h3>
+        <p>Novelist</p>
+      </div>
+      <div class="user-img">
+        <img src="./images/person2.png" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+ 
+</div>
+
+</section>
+
+
+    <!-- Footer part  -->
+    <footer>
+
+      <div>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+      <br>
+      <p>This is a Open Source Project on GitHub. <br> Please help us to <a
+          href="https://github.com/shivshankar9/Student-portal">Improve this</a>.</p> <br> <br>
+      <div class="author">Student-Portal@copyright2022</div>
+    </footer>
+
+<!-- script for testimonials  -->
+<script>
+  var btn2 = document.getElementsByClassName("btn2");
+  var slide = document.getElementById("slide");
+btn2[0].onclick = function(){
+  slide.style.transform ="translateX(0px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[1].onclick = function(){
+  slide.style.transform ="translateX(-800px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[2].onclick = function(){
+  slide.style.transform ="translateX(-1600px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[3].onclick = function(){
+  slide.style.transform ="translateX(-2400px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+</script>
+
+    <!-- Javascript  -->
+    <script src="./js/script.js"></script>
+
+    <!-- chatbot implementation-->
+    <span>
+      <section id="section_chatbot">
+        <a class="float" id="float">
+          <img src="./images/chatbot2.png" id="roboImg">
+        </a>
+
+        <div class="popup" id="popup">
+          <div class="header-chat">
+            <img src="./images/admin.png" class="avatar" alt="">
+            <span class="name"> Shirley </span>
+            <button class="crossbtn" onclick="hide()">X</button>
+          </div>
+
 
     <div>
       <a href="#"><i class="fab fa-instagram"></i></a>
