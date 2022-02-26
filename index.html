@@ -242,7 +242,7 @@ mediaQuery2.addListener(handleTabletChange2);
 // Initial check
 handleTabletChange2(mediaQuery2);
 
-const mediaQuery = window.matchMedia('(max-width: 690px)')
+const mediaQuery = window.matchMedia('(max-width: 690px)');
 function handleTabletChange(e) {
   // Check if the media query is true
   if (e.matches) {
@@ -282,6 +282,53 @@ mediaQuery.addListener(handleTabletChange);
 
 // Initial check
 handleTabletChange(mediaQuery);
+
+
+const mediaQuery3 = window.matchMedia('(max-width: 500px)');
+function handleTabletChange3(e) {
+  // Check if the media query is true
+  if (e.matches) {
+
+  btn2[0].onclick = function(){
+  slide.style.transform ="translateX(0px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[1].onclick = function(){
+  slide.style.transform ="translateX(-300px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[2].onclick = function(){
+  slide.style.transform ="translateX(-600px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[3].onclick = function(){
+  slide.style.transform ="translateX(-900px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+}
+}
+// Register event listener
+mediaQuery3.addListener(handleTabletChange3);
+
+// Initial check
+handleTabletChange3(mediaQuery3);
+
+
+
+
+
 </script>
 
     <!-- Javascript  -->

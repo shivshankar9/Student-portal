@@ -1021,14 +1021,14 @@ border-radius: 10px;
   }
   .slide-col{
     font-size: 8px;
-    width: 840px;
+    width: 600px;
     height: 300px;
   }
   .user-img{
-    height: 80%;
+    height: 85%;
   }
   .user-img img{
-    height:80%;  
+    height:85%;  
   }
   .user-text{
     width: 170px;
@@ -1045,7 +1045,7 @@ border-radius: 10px;
   }
   .container{
     margin-top: 30px;
-    width: 420px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
 }
