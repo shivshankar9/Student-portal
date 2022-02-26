@@ -106,10 +106,13 @@
 
 <div class="container">
   <div class="indicator">
-    
+    <span class="btn2 active2"></span>
+    <span class="btn2"></span>
+    <span class="btn2"></span>
+    <span class="btn2"></span>
   </div>
   <div class="testimonial">
-   <div class="slide-row">
+   <div class="slide-row" id="slide">
     <div class="slide-col">
       <div class="user-text">
         <p>
@@ -193,6 +196,24 @@
           href="https://github.com/shivshankar9/Student-portal">Improve this</a>.</p> <br> <br>
       <div class="author">Student-Portal@copyright2022</div>
     </footer>
+
+<!-- script for testimonials  -->
+<script>
+  var btn2 = document.getElementsByClassName("btn2");
+  var slide = document.getElementById("slide");
+btn2[0].onclick = function(){
+  slide.style.transform ="translateX(0px)";
+}
+btn2[1].onclick = function(){
+  slide.style.transform ="translateX(-800px)";
+}
+btn2[2].onclick = function(){
+  slide.style.transform ="translateX(-1600px)";
+}
+btn2[3].onclick = function(){
+  slide.style.transform ="translateX(-2400px)";
+}
+</script>
 
     <!-- Javascript  -->
     <script src="./js/script.js"></script>

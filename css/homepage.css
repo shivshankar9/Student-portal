@@ -635,7 +635,6 @@ footer {
 }
 footer h3 {
   font-size: 20px;
- 
   padding: 10px;
   margin: 2px;
   text-align: center;
@@ -655,7 +654,7 @@ footer h3 {
 }
 .hero{
   background: #222;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   position: relative;
 }
@@ -669,7 +668,7 @@ footer h3 {
   display: flex;
   width: 3200px;
   overflow-x:visible;
-  
+  transition: all 0.5s;
 }
 .slide-col{
   width: 800px;
@@ -716,7 +715,29 @@ border-radius: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) ;
-
+}
+.indicator{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+}
+.btn2{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 4px;
+  border-radius: 10px;
+  background-color: #8a39e1;
+  cursor: pointer;
+}
+.active2{
+  width: 45px;
+}
+.testimonial{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 
