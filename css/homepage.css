@@ -1020,7 +1020,32 @@ border-radius: 10px;
     width: 1200px;
   }
   .slide-col{
-    width: 400px;
-    height: 150px;
+    font-size: 8px;
+    width: 840px;
+    height: 300px;
+  }
+  .user-img{
+    height: 80%;
+  }
+  .user-img img{
+    height:80%;  
+  }
+  .user-text{
+    width: 170px;
+    height: 190px;
+    padding: 12px;
+    z-index: 2;
+  }
+  .user-text p{
+    font-size: 8.5px;
+    line-height: 18px;
+  }
+  .user-text h3{
+    margin: 15px 0px 2px;
+  }
+  .container{
+    margin-top: 30px;
+    width: 420px;
+    height: 300px;
   }
 }
