@@ -654,14 +654,14 @@ footer h3 {
 }
 .hero{
   background: #222;
-  height: 130vh;
+  height: 120vh;
   width: 100%;
   position: relative;
 }
 .hero h1{
   text-align: center;
   padding-top: 80px;
-  font-size: 40px;
+  font-size: 4rem;
   color: #8a39e1;
 }
 .slide-row{
@@ -709,6 +709,7 @@ border-radius: 10px;
   color: #FBB31C;
 }
 .container{
+  margin-top: 40px;
   width: 800px;
   height: 400px;
   position: absolute;
@@ -730,6 +731,7 @@ border-radius: 10px;
   border-radius: 10px;
   background-color: #8a39e1;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .active2{
   width: 45px;
