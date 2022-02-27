@@ -15,7 +15,7 @@
   background-color: #222222;
   color: #fff;
   border-radius: 10px;
-  width: 50%;
+  width: 70%;
   text-align: center;
 }
 body {
@@ -83,9 +83,10 @@ body {
   background: none;
   color: #8a39e1;
 }
+
 /* light mode styling  */
 .light-mode {
-  background-color: #F5F8FF;
+  background-color: #f5f8ff;
 }
 .light-mode .contactme {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -95,28 +96,105 @@ body {
 .light-mode .mesg {
   background: none;
   color: #222;
-  border: 2px solid #EBF1FF;
+  border: 2px solid #ebf1ff;
 }
 .light-mode .content1 {
   background: #8a39e1;
 }
 
-@media screen and (max-width: 600px) {
-  #contactsubmit {
-    width: 100%;
-    margin-top: 0;
-  }
+/* Responsivity */
+@media (max-width: 947px) {
   .contactme {
-    border-radius: 25px;
-  }
-  .content1 {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-  .contactme h2 {
-    font-size: 2.2em;
+    width: 80%;
   }
   #contact-section {
-    margin-top: 25%;
+    margin-top: 15%;
+  }
+  .contactme h2 {
+    font-size: 2em;
+    padding-top: 25px;
+    padding: 15px;
+  }
+}
+@media (max-width: 690px) {
+  #contact-section {
+    margin-top: 13%;
+  }
+  .contactme {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .contactme {
+    width: 90%;
+  }
+  #contact-section {
+    margin-top: 17%;
+  }
+  .contactme h2 {
+    font-size: 2em;
+    padding-top: 25px;
+    padding: 15px;
+  }
+  .contactme .content input,
+  .mesg {
+    padding: 20px;
+    padding-left: 27px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    width: 80%;
+  }
+  #email {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #contactsubmit {
+    margin-top: 1.2em;
+    font-size: 0.8rem;
+    padding: 12px 27px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+  .contactme h2 {
+    font-size: 1.7em;
+    padding: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .contactme {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .contactme h2 {
+    font-size: 1em;
+    position: relative;
+    padding: 20px;
+  }
+  #contact-section {
+    margin-top: 20%;
+  }
+  .contactme h2 {
+    font-size: 1.9em;
+    padding-top: 22px;
+    padding: 13px;
+  }
+  .contactme .content input,
+  .mesg {
+    padding: 17px;
+    padding-left: 27px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    width: 80%;
+  }
+  #email {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  #contactsubmit {
+    margin-top: 1.2em;
+    font-size: 0.8rem;
+    padding: 12px 27px;
+    font-weight: 600;
+    border-radius: 6px;
   }
 }
