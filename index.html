@@ -333,6 +333,46 @@ mediaQuery3.addListener(handleTabletChange3);
 // Initial check
 handleTabletChange3(mediaQuery3);
 
+const mediaQuery4 = window.matchMedia('(max-width: 900px)');
+function handleTabletChange4(e) {
+  // Check if the media query is true
+  if (e.matches) {
+
+  btn2[0].onclick = function(){
+  slide.style.transform ="translateX(0px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[1].onclick = function(){
+  slide.style.transform ="translateX(-480px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[2].onclick = function(){
+  slide.style.transform ="translateX(-960px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[3].onclick = function(){
+  slide.style.transform ="translateX(-1440px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+}
+}
+// Register event listener
+mediaQuery4.addListener(handleTabletChange4);
+
+// Initial check
+handleTabletChange4(mediaQuery4);
 
 
 
