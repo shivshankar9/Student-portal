@@ -88,6 +88,7 @@ html {
   font-size: 30px;
   border-radius: 5px;
   font-family: sans-serif;
+  text-align:center;
 }
 .about-content p {
   margin-bottom: 30px;
@@ -258,8 +259,11 @@ main button {
   margin: auto 0 auto 40px;
 }
 .home .home-content .text-1 {
-  font-size: 27px;
+  font-size: 75px;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
+
 .home .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
