@@ -936,50 +936,9 @@ border-radius: 10px;
 
 
 /* Testimonials resposivity  */
-@media(max-width:1300px){
+@media(max-width:947px){
   .hero{
-    height: 80vh;
-  }
-  .hero h1{
-      font-size: 3rem;
-    }
-    .slide-row{
-      width: 2000px;
-    }
-    .slide-col{
-      font-size: 20px;
-      width: 1000px;
-      height: 500px;
-    }
-    .user-img{
-      height: 100%;
-    }
-    .user-img img{
-      height:100%;  
-    }
-    .user-text{
-      width: 320px;
-      height: 220px;
-      padding: 20px;
-      z-index: 2;
-    }
-    .user-text p{
-      font-size: 15px;
-      line-height: 22px;
-    }
-    .user-text h3{
-      margin: 25px 0px 5px;
-    }
-    .container{
-      margin-top: 30px;
-      width: 480px;
-      height: 400px;
-    }
-}
-
-@media(max-width:900px){
-  .hero{
-    height: 65vh;
+    height: 85vh;
   }
   .hero h1{
       font-size: 2.8rem;
@@ -1020,7 +979,7 @@ border-radius: 10px;
 
 @media(max-width:690px){
   .hero{
-    height: 60vh;
+    height: 80vh;
   }
   .hero h1{
       font-size: 2.2rem;
@@ -1060,7 +1019,7 @@ border-radius: 10px;
   }
 @media(max-width:500px){
   .hero{
-    height: 50vh;
+    height: 75vh;
   }
   .hero h1{
     font-size: 2rem;
@@ -1095,7 +1054,7 @@ border-radius: 10px;
   .container{
     margin-top: 30px;
     width: 300px;
-    height: 250px;
+    height: 270px;
   }
 }
 
