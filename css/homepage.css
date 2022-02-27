@@ -938,7 +938,7 @@ border-radius: 10px;
 /* Testimonials resposivity  */
 @media(max-width:947px){
   .hero{
-    height: 85vh;
+    height: 90vh;
   }
   .hero h1{
       font-size: 2.8rem;
@@ -973,7 +973,7 @@ border-radius: 10px;
     .container{
       margin-top: 30px;
       width: 480px;
-      height: 400px;
+      height: 350px;
     }
 }
 
