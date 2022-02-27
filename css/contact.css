@@ -166,17 +166,12 @@ body {
     margin-bottom: 10px;
   }
   .contactme h2 {
-    font-size: 1em;
+    font-size: 1.5em;
     position: relative;
     padding: 20px;
   }
   #contact-section {
     margin-top: 20%;
-  }
-  .contactme h2 {
-    font-size: 1.9em;
-    padding-top: 22px;
-    padding: 13px;
   }
   .contactme .content input,
   .mesg {
@@ -189,6 +184,40 @@ body {
   #email {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+  #contactsubmit {
+    margin-top: 1.2em;
+    font-size: 0.8rem;
+    padding: 12px 27px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 337px) {
+  .contactme {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .contactme h2 {
+    font-size: 1.2em;
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+  #contact-section {
+    margin-top: 20%;
+  }
+  .contactme .content input,
+  .mesg {
+    padding: 15px;
+    padding-left: 25px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    width: 80%;
+  }
+  #email {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #contactsubmit {
     margin-top: 1.2em;
