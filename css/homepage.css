@@ -649,7 +649,6 @@ footer h3 {
   margin-left: 20px;
 }
 
-
 @media only screen and (max-width: 960px) {
   main .row {
     width: 100vw;
@@ -1053,3 +1052,4 @@ border-radius: 10px;
     height: 250px;
   }
 }
+
