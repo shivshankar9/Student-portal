@@ -162,7 +162,7 @@ input {
   }
   .preview {
     width: 100%;
-    max-height: 600px;
-    max-width: 1200px;
+    max-height: 400px;
+    max-width: 1000px;
   }
 }
