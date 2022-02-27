@@ -950,8 +950,8 @@ border-radius: 10px;
   }
   
 }
-
-@media(max-width:991px){
+*/
+/* @media(max-width:947px){
 .hero h1{
     font-size: 2.6rem;
   }
@@ -962,21 +962,12 @@ border-radius: 10px;
     width: 700px;
     height: 350px;
   }
-}
-@media(max-width:947px){
-.hero h1{
-    font-size: 2.4rem;
-  }
-  .slide-row{
-    width: 1600px;
-  }
-  .slide-col{
-    width: 650px;
-    height: 300px;
-  }
 } */
+
 @media(max-width:690px){
-  
+  .hero{
+    height: 70vh;
+  }
   .hero h1{
       font-size: 2.2rem;
     }
