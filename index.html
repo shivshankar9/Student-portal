@@ -112,7 +112,7 @@
 <div class="hero">
   <h1>Testimonials</h1>
 
-<div class="container2">
+<div class="container">
   <div class="indicator">
     <span class="btn2 active2"></span>
     <span class="btn2"></span>
@@ -207,8 +207,13 @@
 
 <!-- script for testimonials  -->
 <script>
+  
   var btn2 = document.getElementsByClassName("btn2");
   var slide = document.getElementById("slide");
+  const mediaQuery2 = window.matchMedia('(min-width: 947px)');
+function handleTabletChange2(e) {
+  // Check if the media query is true
+  if (e.matches) {
 btn2[0].onclick = function(){
   slide.style.transform ="translateX(0px)";
   for(var i=0; i<4;i++){
@@ -237,6 +242,141 @@ btn2[3].onclick = function(){
   }
   this.classList.add("active2");
 }
+}
+}
+// Register event listener
+mediaQuery2.addListener(handleTabletChange2);
+
+// Initial check
+handleTabletChange2(mediaQuery2);
+
+const mediaQuery = window.matchMedia('(max-width: 690px)');
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+
+  btn2[0].onclick = function(){
+  slide.style.transform ="translateX(0px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[1].onclick = function(){
+  slide.style.transform ="translateX(-460px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[2].onclick = function(){
+  slide.style.transform ="translateX(-920px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[3].onclick = function(){
+  slide.style.transform ="translateX(-1380px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+}
+}
+// Register event listener
+mediaQuery.addListener(handleTabletChange);
+
+// Initial check
+handleTabletChange(mediaQuery);
+
+
+const mediaQuery3 = window.matchMedia('(max-width: 500px)');
+function handleTabletChange3(e) {
+  // Check if the media query is true
+  if (e.matches) {
+
+  btn2[0].onclick = function(){
+  slide.style.transform ="translateX(0px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[1].onclick = function(){
+  slide.style.transform ="translateX(-300px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[2].onclick = function(){
+  slide.style.transform ="translateX(-600px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[3].onclick = function(){
+  slide.style.transform ="translateX(-900px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+}
+}
+// Register event listener
+mediaQuery3.addListener(handleTabletChange3);
+
+// Initial check
+handleTabletChange3(mediaQuery3);
+
+const mediaQuery4 = window.matchMedia('(max-width: 947px)');
+function handleTabletChange4(e) {
+  // Check if the media query is true
+  if (e.matches) {
+
+  btn2[0].onclick = function(){
+  slide.style.transform ="translateX(0px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[1].onclick = function(){
+  slide.style.transform ="translateX(-480px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[2].onclick = function(){
+  slide.style.transform ="translateX(-960px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+btn2[3].onclick = function(){
+  slide.style.transform ="translateX(-1440px)";
+  for(var i=0; i<4;i++){
+    btn2[i].classList.remove("active2");
+  }
+  this.classList.add("active2");
+}
+}
+}
+// Register event listener
+mediaQuery4.addListener(handleTabletChange4);
+
+// Initial check
+handleTabletChange4(mediaQuery4);
+
+
+
+
 </script>
 
     <!-- Javascript  -->
